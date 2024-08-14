@@ -11,6 +11,7 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=66eaafc9-8520-48f0-b7f3-aefb0112e354
 
 - name:     'Unit 01: Review and Introduction to Machine Learning'
+days:
       - date:           Mon 09/02
         topics:         Linear Algebra Review and Introduction to Machine Learning
         items:
