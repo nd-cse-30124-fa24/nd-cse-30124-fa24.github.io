@@ -1,29 +1,23 @@
-- name:     Sean Beckerle
+- name:     Francisco Septien
   netid:    sbeckerl
   github:   sbeckerl
 
-- name:     Kristen Friday 
+- name:     Jerrick Ban 
   netid:    kfriday
   github:   kfriday32
 
-- name:     Christine Van Kirk
+- name:     Mayleen Liu
   netid:    cvankir2
   github:   cvankir2
 
-- name:     Mia Manabat
+- name:     Thomas Lohman
   netid:    mmanabat
   github:   miamanabat
 
-- name:     Sebastian Gutierrez
+- name:     Doheon Han
   netid:    sgutier5
   github:   sebmaster36
 
-- name:     Joshua Russell
+- name:     Zhongyu Ouyang
   netid:    jrusse22
   github:   jrusse22
-
-- name:     Mark Schermerhorn
-  netid:    mscherm2 
-  github:   mscherm2
-  conflicts:
-    - dscherme
