@@ -275,3 +275,113 @@
         items:
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b
+
+      - date:           Sat 11/05
+        assignments:
+          - Challenge 15
+          - Challenge 16
+
+- name:     Graphs II
+  days:
+      - date:           Mon 11/07
+        topics:         Spanning Trees
+        assignments:
+          - Reading 09
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/154zJqLI2KL1s4Gt-BzVq40mE5rXRdPW54OWEpgptXX0/edit?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=55bcc0ec-1c2a-432f-bf86-af46012098ee
+
+      - date:           Wed 11/09
+        topics:         Topological Sorting
+        items:
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb59f2d2-475d-4b16-8bae-af4801252f14
+
+      - date:           Fri 11/11
+        topics:         Office Hours
+
+      - date:           Sat 11/12
+        assignments:
+          - Challenge 17
+          - Challenge 18
+
+- name:     Graphs III
+  days:
+      - date:           Mon 11/14
+        topics:         Paths
+        assignments:
+          - Reading 10
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1yo2lFhdmWGvLM69tM3sqzvuej2OlOnbQNFponk__6xA/edit?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a24c396-daa1-4367-a580-af4d01214901
+
+      - date:           Wed 11/16
+        topics:         Flows and Cuts
+        items:
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc77c08d-3c50-475f-8af4-af4f01234226
+
+      - date:           Fri 11/18
+        topics:         Office Hours
+
+      - date:           Sat 11/19
+        assignments:
+          - Challenge 19
+          - Challenge 20
+
+- name:     Number Theory
+  days:
+      - date:           Mon 11/21
+        topics:         Primes and Modular Arithmetic
+        assignments:
+          - Reading 11
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/18FUyj3TUK_iRIZTycIo81albN0PETbKP5Qe1RLQ1b2A/edit?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=df26c14c-578f-4653-92d3-af54011d9050
+
+      - date:           Wed 11/23
+        topics:         Thanksgiving
+
+      - date:           Fri 11/25
+        topics:         Thanksgiving
+
+- name:     Miscellaneous
+  days:
+      - date:           Mon 11/28
+        topics:         Negotiation, Contracts, Promotion, Mobility
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1Kw1IQd4tV09dVJkK6aKlzmF6_3C__fApHDL9ng9tdps/edit?usp=sharing
+
+      - date:           Wed 11/30
+        topics:         Graduate School
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1sz5rjj0SbIQuHi8BNXaD_SZstaT9i2plg8yRmLnVeKo/edit?usp=sharing
+
+      - date:           Fri 12/01
+        topics:         Slacking and Hacking
+
+      - date:           Sat 12/03
+        assignments:
+          - Challenge 21
+          - Challenge 22
+          - Challenge 23
+
+- name:     Contest II
+  days:
+      - date:           Mon 12/05
+        topics:         ''
+        items:
+          - name:       Contest II
+
+      - date:           Wed 12/07
+        topics:         ''
+        items:
+          - name:       Contest II
