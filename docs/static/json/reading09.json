@@ -1,0 +1,38 @@
+{
+    "q01": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nWhich of the following statements regarding spanning trees is true (choose\nall that apply)?\n\n</strong>\n",
+        "responses": {
+            "spanning": "In a spanning tree, there is path between any two nodes in the graph.",
+            "acyclic": "Spanning trees are both connected and acyclic.",
+            "single": "There is usually only one way to form a spanning tree.",
+            "minimum": "A minimum spanning tree is a spanning tree that has the least amount of weight as possible.",
+            "maximum": "A maximum spanning tree is a spanning tree that has the most amount of edges as possible.",
+            "unique": "There is usually only one unique minimum spanning tree in a graph.",
+            "greedy": "We can use greedy algorithms to construct minimum spanning trees.",
+            "priority": "To implement Prim's algorithm, we can use a priority queue."
+        }
+    },
+    "q02": {
+        "type": "blank",
+        "question": "<strong>\nComplete the pseudo-code for Prim's Algorithm below\n</strong>\n\n<pre>\nPrim(g):\n    frontier = []\n    visited  = {}\n    start    = g.vertices[0]\n    frontier.push((____, ____, ____))   # Add initial node\n\n    while not frontier.empty():\n        weight, source, target = frontier.pop()\n\n        if ____ in ____:                # Check if already visited\n            continue\n\n        visited[____] = ____             # Record visited\n\n        for neighbor, cost in g.edges[target]:\n            frontier.push((____, ____, ____))\n\n    return ____                         # Return edges in MST\n</pre>\n"
+    },
+    "q03": {
+        "type": "blank",
+        "question": "\n<strong>\n\nA ____ is an ordering of nodes in a ____ graph such that if there is a path\nfrom a node a to node b, then node a appears ____ b in the ordering.  An\n____ graph always has at least one such ordering.  According to Wikipedia,\nwe can use ____'s algorithm compute this ordering of nodes in a graph.\n\n</strong>\n"
+    },
+    "q04": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nGiven the following graph, which of the following orders are topological\nsorts (select all that apply)?\n\n<center>\n<img src=\"static/img/reading09-tsort.png\">\n</center>\n\n</strong>\n",
+        "responses": {
+            "one": "A, B, C, D, E, F, G, H",
+            "two": "C, A, B, E, D, F, G, H",
+            "three": "A, B, C, E, D, H, G, F",
+            "four": "B, A, D, C, H, E, G, F",
+            "five": "A, B, D, F, C, E, G, H",
+            "six": "C, B, E, A, D, H, F, G",
+            "seven": "A, D, H, F, G, E, B, C",
+            "eight": "B, A, D, F, C, G, H, E"
+        }
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Challenge 08: Knight&#39;s Dialer</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="index.html"><i class="fa fa-gavel"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-code"></i> Challenge 08: Knight&#39;s Dialer</h1>
+		</div>
+	    </div>
+
+            
+<p>A few summers ago, <strong>Caleb</strong> went to a day camp where he learned how to
+play <strong>chess</strong>.  He quickly learned the basic rules of chess and grew to
+love playing the game (almost as much as playing <strong>Minecraft</strong>).  On some
+evenings, he will challenge the instructor to a game after dinner (and
+sometimes even wins!).</p>
+<div class="thumbnail">
+<img src="static/img/challenge08-chess.jpg" class="img-response">
+</div>
+
+<p>In chess each piece can move in a different manner.  For instance,
+the <strong>rook</strong>, Caleb's favorite piece, can move any number of spaces vertically
+or horizontally.  A <strong>knight</strong>, however, can only move in a <code>L</code>-shape motion:
+two steps horizontally followed by one vertically, or one step horizontally
+then two vertically:</p>
+<p>Unfortunately, Caleb really dislikes the <strong>knight</strong> piece because its
+movement is so confusing.  To help Caleb practice visualize the movement of
+a knight, the instructor proposes the following problem to his son:</p>
+<blockquote>
+<p>Imagine you place a knight chess piece on a phone dialpad.  Suppose you
+dial keys on the keypad using only hops a knight can make. Every time the
+knight lands on a key, we dial that key and make another hop. The starting
+position counts as being dialed.</p>
+</blockquote>
+<div class="thumbnail">
+<img src="https://hackernoon.com/hn-images/1*pE4b3hqGDv7pKivQTQZyPw.png"
+class="img-responsive">
+</div>
+
+<blockquote>
+<p>What are the <strong>distinct numbers</strong> you can dial in <code>N</code> hops from a
+particular starting position?</p>
+</blockquote>
+<p>Because solving this problem efficiently requires the use of <strong>recursion</strong>,
+Caleb asks that you help him out by programming a solution that solves this
+challenge.</p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>You will be given a series of starting positions and hops in the following format:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>START HOPS
+...
+START HOPS
+</code></pre></div>
+
+<h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>6 3
+0 4
+</code></pre></div>
+
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>For each pair of starting positions and hops, output all possible numbers
+starting with the specified position and of the specified hops formed on
+the dialpad by using only the chess knight's motion.</p>
+<h3 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>604
+606
+616
+618
+672
+676
+
+0404
+0406
+0434
+0438
+0492
+0494
+0604
+0606
+0616
+0618
+0672
+0676
+</code></pre></div>
+
+<div class="alert alert-warning">
+<p><strong>Note</strong>: Output the numbers in <strong>ascending order</strong> and ensure there is a
+single <strong>blank line</strong> between the outputs of the pairs of starting
+positions and hops.</p>
+</div>
+<div class="alert alert-info">
+<h4 id="programming-challenges"><i class="fa fa-lightbulb-o"></i> Programming Challenges<a class="headerlink" href="#programming-challenges" title="Permanent link">&para;</a></h4>
+<p>This is inspired by this blog post: <a href="https://hackernoon.com/google-interview-questions-deconstructed-the-knights-dialer-f780d516f029">Google Interview Questions
+Deconstructed: The Knight’s Dialer</a>
+and this <a href="https://leetcode.com/problems/knight-dialer/">935. Knight Dialer</a> on <a href="https://leetcode.com">LeetCode</a>.</p>
+</div>
+<div class="alert alert-danger">
+<h4 id="algorithmic-complexity"><i class="fa fa-balance-scale"></i> Algorithmic Complexity<a class="headerlink" href="#algorithmic-complexity" title="Permanent link">&para;</a></h4>
+<p>For each input test case, your solution should have the following targets:</p>
+<table class="table table-striped table-bordered" style="background-color: white">
+<tbody>
+<tr>
+<td width="125px"><strong>Time Complexity</strong></td>
+<td><code>O(N!)</code>, where <code>N</code> is the number of hops.</td>
+</tr>
+<tr>
+<td><strong>Space Complexity</strong></td>
+<td><code>O(D)</code>, where <code>D</code> is the number of distinct numbers from starting point.</td>
+</tr>
+</tbody>
+</table>
+<p>Your solution may be below the targets, but it <strong>should not exceed them</strong>.</p>
+</div>
+<h2 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h2>
+<p>To submit your work, follow the same procedure you used for <a href="reading00.html">Reading 00</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> path/to/cse-30872-fa22-assignments     <span style="color: #3D7B7B; font-style: italic"># Go to assignments repository</span>
+$ git checkout master                       <span style="color: #3D7B7B; font-style: italic"># Make sure we are on master</span>
+$ git pull --rebase                         <span style="color: #3D7B7B; font-style: italic"># Pull any changes from GitHub</span>
+
+$ git checkout -b challenge08               <span style="color: #3D7B7B; font-style: italic"># Create and checkout challenge08 branch</span>
+
+$ <span style="color: #19177C">$EDITOR</span> challenge08/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Edit your code</span>
+
+$ git add challenge08/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Stage your changes</span>
+$ git commit -m <span style="color: #BA2121">&quot;challenge08: done&quot;</span>         <span style="color: #3D7B7B; font-style: italic"># Commit your changes</span>
+
+$ git push -u origin challenge08            <span style="color: #3D7B7B; font-style: italic"># Send changes to GitHub</span>
+</code></pre></div>
+
+<p>To check your code, you can use the <code>.scripts/check.py</code> script or <a href="https://curl.haxx.se/">curl</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ .scripts/check.py
+Checking challenge08 program.cpp ...
+  Result Success
+    Time <span style="color: #666666">0</span>.02
+   Score <span style="color: #666666">6</span>.00 / <span style="color: #666666">6</span>.00
+
+$ curl -F <span style="color: #19177C">source</span><span style="color: #666666">=</span>@challenge08/program.cpp https://dredd.h4x0r.space/code/cse-30872-fa22/challenge08
+<span style="color: #666666">{</span><span style="color: #BA2121">&quot;result&quot;</span>: <span style="color: #BA2121">&quot;Success&quot;</span>, <span style="color: #BA2121">&quot;score&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;time&quot;</span>: <span style="color: #666666">0</span>.016405344009399414, <span style="color: #BA2121">&quot;value&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;status&quot;</span>: <span style="color: #666666">0}</span>
+</code></pre></div>
+
+<div class="alert alert-success">
+<h4 id="pull-request"><i class="fa fa-github"></i> Pull Request<a class="headerlink" href="#pull-request" title="Permanent link">&para;</a></h4>
+<p>Once you have committed your work and pushed it to <a href="https://github.com">GitHub</a>, remember to
+create a <strong>pull request</strong> and assign it to the appropriate <strong>teaching
+assistant</strong> from the <a href="reading04_tas.html">Reading 04 TA List</a>.</p>
+</div>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+

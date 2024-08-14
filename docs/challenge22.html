@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Challenge 22: Least Perfect Squares</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="index.html"><i class="fa fa-gavel"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-code"></i> Challenge 22: Least Perfect Squares</h1>
+		</div>
+	    </div>
+
+            
+<p><img src="static/img/challenge22-lego.jpg" class="img-responsive img-rounded pull-right" style="margin-left: 10px"></p>
+<p>Caleb is now in <strong>Upper El</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> and is currently tackling multiplication and
+division.  He recently discovered squared numbers and was wondering the
+following:</p>
+<blockquote>
+<p>Given a positive integer <code>n</code>, what is the least number of perfect square
+numbers (for example, 1, 4, 9, 16, ...) which sum to <code>n</code>.</p>
+</blockquote>
+<p>For example, for the number <code>12</code>, he knows he can use three <code>4</code>s (which is
+a perfect square) to add up to <code>12</code>.</p>
+<p>Likewise, for the number <code>13</code>, he has determined that he can use <code>4</code> and
+<code>9</code> to sum up to <code>13</code>.</p>
+<p>Caleb would like for you to write a program than determines what is the
+least number of perfect squares required to sum up to any arbitrary
+positive integer <code>n</code>.</p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>Each line of input will be a positive integer <code>n</code>.  You are to find the
+least number of perfect square numbers that sum up to <code>n</code>.</p>
+<h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12
+13
+</code></pre></div>
+
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>For each input number <code>n</code>, print out the least number of perfect square
+numbers that sum up to <code>n</code>.</p>
+<h3 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>3
+2
+</code></pre></div>
+
+<div class="alert alert-info">
+<h4 id="programming-challanges"><i class="fa fa-lightbulb-o"></i> Programming Challanges<a class="headerlink" href="#programming-challanges" title="Permanent link">&para;</a></h4>
+<p>This is based on <a href="https://leetcode.com/problems/perfect-squares/">279. Perfect Squares</a> problem on the <a href="https://leetcode.com">Leetcode</a>.</p>
+</div>
+<h2 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h2>
+<p>To submit your work, follow the same procedure you used for <a href="reading00.html">Reading 00</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> path/to/cse-30872-fa22-assignments     <span style="color: #3D7B7B; font-style: italic"># Go to assignments repository</span>
+$ git checkout master                       <span style="color: #3D7B7B; font-style: italic"># Make sure we are on master</span>
+$ git pull --rebase                         <span style="color: #3D7B7B; font-style: italic"># Pull any changes from GitHub</span>
+
+$ git checkout -b challenge22               <span style="color: #3D7B7B; font-style: italic"># Create and checkout challenge22 branch</span>
+
+$ <span style="color: #19177C">$EDITOR</span> challenge22/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Edit your code</span>
+
+$ git add challenge22/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Stage your changes</span>
+$ git commit -m <span style="color: #BA2121">&quot;challenge22: done&quot;</span>         <span style="color: #3D7B7B; font-style: italic"># Commit your changes</span>
+
+$ git push -u origin challenge22            <span style="color: #3D7B7B; font-style: italic"># Send changes to GitHub</span>
+</code></pre></div>
+
+<p>To check your code, you can use the <code>.scripts/check.py</code> script or <a href="https://curl.haxx.se/">curl</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ .scripts/check.py
+Checking challenge22 code ...
+  Result Success
+    Time <span style="color: #666666">0</span>.03
+   Score <span style="color: #666666">6</span>.00 / <span style="color: #666666">6</span>.00
+
+$ curl -F <span style="color: #19177C">source</span><span style="color: #666666">=</span>@challenge22/program.cpp https://dredd.h4x0r.space/code/cse-30872-fa22/challenge22
+<span style="color: #666666">{</span><span style="color: #BA2121">&quot;result&quot;</span>: <span style="color: #BA2121">&quot;Success&quot;</span>, <span style="color: #BA2121">&quot;score&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;time&quot;</span>: <span style="color: #666666">0</span>.03212690353393555, <span style="color: #BA2121">&quot;value&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;status&quot;</span>: <span style="color: #666666">0}</span>
+</code></pre></div>
+
+<div class="alert alert-success">
+<h4 id="pull-request"><i class="fa fa-github"></i> Pull Request<a class="headerlink" href="#pull-request" title="Permanent link">&para;</a></h4>
+<p>Once you have committed your work and pushed it to <a href="https://github.com">GitHub</a>, remember to
+create a <strong>pull request</strong> and assign it to the appropriate <strong>teaching
+assistant</strong> from the <a href="reading11_tas.html">Reading 11 TA List</a>.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Okay, so this problem is a couple of years old.  I'll update the story one day :].&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+
