@@ -1,7 +1,7 @@
-- name:     I/O
+- name:     Introduction
   days:
-      - date:           Wed 08/24
-        topics:         Syllabus, I/O
+      - date:           Wed 08/28
+        topics:         Syllabus, ML as Function Approximation
         assignments:
           - Reading 00
         items:
@@ -12,8 +12,9 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=66eaafc9-8520-48f0-b7f3-aefb0112e354
 
-      - date:           Fri 08/26
-        topics:         Complexity, Coding Style
+
+      - date:           Mon 09/02
+        topics:         Linear Algebra Review and Introduction to Machine Learning
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1-LaBQI-AQG--njIjFdcoxSl9FjlYSqkXI8aKmO8VFQ4/edit?usp=sharing
@@ -26,12 +27,12 @@
         assignments:
           - Challenge 00
 
-- name:     'Unit 01: Data Structures and Algorithms'
+- name:     'Unit 01: Review and Introduction to Machine Learning'
 
 - name:     Sequence Containers
   days:
-      - date:           Mon 08/29
-        topics:         Arrays, Lists
+      - date:           Wed 09/04
+        topics:         Linear Regression and Machine Learning Experiments
         assignments:
           - Reading 01
         items:
@@ -40,11 +41,11 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0d2c07fc-41c1-414b-a23d-af000114e7c0
 
-      - date:           Wed 08/31
-        topics:         Cancelled
+      - date:           Mon 09/09
+        topics:         Supervised Learning and Non-linear Regressions
 
-      - date:           Fri 09/02
-        topics:         Stacks, Queues
+      - date:           Wed 09/11
+        topics:         Statistics Review and Information Theory
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1lzuMS5Pe7HD34D5nTyCoTNmTudIP9e8fprLY_Ezp_4o/edit?usp=sharing
@@ -58,8 +59,8 @@
 
 - name:     Searching, Sorting
   days:
-      - date:           Mon 09/05
-        topics:         Searching
+      - date:           Mon 09/16
+        topics:         Probability Review and Bayesian Statistics
         assignments:
           - Reading 02
         items:
@@ -68,16 +69,16 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=406b4dfc-5409-4500-a918-af070116760f
 
-      - date:           Wed 09/07
-        topics:         Sorting
+      - date:           Wed 09/18
+        topics:         Bayesian Networks
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1c8duDG_JRQTOSQCSXNltK-rauwGEEGBtgF7pHwuupMA/edit?usp=sharing
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=164dadc9-a3f4-4842-8d11-af090114e444
 
-      - date:           Fri 09/19
-        topics:         Testing
+      - date:           Mon 09/23
+        topics:         Classification Problems
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1uo1ke4YkCc7unw8jPlEryyL_lielXLRANLn6VaRxnIw/edit?usp=sharing
@@ -91,8 +92,8 @@
 
 - name:     Associative Containers
   days:
-      - date:           Mon 09/12
-        topics:         Maps, Sets
+      - date:           Wed 09/25
+        topics:         Unsupervised Learning
         assignments:
           - Reading 03
         items:
