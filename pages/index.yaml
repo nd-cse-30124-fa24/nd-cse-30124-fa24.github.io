@@ -348,19 +348,15 @@ body:       |
             <div class="alert alert-info">
                 <h4><i class="fa fa-calendar"></i> Due Dates</h4>
                 <p>
-                All <b>Readings</b> and <b>Challenges</b> are to be
+                All <b>Homeworks</b> are to be
                   submited to your own <b>private</b> <a
                   href="https://github.com">GitHub</a> repository.  Unless
                   specified otherwise:
                 </p>
                 <p>
                 <ul>
-                <li><p><b>Readings</b> are due <b>before class</b> on the <b>Monday</b> of each week.</p></li>
-                <li><p><b>Challenges</b> are due at <b>noon</b> on the <b>Saturday</b> of each week.</p></li>
+                <li><p><b>Homeworks</b> are due at <b>midnight</b> on the <b>Sunday</b> of each week.</p></li>
                 </ul>
-                </p>
-                <p>
-                The <b>External Contest</b> submissions are due at <b>noon</b> on <b>Wednesday, December 7</b>.
                 </p>
             </div>
         </div>
