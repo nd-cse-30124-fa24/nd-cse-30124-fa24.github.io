@@ -12,7 +12,7 @@
 
 - name:     'Unit 01: Reviews and Machine Learning'
 
-- name:     Sequence Containers
+- name:     Reviews and Regressions
   days:
       - date:           Mon 09/02
         topics:         Linear Algebra Review and Introduction to Machine Learning
@@ -43,11 +43,6 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a03468d9-4331-4e6e-8a1f-af04011986db
 
-      - date:           Sat 09/03
-        assignments:
-          - Challenge 01
-          - Challenge 02
-
 - name:     Searching, Sorting
   days:
       - date:           Mon 09/16
@@ -75,11 +70,6 @@
             link:       https://docs.google.com/presentation/d/1uo1ke4YkCc7unw8jPlEryyL_lielXLRANLn6VaRxnIw/edit?usp=sharing
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30ba6a5a-698c-4893-aaa4-af0b011159e8
-
-      - date:           Sat 09/10
-        assignments:
-          - Challenge 03
-          - Challenge 04
 
 - name:     Associative Containers
   days:
@@ -109,11 +99,6 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0dda9ed1-5c7c-4e96-a1b0-af12010e6b7e
 
-      - date:           Sat 09/17
-        assignments:
-          - Challenge 05
-          - Challenge 06
-
 - name:     Complete Search
   days:
       - date:           Mon 09/19
@@ -140,10 +125,12 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e349df39-a02c-4cbd-9a65-af1901144969
 
-      - date:           Sat 09/24
-        assignments:
-          - Challenge 07
-          - Challenge 08
+- name:     Midterm 01
+  days:
+      - date:           Mon 10/10
+        topics:         ''
+        items:
+          - name:       Exam 01
 
 - name:     'Fall Break'
 
@@ -177,11 +164,6 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef24495c-3fae-42a3-b959-af20011074da
 
-      - date:           Sat 10/01
-        assignments:
-          - Challenge 09
-          - Challenge 10
-
 - name:     Dynamic Programming
   days:
       - date:           Mon 10/03
@@ -203,29 +185,12 @@
       - date:           Fri 10/07
         topics:         Optimization Techniques and Gradient Descent
 
-      - date:           Sat 10/08
-        assignments:
-          - Challenge 11
-          - Challenge 12
-
-- name:     Contest I
+- name:     Midterm 02
   days:
       - date:           Mon 10/10
         topics:         ''
         items:
-          - name:       Contest I
-
-      - date:           Wed 10/12
-        topics:         ''
-        items:
-          - name:       Contest I
-
-
-      - date:           Fri 10/14
-        topics:         ''
-        items:
-          - name:       Contest I
-
+          - name:       Exam 02
 
 - name:     'Unit 03: Applications'
 
@@ -283,3 +248,10 @@
         assignments:
           - Challenge 15
           - Challenge 16
+
+- name:     Final Exam
+  days:
+      - date:           Mon 10/10
+        topics:         ''
+        items:
+          - name:       Final Exam
