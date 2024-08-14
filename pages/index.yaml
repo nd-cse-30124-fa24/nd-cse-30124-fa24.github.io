@@ -1,4 +1,4 @@
-title:      Programming Challenges
+title:      Introduction to Artificial Intelligence
 icon:       fa-gavel
 navigation:
     - name: "Logistics"
@@ -21,7 +21,7 @@ body:       |
 
     <div class="row" markdown="1">
 
-    **CSE 30872** is an elective course in the [Computer Science and
+    **CSE 30124** is an elective course in the [Computer Science and
     Engineering] program at the [University of Notre Dame].  This course
     encourages the development of practical programming and problem solving
     skills through extensive practice and guided learning. The bulk of the
