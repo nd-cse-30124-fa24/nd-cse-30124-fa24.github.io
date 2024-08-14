@@ -29,5 +29,5 @@ jobs:
         git config --local user.email "<>"
         git checkout gh-pages
         git add docs/
-        git commit -m 'GitHub Actions: build site' || echo 'nothing to commit'
+        git commit -m 'GitHub Actions: build sites' || echo 'nothing to commit'
         git push origin gh-pages || echo 'nothing to push'
