@@ -1,0 +1,27 @@
+{
+    "q01": {
+        "type": "blank",
+        "question": "<strong>\n\nHow many prime numbers are there between `2` and `1000`? ____\n\n</strong>\n"
+    },
+    "q02": {
+        "type": "multiple",
+        "question": "<strong>\nWhich of the following numbers are perfect?\n</strong>\n",
+        "responses": {
+            "3": 3,
+            "6": 6,
+            "24": 24,
+            "28": 28,
+            "358": 358,
+            "496": 496,
+            "650": 640
+        }
+    },
+    "q03": {
+        "type": "blank",
+        "question": "<strong>\n\n<ol>\n<li>What is the GCD(1024, 768)? ____</li>\n<li>What is the GCD(1224, 315)? ____</li>\n<li>What is the GCD(1280, 900)? ____</li>\n<li>What is the GCD(1600, 900)? ____</li>\n<li>What is the GCD(6685, 12033)? ____</li>\n</ol>\n\n</strong>\n"
+    },
+    "q04": {
+        "type": "blank",
+        "question": "<strong>\n<ol>\n<li>What is 2^10 mod 5? ____</li>\n<li>What is 5^7 mod 4? ____</li>\n<li>What is 25^100 mod 3? ____</li>\n<li>What is 32^23 mod 4? ____</li>\n</ol>\n</strong>\n"
+    }
+}
