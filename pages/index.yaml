@@ -279,11 +279,11 @@ body:       |
                 </tr>
                 <tr>
                     <td><span class="label label-info">Midterms</span> Midterm Exams</td>
-                    <td class="text-center">2 &times; 50</td>
+                    <td class="text-center">2 &times; 60</td>
                 </tr>
                 <tr>
                     <td><span class="label label-danger">Exams</span> The Final Exam</td>
-                    <td class="text-center">1 &times; 100</td>
+                    <td class="text-center">1 &times; 80</td>
                 </tr>
                 <tr>
                     <td class="text-strong text-right">Total</td>
