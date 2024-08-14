@@ -83,7 +83,7 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ce66d519-a15f-4991-9da1-af0e0111e7c2
 
-      - date:           Wed 09/30
+      - date:           Mon 09/30
         topics:         Clustering
         items:
           - name:       Slides
@@ -91,7 +91,7 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8f6bd8ac-7753-44e4-8763-af10011412b3
 
-      - date:           Fri 10/02
+      - date:           Wed 10/02
         topics:         Dimensionality Reduction
         items:
           - name:       Slides
@@ -117,8 +117,8 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a3e5567-b3c5-4be0-ac1b-af170116ce3e
 
-      - date:           Fri 10/14
-        topics:         Validation and Evaluation of Machine Learning Systems
+      - date:           Mon 10/14
+        topics:         Evaluation of Machine Learning Systems
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1qLMV8eIOU6xXECWHVxjFug_JlTNC78Igw_Y3tnLzlms/edit?usp=sharing
@@ -127,7 +127,7 @@
 
 - name:     Midterm 01
   days:
-      - date:           Mon 10/16
+      - date:           Wed 10/16
         topics:         ''
         items:
           - name:       Exam 01
