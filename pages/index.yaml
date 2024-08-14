@@ -110,8 +110,7 @@ body:       |
             {% for index, ta in enumerate(sorted(page.external['tas'], key=lambda ta: ta['name'].split()[-1])) %}
             <div class="col-md-4">
                 <dl>
-                  <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
-                  <dt><i class="fa fa-user"></i>{{ ta['level'] }} Teaching Assistant</dt>
+                  <dt><i class="fa fa-user"></i> {{ ta['level'] }} Teaching Assistant</dt>
                   <dd>{{ ta['name'] }} (<a href="mailto:{{ ta['netid'] }}@nd.edu">{{ ta['netid'] }}@nd.edu</a>)</dd>
                   <!--
                   <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
