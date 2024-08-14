@@ -223,7 +223,7 @@ body:       |
                       <i class="text-muted">Programming Challenges</i>
                     {% end %}
                     {% for item in day.get('items', []) %}
-                    {% if item['name'].lower().startswith('contest') %}
+                    {% if item['name'].lower().startswith('exam') %}
                       {% set item['label'] = 'danger' %}
                     {% elif item['name'].lower().startswith('panopto') %}
                       {% set item['label'] = 'success' %}
@@ -274,20 +274,16 @@ body:       |
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="label label-primary">Readings</span> Weekly reading assignments.</td>
-                    <td class="text-center">11 &times; 3</td>
+                    <td><span class="label label-primary">Homeworks</span> Weekly homework assignments.</td>
+                    <td class="text-center">10 &times; 10</td>
                 </tr>
                 <tr>
-                    <td><span class="label label-caution">Challenges</span> Weekly programming challenges.</td>
-                    <td class="text-center">23 &times; 7</td>
+                    <td><span class="label label-info">Midterms</span> Midterm Exams</td>
+                    <td class="text-center">2 &times; 50</td>
                 </tr>
                 <tr>
-                    <td><span class="label label-info">Externals</span> External programming contest.</td>
-                    <td class="text-center">2 &times; 17</td>
-                </tr>
-                <tr>
-                    <td><span class="label label-danger">Contests</span> In-class programming contests.</td>
-                    <td class="text-center">2 &times; 36</td>
+                    <td><span class="label label-danger">Exams</span> The Final Exam</td>
+                    <td class="text-center">1 &times; 100</td>
                 </tr>
                 <tr>
                     <td class="text-strong text-right">Total</td>
