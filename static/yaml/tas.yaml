@@ -1,23 +1,29 @@
 - name:     Francisco Septien
+  level:    Undergraduate
   netid:    sbeckerl
   github:   sbeckerl
 
 - name:     Jerrick Ban 
+  level:    Undergraduate
   netid:    kfriday
   github:   kfriday32
 
 - name:     Mayleen Liu
+  level:    Undergraduate
   netid:    cvankir2
   github:   cvankir2
 
 - name:     Thomas Lohman
+  level:    Undergraduate
   netid:    mmanabat
   github:   miamanabat
 
 - name:     Doheon Han
+  level:    Graduate
   netid:    sgutier5
   github:   sebmaster36
 
 - name:     Zhongyu Ouyang
+  level:    Graduate
   netid:    jrusse22
   github:   jrusse22

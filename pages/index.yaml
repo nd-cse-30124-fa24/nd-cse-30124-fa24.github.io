@@ -64,10 +64,10 @@ body:       |
         <h3>Class Information</h3>
         <dl>
             <dt><i class="fa fa-clock-o"></i> Lecture</dt>
-            <dd><strong>M/W</strong> 3:30 AM - 4:45 PM</dd>
+            <dd><strong>M/W</strong> 3:30 PM - 4:45 PM</dd>
 
             <dt><i class="fa fa-home"></i> Location</dt>
-            <dd>DeBart 124</dd>
+            <dd>DeBart 155</dd>
 
             <dt><i class="fa fa-video-camera"></i> Zoom Meeting</dt>
             <dd><a href="https://notredame.zoom.us/j/94394065355">943 9406 5355</a></dd>
@@ -111,6 +111,7 @@ body:       |
             <div class="col-md-4">
                 <dl>
                   <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+                  <dt><i class="fa fa-user"></i>{{ ta['level'] }} Teaching Assistant</dt>
                   <dd>{{ ta['name'] }} (<a href="mailto:{{ ta['netid'] }}@nd.edu">{{ ta['netid'] }}@nd.edu</a>)</dd>
                   <!--
                   <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
