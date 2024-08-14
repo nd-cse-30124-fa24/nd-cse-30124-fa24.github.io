@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Challenge 01: License Plates</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="index.html"><i class="fa fa-gavel"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-code"></i> Challenge 01: License Plates</h1>
+		</div>
+	    </div>
+
+            
+<p><img src="static/img/challenge01-sloth.jpg" class="pull-right" style="padding-left: 5px;"></p>
+<p><a href="https://zootopia.fandom.com/wiki/Flash_Slothmore">Flash Slothmore</a> is a hardworking employee at the <a href="https://zootopia.fandom.com/wiki/Department_of_Mammal_Vehicles">Department of Mammal
+Vehicles</a> in the paradise known as <a href="https://www.imdb.com/title/tt2948356/">Zootopia</a>.  While he is normally a
+<em>fast</em> and <em>efficient</em> worker who strives to provide <em>prompt</em> and
+<em>courteous</em> customer service, Flash has a tendency to let his mind
+wander...</p>
+<p>For instance, while stamping new <strong>license plates</strong> for the <strong>DMV</strong>, he
+notices that each plate contains a mixture of letters, digits, and spaces.
+Focusing on just the letters, he likes to think of what possible words
+could be formed from the letters in the <strong>license plate</strong>.</p>
+<p>For example, given the <strong>license plate</strong>: <code>1s3 PSt</code>, this contains the
+following letters (<strong>ignoring case</strong>): <code>p</code>, <code>s</code>, <code>s</code>, <code>t</code>.  Possible words
+that can be formed from those letters are: <code>steps</code>, <code>priests</code>, and
+  <code>passports</code>.  Although each of these words contain letters not in the
+  <strong>license plate</strong>, they do contain all the letters that appear in the
+  <strong>license plate</strong> (ie. they are a superset of the letters in the
+  <strong>license plate</strong>).</p>
+<p>We call these words, <strong>completing words</strong>:</p>
+<blockquote>
+<p>A <strong>completing word</strong> is a word that contains all the letters in a
+<strong>license plate</strong>. You should ignore numbers, spaces, and case sensitivity.
+If a letter appears more than once in the <strong>license plate</strong>, then it must
+appear in the <strong>completing word</strong> the same number of times or more.</p>
+</blockquote>
+<p>So in the example above, while <code>steps</code> is a possible <strong>completing word</strong>
+for <code>1s3 PSt</code>, <code>step</code> is not because it only has one <code>s</code>.</p>
+<p>Since Flash is a busy <strong>DMV</strong> worker, he doesn't have time to consider all
+possible words that could form a <strong>completing word</strong> for a given <strong>license
+plate</strong>.  Instead, he just needs to search a list of possible <strong>completing
+words</strong> and select the first one that could be a <strong>completing word</strong> (not
+all words in the list are valid <strong>completing words</strong>, but each list
+contains at least once valid <strong>completing word</strong>).</p>
+<p>Because you wish to encourage Flash to <a href="https://youtu.be/4aUC1VZQE1E">get back to
+work</a>, you decided to write him a program
+that finds the <strong>first completing word</strong> for a given <strong>license plate</strong> and
+set of possible candidate <strong>completing words</strong>.</p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>You will be given a series of tests cases (one per line) in the following format:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>license plate1,word1,word2,...
+license plate2,word1,word2,...
+</code></pre></div>
+
+<p>Each input test cases consists of a <strong>license plate</strong>, followed by a series
+of possible completing <strong>words</strong> (with each word separated by a comma):</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1s3 PSt,step,steps,stripe,stepple
+1s3 456,pest,stew,show,looks
+</code></pre></div>
+
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>For each input test case, you are to emit the <strong>test case number</strong> along
+with the <strong>first completing word</strong> (as described above) in the following format:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>{Test Case #}. {First Completing Word}
+</code></pre></div>
+
+<p><strong>Note</strong>: If there is more than one <strong>completing word</strong>, pick the first one
+that appears in the given list of <strong>words</strong>.</p>
+<p>Here is the output for the example input above:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1. steps
+2. pest
+</code></pre></div>
+
+<div class="alert alert-info">
+<h4 id="leetcode"><i class="fa fa-lightbulb-o"></i> LeetCode<a class="headerlink" href="#leetcode" title="Permanent link">&para;</a></h4>
+<p>This programming challenge is inspired by <a href="https://leetcode.com/problems/shortest-completing-word/">748. Shortest Completing Word</a>
+on <a href="https://leetcode.com/problems/shortest-completing-word/">LeetCode</a>.</p>
+</div>
+<div class="alert alert-danger">
+<h4 id="algorithmic-complexity"><i class="fa fa-balance-scale"></i> Algorithmic Complexity<a class="headerlink" href="#algorithmic-complexity" title="Permanent link">&para;</a></h4>
+<p>For each input test case, your solution should have the following targets:</p>
+<table class="table table-striped table-bordered" style="background-color: white">
+<tbody>
+<tr>
+<td width="125px"><strong>Time Complexity</strong></td>
+<td><code>O(WN)</code>, where <code>W</code> corresponds to the number of <strong>words</strong> and <code>N</code> corresponds to the <strong>number</strong> of characters in the largest word in each input test case.
+</td>
+</tr>
+<tr>
+<td><strong>Space Complexity</strong></td>
+<td><code>O(1)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Your solution may be below the targets, but it <strong>should not exceed them</strong>.</p>
+</div>
+<h2 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h2>
+<p>To submit your work, follow the same procedure you used for <a href="reading00.html">Reading 00</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> path/to/cse-30872-fa22-assignments     <span style="color: #3D7B7B; font-style: italic"># Go to assignments repository</span>
+$ git checkout master                       <span style="color: #3D7B7B; font-style: italic"># Make sure we are on master</span>
+$ git pull --rebase                         <span style="color: #3D7B7B; font-style: italic"># Pull any changes from GitHub</span>
+
+$ git checkout -b challenge01               <span style="color: #3D7B7B; font-style: italic"># Create and checkout challenge01 branch</span>
+
+$ <span style="color: #19177C">$EDITOR</span> challenge01/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Edit your code</span>
+
+$ git add challenge01/program.cpp           <span style="color: #3D7B7B; font-style: italic"># Stage your changes</span>
+$ git commit -m <span style="color: #BA2121">&quot;challenge01: done&quot;</span>         <span style="color: #3D7B7B; font-style: italic"># Commit your changes</span>
+
+$ git push -u origin challenge01            <span style="color: #3D7B7B; font-style: italic"># Send changes to GitHub</span>
+</code></pre></div>
+
+<p>To check your code, you can use the <code>.scripts/check.py</code> script or <a href="https://curl.haxx.se/">curl</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ .scripts/check.py
+Checking challenge01 program.cpp ...
+  Result Success
+    Time <span style="color: #666666">0</span>.02
+   Score <span style="color: #666666">6</span>.00 / <span style="color: #666666">6</span>.00
+
+$ curl -F <span style="color: #19177C">source</span><span style="color: #666666">=</span>@challenge01/program.cpp https://dredd.h4x0r.space/code/cse-30872-fa22/challenge01
+<span style="color: #666666">{</span><span style="color: #BA2121">&quot;result&quot;</span>: <span style="color: #BA2121">&quot;Success&quot;</span>, <span style="color: #BA2121">&quot;score&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;time&quot;</span>: <span style="color: #666666">0</span>.0016994476318359375, <span style="color: #BA2121">&quot;value&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;status&quot;</span>: <span style="color: #666666">0}</span>
+</code></pre></div>
+
+<div class="alert alert-success">
+<h4 id="pull-request"><i class="fa fa-github"></i> Pull Request<a class="headerlink" href="#pull-request" title="Permanent link">&para;</a></h4>
+<p>Once you have committed your work and pushed it to <a href="https://github.com">GitHub</a>, remember to
+create a <strong>pull request</strong> and assign it to the appropriate teaching
+assistant from the <a href="reading01_tas.html">Reading 01 TA List</a>.</p>
+</div>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+

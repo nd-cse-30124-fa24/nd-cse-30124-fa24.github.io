@@ -1,0 +1,29 @@
+- name:     Sean Beckerle
+  netid:    sbeckerl
+  github:   sbeckerl
+
+- name:     Kristen Friday 
+  netid:    kfriday
+  github:   kfriday32
+
+- name:     Christine Van Kirk
+  netid:    cvankir2
+  github:   cvankir2
+
+- name:     Mia Manabat
+  netid:    mmanabat
+  github:   miamanabat
+
+- name:     Sebastian Gutierrez
+  netid:    sgutier5
+  github:   sebmaster36
+
+- name:     Joshua Russell
+  netid:    jrusse22
+  github:   jrusse22
+
+- name:     Mark Schermerhorn
+  netid:    mscherm2 
+  github:   mscherm2
+  conflicts:
+    - dscherme
