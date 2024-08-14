@@ -1,0 +1,63 @@
+{
+    "q1": {
+        "type": "blank",
+        "question": "\n<strong>\n\nA ____ is a data structure that typically consists of <tt>n</tt> nodes and\n<tt>n - 1</tt> edges.  Each node may have several ____ or lower neighbors.\nThe ____ in this data structure are nodes that have a degree of <tt>1</tt>\nwhich means they are only connected to their ____.  Due to the ____ nature\nof this data structure, each node can be considered the ____ of a ____.\n\n</strong>\n"
+    },
+    "q2": {
+        "type": "multiple",
+        "question": "<strong>\n\nWhich of the following statements are true regarding binary trees, heaps,\nand binary search trees (choose all that apply)?\n\n</strong>\n",
+        "responses": {
+            "heap_balance": "Binary heaps are always balanced.",
+            "bst_balance": "Binary search trees are always balanced.",
+            "heap_sort": "Binary heaps can be used for sorting in O(nlogn) time.",
+            "bst_sort": "Binary search trees be used for sorting in O(nlogn) time.",
+            "heap_value": "Binary heaps can determine the lowest value in a collection in O(1) time.",
+            "bst_value": "Binary search trees can determine the lowest value in a collection in O(1) time."
+        }
+    },
+    "q3": {
+        "type": "order",
+        "question": "\n<strong>\n\nGiven the following binary tree, enumerate the order in which nodes are\nprocessed in a <tt>pre-order</tt> traversal:\n\n</strong>\n\n<center>\n<p>\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png\"\n</p>\n</center>\n\n<strong>Consider writing code that represents this tree and then\nperforming the traversal to determine this solution.</strong>\n",
+        "responses": {
+            "8": 8,
+            "3": 3,
+            "1": 1,
+            "6": 6,
+            "4": 4,
+            "7": 7,
+            "10": 10,
+            "14": 14,
+            "13": 13
+        }
+    },
+    "q4": {
+        "type": "order",
+        "question": "\n<strong>\n\nGiven the binary tree above, enumerate the order in which nodes are\nprocessed in a <tt>in-order</tt> traversal:\n\n</strong>\n",
+        "responses": {
+            "8": 8,
+            "3": 3,
+            "1": 1,
+            "6": 6,
+            "4": 4,
+            "7": 7,
+            "10": 10,
+            "14": 14,
+            "13": 13
+        }
+    },
+    "q5": {
+        "type": "order",
+        "question": "\n<strong>\n\nGiven the binary tree above, enumerate the order in which nodes are\nprocessed in a <tt>post-order</tt> traversal:\n\n</strong>\n",
+        "responses": {
+            "8": 8,
+            "3": 3,
+            "1": 1,
+            "6": 6,
+            "4": 4,
+            "7": 7,
+            "10": 10,
+            "14": 14,
+            "13": 13
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "q1": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nWhich of the following statements about dynamic arrays (aka vectors) and\nlinked lists (with head and tail pointers) are true (choose all that apply)?\n\n</strong>\n",
+        "responses": {
+            "cache_array": "Dynamic arrays generally exhibit poor cache behavior.",
+            "cache_list": "Linked lists generally exhibit poor cache behavior.",
+            "insert_array": "Inserting to the front of a dynamic array is always <tt>O(1)</tt>.",
+            "insert_list": "Inserting to the front of a linked list is always <tt>O(1)</tt>.",
+            "append_array": "Appending to the back of a dynamic array is always <tt>O(1)</tt>.",
+            "append_list": "Appending to the back of a linked list is always <tt>O(1)</tt>.",
+            "access_array": "Accessing an element in the middle of a dynamic array is <tt>O(1)</tt>.",
+            "access_list": "Accessing an element in the middle of a linked list is <tt>O(1)</tt>.",
+            "remove_array": "Removing an element from the middle of a dynamic array is <tt>O(n)</tt>.",
+            "remove_list": "Removing an element from the middle of a doubly-linked list is <tt>O(n)</tt>."
+        }
+    },
+    "q2": {
+        "type": "blank",
+        "question": "\n<strong>\n\nWhile stacks and queues provide both a ____ operation to add items and a\n____ operation to remove items from the collection, the former provides\n____ ordering while the latter provides ____ ordering.\n\n</strong>\n"
+    },
+    "q3": {
+        "type": "blank",
+        "question": "\n<strong>\n\nBelow is a C++ function whose purpose is to reverse the contents of the\ngiven vector.  It does this by copying the elements from the vector into\nanother container and then copying the elements back to the original\nvector.\n\nFill in the blanks to complete the implementation.\n\n</strong>\n\n<pre>\nvoid reverse(vector&lt;string&gt; &v) {\n    ____&lt;string&gt; c;         // 1\n\n    for (auto e : v) {\n        ____;               // 2\n    }\n\n    ____;                   // 3\n    while (____) {          // 4\n        ____;               // 5\n        ____;               // 6\n    }\n}\n</pre>\n"
+    },
+    "q4": {
+        "type": "blank",
+        "question": "\n<strong>\n\nBelow is a Python function whose purpose is to reverse the contents of the\ngiven list.  It does this by copying the elements from the list into\nanother container and then copying the elements back to the original list.\n\nFill in the blanks to complete the implementation.\n\n</strong>\n\n<pre>\ndef reverse(v):\n    c = ____                // 1\n\n    for e in v:\n        ____                // 2\n\n    v = ____                // 3\n    while ____:             // 4\n        ____                // 5\n\n    return ____             // 6\n</pre>\n"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "q1": {
+        "type": "multiple",
+        "question": "\n<strong>\nWhich programming languages are normally supported in programming contest\nenvironments?\n</strong>\n",
+        "responses": {
+            "bash": "Bash",
+            "c": "C",
+            "cpp": "C++",
+            "perl": "Perl",
+            "python": "Python",
+            "ruby": "Ruby",
+            "java": "Java",
+            "js": "JavaScript"
+        }
+    },
+    "q2": {
+        "type": "order",
+        "question": "\n<strong>\nRank the following complexity classes from lowest (fastest) to highest\n(slowest).\n</strong>\n",
+        "responses": {
+            "nf": "O(n!)",
+            "logn": "O(log(n))",
+            "n2": "O(n^2)",
+            "1": "O(1)",
+            "n": "O(n)",
+            "sqrtn": "O(sqrt(n))",
+            "nlogn": "O(nlog(n))"
+        }
+    },
+    "q3": {
+        "type": "single",
+        "question": "\n<strong>\nWhat is the time complexity of the following code?\n</strong>\n\n<pre>\nvoid f(vector&lt;string&gt; &a, vector&lt;string&gt; &b, vector&lt;string&gt; &c) {\n    c.clear();\n\n    for (auto e : a) {\n        if (find(b.begin(), b.end(), e) != b.end()) {\n            c.push_back(e);\n        }\n    }\n}\n</pre>\n",
+        "responses": {
+            "n2": "O(n^2)",
+            "1": "O(1)",
+            "n": "O(n)",
+            "nlogn": "O(nlog(n))"
+        }
+    },
+    "q4": {
+        "type": "single",
+        "question": "\n<strong>\nWhat is the time complexity of the following code?\n</strong>\n\n<pre>\nvoid f(vector&lt;string&gt; &a, vector&lt;string&gt; &b, vector&lt;string&gt; &c) {\n    c.clear();\n\n    sort(b.begin(), b.end());\n\n    for (auto e : a) {\n        if (binary_search(b.begin(), b.end(), e)) {\n            c.push_back(e);\n        }\n    }\n}\n</pre>\n",
+        "responses": {
+            "n2": "O(n^2)",
+            "1": "O(1)",
+            "n": "O(n)",
+            "nlogn": "O(nlog(n))"
+        }
+    },
+    "q5": {
+        "type": "multiple",
+        "question": "\n<strong>\nWhich of the following statements about the course is true (select all that apply)?\n</strong>\n",
+        "responses": {
+            "readings": "Students cannot drop any readings.",
+            "challenges": "Students can drop one assigned challenge.",
+            "style": "Challenges are graded purely on correctness and not on style.",
+            "external": "Students must complete at least two external programming contests.",
+            "final": "There is a final exam in this course.",
+            "participation": "Students are expected to attend class regularly and on-time.",
+            "deadlines": "There are no deadlines in this class.",
+            "officehours": "There are both in-person and online office hours available to students.",
+            "consulting": "Students may consult online references or copy from resources if properly cited.",
+            "copying": "Students may consult or copy from solutions found online or from other students."
+        }
+    }
+}
