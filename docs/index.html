@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Introduction to Artificial Intelligence</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="#logistics"><i class="fa fa-cogs"></i> <span class="visible-md-inline visible-lg-inline">Logistics</span></a></li>
+			
+			<li><a href="#schedule"><i class="fa fa-calendar"></i> <span class="visible-md-inline visible-lg-inline">Schedule</span></a></li>
+			
+			<li><a href="#Requirements"><i class="fa fa-balance-scale"></i> <span class="visible-md-inline visible-lg-inline">Requirements</span></a></li>
+			
+			<li><a href="#resources"><i class="fa fa-external-link"></i> <span class="visible-md-inline visible-lg-inline">Resources</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-gavel"></i> Introduction to Artificial Intelligence</h1>
+		</div>
+	    </div>
+
+            
+<div class="row">
+<p><strong>CSE 30124</strong> is an elective course in the <a href="http://cse.nd.edu">Computer Science and
+Engineering</a> program at the <a href="http://www.nd.edu">University of Notre Dame</a>.  This course
+serves as an introduction and gateway to upper level machine learning
+and artificial intelligence courses. In this course students will
+learn the fundamentals of learning algorithms and the basics of common
+python libraries for these algorithms such as scikit-learn and pytorch.</p>
+</div>
+<p><img src="static/img/icpclogo.png" class="pull-right" style="margin-left: 10px;"/></p>
+<div class="row">
+<p>Upon successful completion of this course, students will be able to:</p>
+<ol>
+<li>
+<p><strong>Parse</strong> a variety of inputs and model problems.</p>
+</li>
+<li>
+<p><strong>Utilize</strong> appropriate data structures to represent and solve problems.</p>
+</li>
+<li>
+<p><strong>Implement</strong> common problem solving techniques and algorithms.</p>
+</li>
+<li>
+<p><strong>Employ</strong> modern software development methods and tools.</p>
+</li>
+<li>
+<p><strong>Debug</strong> and <strong>test</strong> code within an automated testing environment.</p>
+</li>
+</ol>
+</div>
+<div class="row">
+    <div class="page-header">
+        <h2 id="logistics"><i class="fa fa-cogs"></i> Logistics</h2>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-6">
+    <h3>Class Information</h3>
+    <dl>
+        <dt><i class="fa fa-clock-o"></i> Lecture</dt>
+        <dd><strong>M/W</strong> 3:30 AM - 4:45 PM</dd>
+
+        <dt><i class="fa fa-home"></i> Location</dt>
+        <dd>DeBart 124</dd>
+
+        <dt><i class="fa fa-video-camera"></i> Zoom Meeting</dt>
+        <dd><a href="https://notredame.zoom.us/j/94394065355">943 9406 5355</a></dd>
+
+        <dt><i class="fa fa-envelope"></i> Mailing List (Class)</dt>
+        <dd><a href="mailto:fa24-cse-30124-01-group@nd.edu">fa24-cse-30124-01-group@nd.edu</a></dd>
+
+        <dt><i class="fa fa-envelope"></i> Mailing List (Staff)</dt>
+        <dd><a href="mailto:fa24-cse-30124-01-staff-list@nd.edu">fa24-cse-30124-01-staff-list@nd.edu</a></dd>
+
+        <dt><i class="fa fa-slack"></i> Slack</dt>
+        <dd><a href="https://nd-cse.slack.com/messages/cse-30124-fa24/">#cse-30124-fa24</a></dd>
+
+        <dt><i class="fa fa-github"></i> GitHub</dt>
+        <dd><a href="https://www.github.com/nd-cse-30124-fa24/">nd-cse-30124-fa24</a></dd>
+    </dl>
+</div>
+
+<div class="col-md-6">
+    <h3>Instructor</h3>
+
+    <dl>
+        <dt><i class="fa fa-user"></i> Instructor</dt>
+        <dd><a href="http://www.williamtheisen.com">Bill Theisen</a> (<a href="mailto:wtheisen@nd.edu">wtheisen@nd.edu</a>)</dd>
+
+        <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+        <dd><strong>T/TR</strong> 10:00 AM - 3:00 PM, and by <strong>appointment</strong></dd>
+
+        <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+        <dd>356B Fitz</dd>
+    </dl>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+    <h3>Teaching Assstants</h3>
+
+    <div class="row">
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Sean Beckerle (<a href="mailto:sbeckerl@nd.edu">sbeckerl@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Kristen Friday (<a href="mailto:kfriday@nd.edu">kfriday@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Sebastian Gutierrez (<a href="mailto:sgutier5@nd.edu">sgutier5@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        </div><div class="row">
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Christine Van Kirk (<a href="mailto:cvankir2@nd.edu">cvankir2@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Mia Manabat (<a href="mailto:mmanabat@nd.edu">mmanabat@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Joshua Russell (<a href="mailto:jrusse22@nd.edu">jrusse22@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        </div><div class="row">
+        
+        
+        <div class="col-md-4">
+            <dl>
+              <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+              <dd>Mark Schermerhorn (<a href="mailto:mscherm2@nd.edu">mscherm2@nd.edu</a>)</dd>
+              <!--
+              <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+              <dd>TBD</dd>
+              <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+              <dd>TBD</dd>
+              //-->
+            </dl>
+        </div>
+
+        
+        
+    </div>
+    <div class="row">
+        <div class="alert alert-info">
+            <h4><i class="fa fa-question"></i> Help Protocol</h4>
+            <ol class="list-inline">
+                <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                <li><small><i class="fa fa-arrow-right"></i></small></li>
+                <li><strong><i class="fa fa-slack"></i> Slack</strong></li>
+                <li><small><i class="fa fa-arrow-right"></i></small></li>
+                <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                <li><small><i class="fa fa-arrow-right"></i></small></li>
+                <li><strong><i class="fa fa-envelope"></i> Email</strong></li>
+                <li><small><i class="fa fa-arrow-right"></i></small></li>
+                <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                <li><small><i class="fa fa-arrow-right"></i></small></li>
+                <li><strong><i class="fa fa-briefcase"></i> Office</strong></li>
+            </ol>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+    <h3>Office Hours</h3>
+    <div class="thumbnail">
+        <img src="static/img/office-hours.svg">
+    </div>
+<div>
+<div class="alert alert-success">
+<h4 id="online-office-hours"><i class="fa fa-video-camera"></i> Online Office Hours<a class="headerlink" href="#online-office-hours" title="Permanent link">&para;</a></h4>
+
+  Online office hours for the teaching assistants will take place in <a
+  href="https://notredame.zoom.us/j/94550028052">Zoom Meeting 945 5002
+  8052</a>.
+
+  Please use the main session for <b>general</b> questions.  If you have an
+  <b>individual</b> question, then request a private <b>breakout room</b>
+  with the teaching assistant.
+
+  If you need more individualized attention, please contact the
+  <b>instructor</b> to schedule an <b>appointment</b>.
+  </div>
+</div>
+<div class="row">
+    <div class="page-header">
+        <h2 id="schedule"><i class="fa fa-calendar"></i> Schedule</h2>
+    </div>
+</div>
+<style>
+table.schedule td.unit {
+    background-color: #fff;
+    border-right: 2px solid #ddd;
+    text-align: right;
+    width: 175px;
+    vertical-align: middle;
+}
+</style>
+
+<div class="row">
+    <table class="table condensed table-striped schedule">
+        <thead>
+            <tr>
+                <th class="text-center">Unit</th>
+                <th class="text-center" style="width: 100px;">Date</th>
+                <th class="text-center">Topics</th>
+                <th class="text-center" style="width: 275px;">Assignments</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="3" class="text-strong text-primary text-center unit">Introduction</td>
+            
+                <td class="text-center text-strong"><tt>Wed 08/28</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Syllabus, ML as Function Approximation
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/10wOlND3jCN9jn1EZB3hsMJCLZyZFFfZr7UmLe0DL61k/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1HkUSuYkob8u5yyOLfhAKu5VRl9f2nwvXflz85_MtS6w/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=66eaafc9-8520-48f0-b7f3-aefb0112e354">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading00.html" class="label label-primary">Reading 00</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Mon 09/02</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Linear Algebra Review and Introduction to Machine Learning
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1-LaBQI-AQG--njIjFdcoxSl9FjlYSqkXI8aKmO8VFQ4/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1Hpj6nVhQsbO8gHe1-BinNbQ71nKC7IU1PM4a3iwH1Tc/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=288f7919-169e-43ae-86ea-aefd0112076e">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 08/27</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge00.html" class="label label-caution">Challenge 00</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+              <tr>
+              <td colspan="4" class="text-center text-strong" style="border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 4px;">Unit 01: Review and Introduction to Machine Learning</td>
+              </tr>
+              
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Sequence Containers</td>
+            
+                <td class="text-center text-strong"><tt>Wed 09/04</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Linear Regression and Machine Learning Experiments
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0d2c07fc-41c1-414b-a23d-af000114e7c0">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading01.html" class="label label-primary">Reading 01</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Mon 09/09</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Supervised Learning and Non-linear Regressions
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 09/11</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Statistics Review and Information Theory
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1lzuMS5Pe7HD34D5nTyCoTNmTudIP9e8fprLY_Ezp_4o/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a03468d9-4331-4e6e-8a1f-af04011986db">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 09/03</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge01.html" class="label label-caution">Challenge 01</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge02.html" class="label label-caution">Challenge 02</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Searching, Sorting</td>
+            
+                <td class="text-center text-strong"><tt>Mon 09/16</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Probability Review and Bayesian Statistics
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1xs4rf3GnBVoBjUFOlbO-mXU_lq_tRJ7GWPwo1huS0XI/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=406b4dfc-5409-4500-a918-af070116760f">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading02.html" class="label label-primary">Reading 02</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 09/18</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Bayesian Networks
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1c8duDG_JRQTOSQCSXNltK-rauwGEEGBtgF7pHwuupMA/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=164dadc9-a3f4-4842-8d11-af090114e444">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Mon 09/23</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Classification Problems
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1uo1ke4YkCc7unw8jPlEryyL_lielXLRANLn6VaRxnIw/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30ba6a5a-698c-4893-aaa4-af0b011159e8">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 09/10</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge03.html" class="label label-caution">Challenge 03</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge04.html" class="label label-caution">Challenge 04</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Associative Containers</td>
+            
+                <td class="text-center text-strong"><tt>Wed 09/25</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Unsupervised Learning
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1ePY7bNFwdvDaatqo9vyx9rlVpC6YwOBBUv-2VwX87yw/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ce66d519-a15f-4991-9da1-af0e0111e7c2">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading03.html" class="label label-primary">Reading 03</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 09/14</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Memoization, Profiling
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1ePY7bNFwdvDaatqo9vyx9rlVpC6YwOBBUv-2VwX87yw/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8f6bd8ac-7753-44e4-8763-af10011412b3">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 09/16</tt></td>
+                <td class="text-strong">
+                
+                  
+                  History
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1ePY7bNFwdvDaatqo9vyx9rlVpC6YwOBBUv-2VwX87yw/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0dda9ed1-5c7c-4e96-a1b0-af12010e6b7e">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 09/17</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge05.html" class="label label-caution">Challenge 05</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge06.html" class="label label-caution">Challenge 06</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Complete Search</td>
+            
+                <td class="text-center text-strong"><tt>Mon 09/19</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Subsets
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1jlDiEL5PiIXOwY9wHrYnyTHiy_mz3JFd4ceTPVKegtk/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24732681-0057-46aa-ad63-af150111c79b">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading04.html" class="label label-primary">Reading 04</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 09/21</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Permutations, Backtracking
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a3e5567-b3c5-4be0-ac1b-af170116ce3e">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 09/23</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Static Analysis
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1qLMV8eIOU6xXECWHVxjFug_JlTNC78Igw_Y3tnLzlms/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e349df39-a02c-4cbd-9a65-af1901144969">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 09/24</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge07.html" class="label label-caution">Challenge 07</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge08.html" class="label label-caution">Challenge 08</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Bit Manipulation, Greedy Algorithms</td>
+            
+                <td class="text-center text-strong"><tt>Mon 09/26</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Bit Manipulation
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/16phiiZ9pOjapHyHA8dXBazR_eKNjz7_aKLxMsoDVLEE/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=589a149f-64e3-4454-a9c8-af1c01155e8f">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading05.html" class="label label-primary">Reading 05</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 09/28</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Greedy Algorithms
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1Mq8A5hAvEROjmO_4-z2fAKSYEVu8Nm0g7IRTFUze6rw/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eea7b4ba-0995-44d6-a7c5-af1e011287be">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 09/30</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Documentation
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1YqNHJ0591GDk_fNX1I5Ln_SSmkOCcnIbfw22sxfv0HE/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef24495c-3fae-42a3-b959-af20011074da">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 10/01</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge09.html" class="label label-caution">Challenge 09</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge10.html" class="label label-caution">Challenge 10</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Dynamic Programming</td>
+            
+                <td class="text-center text-strong"><tt>Mon 10/03</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Memoization (Again)
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1ataFbUODdUlzbpJj6M0h5DKsvAcTk1fRnTndodox89o/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=072b8617-0531-4325-8ac6-af2301135fe9">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading06.html" class="label label-primary">Reading 06</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 10/05</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Table Building
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79e08acf-b78c-469e-bf73-af2501116ffb">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 10/07</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Table Building
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 10/08</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge11.html" class="label label-caution">Challenge 11</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge12.html" class="label label-caution">Challenge 12</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="3" class="text-strong text-primary text-center unit">Contest I</td>
+            
+                <td class="text-center text-strong"><tt>Mon 10/10</tt></td>
+                <td class="text-strong">
+                
+                  
+                  
+                  
+                
+                
+                
+                  
+                
+                
+                  <span class="label label-danger">Contest I</span>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 10/12</tt></td>
+                <td class="text-strong">
+                
+                  
+                  
+                  
+                
+                
+                
+                  
+                
+                
+                  <span class="label label-danger">Contest I</span>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 10/14</tt></td>
+                <td class="text-strong">
+                
+                  
+                  
+                  
+                
+                
+                
+                  
+                
+                
+                  <span class="label label-danger">Contest I</span>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            
+            
+              <tr>
+              <td colspan="4" class="text-center text-strong" style="border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 4px;">Fall Break</td>
+              </tr>
+              
+            
+              <tr>
+              <td colspan="4" class="text-center text-strong" style="border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 4px;">Unit 02: Trees and Graphs</td>
+              </tr>
+              
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Trees</td>
+            
+                <td class="text-center text-strong"><tt>Mon 10/24</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Representation
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1KDy3UVhQn3ehLzoT3tF_WbNcdeoJIL7EPxUTwCOe7Xg/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9a9c5496-9608-49c2-a7c6-af380110c151">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading07.html" class="label label-primary">Reading 07</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 10/26</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Traversal
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c687335b-16dd-43dc-892b-af3a0114c320">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 10/28</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Divide and Conquer
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 10/29</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge13.html" class="label label-caution">Challenge 13</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge14.html" class="label label-caution">Challenge 14</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Graphs I</td>
+            
+                <td class="text-center text-strong"><tt>Mon 10/31</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Representation
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/16K7s0K-MTjKP_dV3Xy1IovbXNWI_rWvAXW9e87qHOSY/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=686df24f-ea8b-4460-af6b-af3f0110de2b">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading08.html" class="label label-primary">Reading 08</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 11/02</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Traversal
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b2a86534-dbfb-4598-8b5a-af410116313c">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 11/04</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Shortest Paths
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 11/05</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge15.html" class="label label-caution">Challenge 15</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge16.html" class="label label-caution">Challenge 16</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Graphs II</td>
+            
+                <td class="text-center text-strong"><tt>Mon 11/07</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Spanning Trees
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/154zJqLI2KL1s4Gt-BzVq40mE5rXRdPW54OWEpgptXX0/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=55bcc0ec-1c2a-432f-bf86-af46012098ee">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading09.html" class="label label-primary">Reading 09</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 11/09</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Topological Sorting
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb59f2d2-475d-4b16-8bae-af4801252f14">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 11/11</tt></td>
+                <td class="text-strong">
+                
+                  
+                  <i class="text-muted">Office Hours</i>
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 11/12</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge17.html" class="label label-caution">Challenge 17</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge18.html" class="label label-caution">Challenge 18</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Graphs III</td>
+            
+                <td class="text-center text-strong"><tt>Mon 11/14</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Paths
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1yo2lFhdmWGvLM69tM3sqzvuej2OlOnbQNFponk__6xA/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a24c396-daa1-4367-a580-af4d01214901">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading10.html" class="label label-primary">Reading 10</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 11/16</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Flows and Cuts
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc77c08d-3c50-475f-8af4-af4f01234226">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 11/18</tt></td>
+                <td class="text-strong">
+                
+                  
+                  <i class="text-muted">Office Hours</i>
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 11/19</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge19.html" class="label label-caution">Challenge 19</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge20.html" class="label label-caution">Challenge 20</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="3" class="text-strong text-primary text-center unit">Number Theory</td>
+            
+                <td class="text-center text-strong"><tt>Mon 11/21</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Primes and Modular Arithmetic
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/18FUyj3TUK_iRIZTycIo81albN0PETbKP5Qe1RLQ1b2A/edit?usp=sharing">Slides</a>
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-success" href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=df26c14c-578f-4653-92d3-af54011d9050">Panopto</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="reading11.html" class="label label-primary">Reading 11</a>
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 11/23</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Thanksgiving
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 11/25</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Thanksgiving
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="4" class="text-strong text-primary text-center unit">Miscellaneous</td>
+            
+                <td class="text-center text-strong"><tt>Mon 11/28</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Negotiation, Contracts, Promotion, Mobility
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1Kw1IQd4tV09dVJkK6aKlzmF6_3C__fApHDL9ng9tdps/edit?usp=sharing">Slides</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 11/30</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Graduate School
+                  
+                
+                
+                
+                  
+                
+                
+                  <a class="label label-default" href="https://docs.google.com/presentation/d/1sz5rjj0SbIQuHi8BNXaD_SZstaT9i2plg8yRmLnVeKo/edit?usp=sharing">Slides</a>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Fri 12/01</tt></td>
+                <td class="text-strong">
+                
+                  
+                  Slacking and Hacking
+                  
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Sat 12/03</tt></td>
+                <td class="text-strong">
+                
+                  <i class="text-muted">Programming Challenges</i>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge21.html" class="label label-caution">Challenge 21</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge22.html" class="label label-caution">Challenge 22</a>
+                
+                  
+                  
+                    
+                  
+                  <a href="challenge23.html" class="label label-caution">Challenge 23</a>
+                
+                </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+            
+                <td rowspan="2" class="text-strong text-primary text-center unit">Contest II</td>
+            
+                <td class="text-center text-strong"><tt>Mon 12/05</tt></td>
+                <td class="text-strong">
+                
+                  
+                  
+                  
+                
+                
+                
+                  
+                
+                
+                  <span class="label label-danger">Contest II</span>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            <tr>
+            
+                <td class="text-center text-strong"><tt>Wed 12/07</tt></td>
+                <td class="text-strong">
+                
+                  
+                  
+                  
+                
+                
+                
+                  
+                
+                
+                  <span class="label label-danger">Contest II</span>
+                
+                
+                </td>
+                <td class="text-strong text-center">
+                
+                </td>
+            </tr>
+            
+            
+
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <div class="page-header">
+        <h2 id="Requirements"><i class="fa fa-balance-scale"></i> Requirements</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+    <h3>Coursework</h3>
+    <table class="table table-condensed table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Component</th>
+                <th class="text-center">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="label label-primary">Readings</span> Weekly reading assignments.</td>
+                <td class="text-center">11 &times; 3</td>
+            </tr>
+            <tr>
+                <td><span class="label label-caution">Challenges</span> Weekly programming challenges.</td>
+                <td class="text-center">23 &times; 7</td>
+            </tr>
+            <tr>
+                <td><span class="label label-info">Externals</span> External programming contest.</td>
+                <td class="text-center">2 &times; 17</td>
+            </tr>
+            <tr>
+                <td><span class="label label-danger">Contests</span> In-class programming contests.</td>
+                <td class="text-center">2 &times; 36</td>
+            </tr>
+            <tr>
+                <td class="text-strong text-right">Total</td>
+                <td class="text-strong text-center">300</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-6">
+    <h3>Grading</h3>
+    <table class="table table-condensed table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">Grade</th>
+                <th class="text-center">Points</th>
+                <th class="text-center">Grade</th>
+                <th class="text-center">Points</th>
+                <th class="text-center">Grade</th>
+                <th class="text-center">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="success">
+                <td></td>
+                <td></td>
+                <td class="text-center text-strong">A</td>
+                <td class="text-center">285-300</td>
+                <td class="text-center text-strong">A-</td>
+                <td class="text-center">270-284</td>
+            </tr>
+            <tr class="info">
+                <td class="text-center text-strong">B+</td>
+                <td class="text-center">260-269</td>
+                <td class="text-center text-strong">B</td>
+                <td class="text-center">250-259</td>
+                <td class="text-center text-strong">B-</td>
+                <td class="text-center">240-249</td>
+            </tr>
+            <tr class="warning">
+                <td class="text-center text-strong">C+</td>
+                <td class="text-center">230-239</td>
+                <td class="text-center text-strong">C</td>
+                <td class="text-center">220-229</td>
+                <td class="text-center text-strong">C-</td>
+                <td class="text-center">210-219</td>
+            </tr>
+            <tr class="danger">
+                <td class="text-center text-strong">D</td>
+                <td class="text-center">195-209</td>
+                <td class="text-center text-strong">F</td>
+                <td class="text-center">0-194</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="alert alert-info">
+            <h4><i class="fa fa-calendar"></i> Due Dates</h4>
+            <p>
+            All <b>Readings</b> and <b>Challenges</b> are to be
+              submited to your own <b>private</b> <a
+              href="https://github.com">GitHub</a> repository.  Unless
+              specified otherwise:
+            </p>
+            <p>
+            <ul>
+            <li><p><b>Readings</b> are due <b>before class</b> on the <b>Monday</b> of each week.</p></li>
+            <li><p><b>Challenges</b> are due at <b>noon</b> on the <b>Saturday</b> of each week.</p></li>
+            </ul>
+            </p>
+            <p>
+            The <b>External Contest</b> submissions are due at <b>noon</b> on <b>Wednesday, December 7</b>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <h3>Policies</h3>
+      <div class="row">
+          <div class="col-md-4">
+          <h4>Participation</h4>
+          <p>
+          Students are expected to attend and contribute regularly in class. This
+          means answering questions in class, participating in discussions, and
+          helping other students.
+          </p>
+          <p>
+          Foreseeable absences should be discussed with the instructor ahead of time.
+          </p>
+          </div>
+           <div class="col-md-4">
+          <h4>Community</h4>
+          <p>
+          Recalling one of the tenets of the <a href="https://en.wikipedia.org/wiki/Hacker_ethic">Hacker Ethic</a>:
+          </p>
+          <blockquote>
+          Hackers should be judged by their hacking, not criteria such as
+          degrees, age, race, sex, or position.
+          </blockquote>
+          <p>
+          Students are expected to be respectful of their fellow classmates
+          and the instructional staff.
+          </p>
+          </div>
+          <div class="col-md-4">
+          <h4>Students with Disabilities</h4>
+          <p>
+          Any student who has a documented disability and is registered with
+          Disability Services should speak with the professor as soon as possible
+          regarding accommodations. Students who are not registered should contact
+          the <a href="https://sarabeadisabilityservices.nd.edu/">Office of Disabilities</a>.
+          </p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+          <h4>Academic Honesty</h4>
+          <p>
+          Any academic misconduct in this course is considered a serious
+          offense, and the strongest possible academic penalties will be
+          pursued for such behavior. Students may discuss high-level
+          ideas with other students, but at the time of implementation
+          (i.e. programming), each person must do his/her own work. Use
+          of the Internet as a reference is allowed but directly copying
+          code or other information is cheating. It is cheating to copy,
+          to allow another person to copy, all or part of an exam or a
+          assignment, or to fake program output. It is also a violation
+          of the <a href="https://honorcode.nd.edu/">Undergraduate
+          Academic Code of Honor</a> to observe and then fail to report
+          academic dishonesty. You are responsible for the security and
+          integrity of your own work.
+          </p>
+          </div>
+          <div class="col-md-4">
+          <h4>Late Work</h4>
+          <p>
+          In the case of a serious illness or other excused absence, as defined by
+          university policies, coursework submissions will be accepted late by the
+          same number of days as the excused absence.
+          </p>
+          <p>
+          Otherwise, there is an automatic <b>25% late penalty</b> for
+          assignments turned in <b>12 hours</b> pass the specified
+          deadline.
+          </p>
+          </div>
+          <div class="col-md-4">
+          <h4>Classroom Recording</h4>
+          <p>
+          This course will be recorded using Zoom and Panopto. This system allows us
+          to automatically record and distribute lectures to you in a
+          secure environment. You can watch these recordings on your
+          computer, tablet, or smartphone. In the course in Sakai, look for
+          the "Panopto" tool on the left hand side of the course.
+          </p>
+          <p>
+          Because we will be recording in the classroom, your questions and
+          comments may be recorded. Recordings typically only capture the
+          front of the classroom, but if you have any concerns about your
+          voice or image being recorded please speak to me to discuss your
+          concerns. Except for faculty and staff who require access, no
+          content will be shared with individuals outside of your course
+          without your permission.
+          </p>
+          <p>
+          These recordings are jointly copyrighted by the University of
+          Notre Dame and your instructor. Posting them to other websites
+          (including YouTube, Facebook, SnapChat, etc.) or elsewhere
+          without express, written permission may result in disciplinary
+          action and possible civil prosecution.
+          </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="alert alert-danger">
+        <h4><i class="fa fa-warning"></i> CSE Guide to the Honor Code</h4>
+
+        <p>For the assignments in this class, you may discuss with other
+        students and consult printed and online resources. You may quote
+        from books and online sources as long as you <b>cite them
+        properly</b>.  However, you may <b>not</b> look at another
+        student's solution, and you may not copy any significant portions
+        of other's solutions. Furthermore, you may not utilize <b>AI</b>
+        powered tools such as <b>Co-Pilot</b> or <b>Tabnine</b> for any of
+        your programming assignments.</p>
+
+        <p>The following table summarizes how you may work with other
+        students and use print/online sources:</p>
+
+        <table class="table table-striped table-bordered" style="color: #000000; background: #ffffff; font-weight: bold">
+        <thead>
+        <th></th>
+        <th class="text-center">Resources</th>
+        <th class="text-center">Solutions</th>
+        <th class="text-center">AI Tools</th>
+        </thead>
+        <tbody>
+        <tr>
+        <th>Consulting</th>
+        <td bgcolor="#93c47d">Allowed</td>
+        <td bgcolor="#e06666">Not Allowed</td>
+        <td bgcolor="#e06666">Not Allowed</td>
+        </tr>
+        <tr>
+        <th>Copying</th>
+        <td bgcolor="ffd966">Cite</td>
+        <td bgcolor="#e06666">Not Allowed</td>
+        <td bgcolor="#e06666">Not Allowed</td>
+        </tr>
+        </tbody></table>
+
+        <p>See the <a
+        href="https://cse.nd.edu/undergraduates/honor-code">CSE Guide to
+        the Honor Code</a> for definitions of the above terms.</p> <p>If an
+        instructor sees behavior that is, in his judgment, academically
+        dishonest, he is required to file either an <a
+        href="https://honorcode.nd.edu/honor-code-violation-report/">Honor
+        Code Violation Report</a> or a formal report to the College of
+        Engineering Honesty Committee.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="alert alert-warning">
+        <h4><i class="fa fa-medkit"></i> Health and Safety Protocols</h4>
+        <p>In this class, as elsewhere on campus, <b>students must comply with
+        all University health and safety protocols</b>, including:</p>
+
+        <p>
+        <ul>
+
+        <li>Students who are not fully vaccinated must wear masks inside
+        campus buildings.</li>
+
+        <li>Students are expected to carry a mask at all times.</li>
+
+        <li>Students are to be considerate and understanding of the medical
+        needs and personal beliefs of others.</li>
+
+        </ul>
+        </p>
+
+        <p><b>We are part of a community of learning in which compassionate
+        care for one another is part of our spiritual and social charter</b>.
+        Consequently, compliance with these protocols is an expectation for
+        everyone enrolled in this course. If a student refuses to comply
+        with the University’s health and safety protocols, the student must
+        leave the classroom and will earn an unexcused absence for the
+        class period and any associated assignments/assessments for the
+        day. Persistent deviation from expected health and safety
+        guidelines may be considered a violation of the University’s <a
+        href="https://dulac.nd.edu/community-standards/standards/">"Standards
+        of Conduct,”</a> as articulated in <a href="https://dulac.nd.edu/">du Lac: A
+        Guide for Student Life</a>, and will be referred accordingly.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="page-header">
+        <h2 id="resources"><i class="fa fa-external-link"></i> Resources</h2>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-md-6" markdown="1">
+
+<h3>Information</h3>
+<ul>
+<li><a href="https://cses.fi/book.html">Competitive Programmer's Handbook</a>
+    <p>This is our main <strong>textbook</strong> for the semester.  It contains background
+    information regarding the algorithms and data structures we will be
+    utilizing and implementing to solve different problems.</p></li>
+<li><a href="https://github.com/AhmadElsagheer/Competitive-programming-library/tree/master/curriculum">Competitive Programming Library</a>
+    <p>This contains a list of topics and links to resources to help students
+    become competitive at programming contests.</p></li>
+<li><a href="http://courses.csail.mit.edu/iap/interview/materials.php">Hacking a Google Interview</a>
+    <p>This site has information about common questions and concepts often
+    used in technical programming interviews, along with some answers to
+    the questions.</p></li>
+<li><a href="https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions">500 Data Structures and Algorithms practice problems and their solutions</a>
+    <p>This is a long list of common data structures and algorithm problems.</p></li>
+<li><a href="http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/">Top 10 Algorithms and Data Structures for Competitive Programming</a>
+    <p>This is another list of common data structures and algorithms.</p>
+</div>
+<div class="col-md-6" markdown="1"></li>
+</ul>
+<h3>Online Challenges</h3>
+<ul>
+<li><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118">UVa Online Judge</a>
+    <p>This site is an online judge for programming challenges found in the book <a href="https://link.springer.com/book/10.1007%2Fb97559">Programming Challenges</a>.</p></li>
+<li><a href="http://www.hackerrank.com/">HackerRank</a>
+    <p>This site is contains a variety of programming challenges similar to
+    what is found in ACM programming contests. It also includes
+    non-programming contest type problems as well and is a platform for
+    evaluating and testing your programming skills.</p></li>
+<li><a href="https://leetcode.com/">LeetCode</a>
+    <p>This is another site that contains a variety of programming challenges.</p></li>
+<li><a href="https://www.topcoder.com/challenges/">TopCoder</a>
+    <p>This is another site that contains a variety of programming challenges.
+    It also periodically runs contests and learning resources.</p></li>
+<li><a href="https://projecteuler.net/">Project Euler</a>
+    <p>This site is a large set of mathematical and programming problems
+    designed to test your abilities and sharpen your skills. The problems
+    make for good practice.</p></li>
+<li><a href="https://code.google.com/codejam/">Google Code Jam</a>
+    <p>This is global programming competition where programmers test their
+    skills by solving multiple rounds of algorithmic puzzles.</p></li>
+<li><a href="https://adventofcode.com/">Advent of Code</a>
+    <p>This is an annual series of programming challenges.</p>
+</div></li>
+</ul>
+</div>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+

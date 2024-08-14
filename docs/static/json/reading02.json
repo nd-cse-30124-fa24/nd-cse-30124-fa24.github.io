@@ -1,0 +1,25 @@
+{
+    "q01": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nSuppose we wanted to sort a million integers where each integer is between\n0 and 1,000.  Which of the following statements are false?\n\n</strong>\n",
+        "responses": {
+            "bubble_bigo": "Bubble sort would order the integers in O(nlogn) time in the worst case.",
+            "merge_bigo": "Merge sort would order the integers in O(nlogn) time in the worst case.",
+            "quick_bigo": "Quick sort would order the integers in O(nlogn) time in the worst case.",
+            "count_bigo": "Counting sort would order the integers in O(nlogn) time in the worst case.",
+            "insert_bigo": "Insertion sort would order the integers in O(nlogn) time in the worst case."
+        }
+    },
+    "q02": {
+        "type": "blank",
+        "question": "\n<strong>\n\nGiven the following vector in C++:\n\n</strong>\n\n<pre>\nvector&lt;int&gt; v = {4, 6, 6, 3, 7, 5, 4, 7, 0, 1};\n</pre>\n\n<strong>\nTo sort the vector in ascending order we would do:\n</strong>\n\n<pre>\n____(____, ____);\n</pre>\n\n<strong>\nTo sort the vector in descending order we would do:\n</strong>\n\n<pre>\n____(____, ____);\n</pre>\n"
+    },
+    "q03": {
+        "type": "blank",
+        "question": "\n<strong>\n\nGiven the same vector in question 2, what would be the output of the\nfollowing statements after sorting the vector in ascending order:\n\n</strong>\n\n<pre>\ncout &lt;&lt; lower_bound(v.begin(), v.end(), 4) - v.begin() &lt;&lt; endl; // 1. ____\ncout &lt;&lt; upper_bound(v.begin(), v.end(), 6) - v.begin() &lt;&lt; endl; // 2. ____\n</pre>\n"
+    },
+    "q04": {
+        "type": "blank",
+        "question": "\n<strong>\nComplete the following implementation of binary search in C++:\n</strong>\n\n<pre>\ntemplate &lt;typename IT, typename T&gt;\nbool binary_search(IT start, IT end, const T &target) {\n    while (____) {                  // 1\n        auto length   = ____;       // 2\n        auto middle   = ____;       // 3\n        auto midpoint = *(____);    // 4\n\n        if (____) {                 // 5\n            end   = ____;           // 6\n        } else if (____) {          // 7\n            start = ____;           // 8\n        } else {\n            return true;\n        }\n    }\n    return false;\n}\n\n</pre>\n"
+    }
+}

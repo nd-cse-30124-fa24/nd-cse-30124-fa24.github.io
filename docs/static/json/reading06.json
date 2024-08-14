@@ -1,0 +1,21 @@
+{
+    "q1": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nRegarding dynamic programming, which of the following statements is true\n(select all that apply?)\n\n</strong>\n",
+        "responses": {
+            "technique": "Dynamic programming combines the correctness of complete search and the efficiency of greedy algorithms.",
+            "optimal": "Dynamic programming is useful in finding an optimal solution.",
+            "count": "Dynamic programming can be used to calculate the total number of possible solutions.",
+            "memoization": "Dynamic programming utilizes memoization.",
+            "overlapping": "Dynamic programming is utilized when the problem can be divided into independent overlapping subproblems."
+        }
+    },
+    "q2": {
+        "type": "blank",
+        "question": "<strong>\n\nMemoization is a technique that ____ values in a container such as an ____\nafter ____ them.  For each parameter in a ____ function, the value of the\nfunction is calculated ____, and after this, the value can be directly\nretrieved from the container.\n\n</strong>\n"
+    },
+    "q3": {
+        "type": "blank",
+        "question": "<strong>\n\nImplement a solution to the coins problem (denominations 1, 3, 4) using\ndynamic programming and determine the <u>minimum number of coins</u>\nnecessary to form the following sums:\n\n</strong>\n\n<pre>\n1. 17 = ____\n2. 33 = ____\n3. 64 = ____\n4. 71 = ____\n5. 99 = ____\n</pre>\n"
+    }
+}

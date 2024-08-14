@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Challenge 17: Sim City</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="index.html"><i class="fa fa-gavel"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-code"></i> Challenge 17: Sim City</h1>
+		</div>
+	    </div>
+
+            
+<p><img src="static/img/challenge17-simcity.png" class="img-responsive pull-right" style="padding-left: 5px"></p>
+<p>Recalling your youth, you remember spending long hours playing <a href="http://www.simcity.com/">Sim City</a>
+<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.  In this game you had the privilege and honor of building a city to
+your exact specifications and desires.  You could build airports, sports
+stadiums, schools, industrial factories, residential homes, and more.  It
+was your job to keep the citizens of your metropolis happy and prosperous.</p>
+<p>Unfortunately, to pay for all of these construction projects, you had to
+tax your people.  Even in the virtual world, people hate taxes and want you
+to spend their hard-earned income wisely. In particular, they would demand
+that you build roads to connect every building, but in the most cost
+efficient way.</p>
+<p>Now that you have had some training in graph algorithms, you can easily
+tackle the problem of connecting every building in your city to every other
+building using the minimum amount of road.  Given the coordinates of the
+buildings in a city, you are to connect them such that all buildings are
+reachable by road, while minimizing the amount of pavement you must lay
+down to make the connections.</p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>The input is a series of building locations specified by sets of point
+locations. The first line of a set denotes the number of points <code>N</code>, followed by
+<code>N</code> pair of points <code>X Y</code>. The end of the input is denoted when <code>N</code> = 0. N will never
+be larger than <code>100</code>.</p>
+<h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>3
+1.0 1.0
+2.0 2.0
+2.0 4.0
+0
+</code></pre></div>
+
+<div class="alert alert-warning">
+<p><strong>Note</strong>: You can assume you can connect buildings directly with a
+straight-line path (unlike in the video game).</p>
+</div>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>For each set of building locations, output the minimum total amount of road
+that must be constructed to connect all the buildings to <strong>two decimal places</strong>.</p>
+<h3 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>3.41
+</code></pre></div>
+
+<div class="alert alert-danger">
+<h4 id="algorithmic-complexity"><i class="fa fa-balance-scale"></i> Algorithmic Complexity<a class="headerlink" href="#algorithmic-complexity" title="Permanent link">&para;</a></h4>
+<p>For each input test case, your solution should have the following targets:</p>
+<table class="table table-striped table-bordered" style="background-color: white">
+<tbody>
+<tr>
+<td><strong>Time Complexity</strong></td>
+<td><code>O(VlogV)</code>, where <code>V</code> is the number of vertices in the graph.</td>
+</tr>
+<tr>
+<td><strong>Space Complexity</strong></td>
+<td><code>O(V+E)</code>, where <code>V</code> is the number of vertices and <code>E</code> is the number of edges in the graph.</td>
+</tr>
+</tbody>
+</table>
+<p>Your solution may be below the targets, but it <strong>should not exceed them</strong>.</p>
+</div>
+<h2 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h2>
+<p>To submit your work, follow the same procedure you used for <a href="reading00.html">Reading 00</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> path/to/cse-30872-fa22-assignments     <span style="color: #3D7B7B; font-style: italic"># Go to assignments repository</span>
+$ git checkout master                       <span style="color: #3D7B7B; font-style: italic"># Make sure we are on master</span>
+$ git pull --rebase                         <span style="color: #3D7B7B; font-style: italic"># Pull any changes from GitHub</span>
+
+$ git checkout -b challenge17               <span style="color: #3D7B7B; font-style: italic"># Create and checkout challenge17 branch</span>
+
+$ <span style="color: #19177C">$EDITOR</span> challenge17/program.py            <span style="color: #3D7B7B; font-style: italic"># Edit your code</span>
+
+$ git add challenge17/program.py            <span style="color: #3D7B7B; font-style: italic"># Stage your changes</span>
+$ git commit -m <span style="color: #BA2121">&quot;challenge17: done&quot;</span>         <span style="color: #3D7B7B; font-style: italic"># Commit your changes</span>
+
+$ git push -u origin challenge17            <span style="color: #3D7B7B; font-style: italic"># Send changes to GitHub</span>
+</code></pre></div>
+
+<p>To check your code, you can use the <code>.scripts/check.py</code> script or <a href="https://curl.haxx.se/">curl</a>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ .scripts/check.py
+Checking challenge17 program.py ...
+  Result Success
+    Time <span style="color: #666666">0</span>.02
+   Score <span style="color: #666666">6</span>.00 / <span style="color: #666666">6</span>.00
+
+$ curl -F <span style="color: #19177C">source</span><span style="color: #666666">=</span>@challenge17/program.py https://dredd.h4x0r.space/code/cse-30872-fa22/challenge17
+<span style="color: #666666">{</span><span style="color: #BA2121">&quot;result&quot;</span>: <span style="color: #BA2121">&quot;Success&quot;</span>, <span style="color: #BA2121">&quot;score&quot;</span>: <span style="color: #666666">6</span>, <span style="color: #BA2121">&quot;time&quot;</span>: <span style="color: #666666">0</span>.01631760597229004<span style="color: #666666">}</span>
+</code></pre></div>
+
+<div class="alert alert-success">
+<h4 id="pull-request"><i class="fa fa-github"></i> Pull Request<a class="headerlink" href="#pull-request" title="Permanent link">&para;</a></h4>
+<p>Once you have committed your work and pushed it to <a href="https://github.com">GitHub</a>, remember to
+create a <strong>pull request</strong> and assign it to the appropriate <strong>teaching
+assistant</strong> from the <a href="reading09_tas.html">Reading 09 TA List</a>.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>I was actually more of a fan of <a href="https://en.wikipedia.org/wiki/SimAnt">Sim Ant</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+

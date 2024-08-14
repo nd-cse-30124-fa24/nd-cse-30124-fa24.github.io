@@ -1,0 +1,45 @@
+{
+    "q01": {
+        "type": "blank",
+        "question": "\n<strong>\n\nA path that goes through each edge exactly once is called an ____ path,\nwhile a path that visits each node exactly once is a ____ path.  A variant\nof either type of path that starts and ends at the same node is called a\n____.\n\nWhile there are efficient methods of determining if the former exists in a\ngraph, the existence of the latter is considered a ____ problem, where no\nefficient algorithm is known for solving the problem.\n\n</strong>\n"
+    },
+    "q02": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nFor an Eulerian path to exist in a graph, which of the following conditions\nare sufficient (choose all that apply)?\n\n</strong>\n",
+        "responses": {
+            "even": "The degree of each node is even.",
+            "odd_even": "The degree of exactly two nodes is odd, and the degree of all other nodes is even.",
+            "odd": "The degree of each node is odd.",
+            "even_odd": "The degree of exactly two nodes is even, and the degree of all other nodes is odd."
+        }
+    },
+    "q03": {
+        "type": "multiple",
+        "question": "\n<strong>\n\nFor a Hamiltonian path to exist in a graph, which of the following\nconditions are sufficient (choose all that apply)?\n\n</strong>\n",
+        "responses": {
+            "complete": "The graph is complete.",
+            "connected": "The graph is connected.",
+            "degree": "The degree of each node is at least n/2.",
+            "sum": "The sum of the degrees of each non-adjacent pair of nodes is at least n.",
+            "even": "The degree of each node is even."
+        }
+    },
+    "q04": {
+        "type": "multiple",
+        "question": "<strong>\n<p>\nGiven the following graph, which of the following statements is true (choose all that apply)?\n</p>\n\n<center>\n  <img src=\"static/img/reading10-euler.png\">\n</center>\n</strong>\n",
+        "responses": {
+            "epath": "There is an Eulerian path.",
+            "ecircuit": "There is an Eulerian circuit.",
+            "hpath": "There is an Hamiltonian path.",
+            "hcircuit": "There is an Hamiltonian circuit."
+        }
+    },
+    "q05": {
+        "type": "blank",
+        "question": "<strong>\n\nIn a ____ problem, we are interested in determining how much flow is\npossible to send from the ____ to the ____, while in a ____ problem, we\nwant to know the ____ set of edges that separates the two nodes of the\ngraph.\n\n</strong>\n"
+    },
+    "q06": {
+        "type": "blank",
+        "question": "<strong>\n<p>\nGiven the following graph:\n</p>\n\n<center>\n  <img src=\"static/img/reading10-flow.png\">\n</center>\n\n<ol>\n  <li>What is the maximum flow from 1 to 5? ____</li>\n  <li>What is the minimum cut from 1 to 5? ____</li>\n  <li>How many edges are in the minimum cut? ____</li>\n</ol>\n</strong>\n"
+    }
+}
