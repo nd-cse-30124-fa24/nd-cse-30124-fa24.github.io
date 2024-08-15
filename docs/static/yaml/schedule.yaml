@@ -167,7 +167,7 @@
 - name:     Dynamic Programming
   days:
       - date:           Mon 10/03
-        topics:         Reviewing Pytorch and Training Networks
+        topics:         Training Networks and Formally Introducing Pytorch
         assignments:
           - Reading 06
         items:
