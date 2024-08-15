@@ -194,7 +194,7 @@
 
 - name:     'Unit 03: Applications'
 
-- name:     Trees
+- name:     Misc.
   days:
       - date:           Mon 10/24
         topics:         Series Forecasting, LSTMs, and Markovs
@@ -212,16 +212,11 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c687335b-16dd-43dc-892b-af3a0114c320
 
+- name:     Natural Language Processing (NLP)
+  days:
       - date:           Fri 10/28
         topics:         Pre-GPT Natural Language Processing
 
-      - date:           Sat 10/29
-        assignments:
-          - Challenge 13
-          - Challenge 14
-
-- name:     Graphs I
-  days:
       - date:           Mon 10/31
         topics:         Post-GPT Natural Language Processing
         assignments:
@@ -232,6 +227,8 @@
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=686df24f-ea8b-4460-af6b-af3f0110de2b
 
+- name:     Computer Vision (CV)
+  days:
       - date:           Wed 11/02
         topics:         Computer Vision
         items:
@@ -243,11 +240,6 @@
         items:
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b
-
-      - date:           Sat 11/05
-        assignments:
-          - Challenge 15
-          - Challenge 16
 
 - name:     Final Exam
   days:
