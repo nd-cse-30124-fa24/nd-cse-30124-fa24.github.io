@@ -197,7 +197,7 @@
 - name:     Trees
   days:
       - date:           Mon 10/24
-        topics:         Search and Reinforcement Learning
+        topics:         Series Forecasting, LSTMs, and Markovs
         assignments:
           - Reading 07
         items:
@@ -207,13 +207,13 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9a9c5496-9608-49c2-a7c6-af380110c151
 
       - date:           Wed 10/26
-        topics:         Pre-GPT Natural Language Processing
+        topics:         Search and Reinforcement Learning
         items:
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c687335b-16dd-43dc-892b-af3a0114c320
 
       - date:           Fri 10/28
-        topics:         Post-GPT Natural Language Processing
+        topics:         Pre-GPT Natural Language Processing
 
       - date:           Sat 10/29
         assignments:
@@ -223,7 +223,7 @@
 - name:     Graphs I
   days:
       - date:           Mon 10/31
-        topics:         Computer Vision
+        topics:         Post-GPT Natural Language Processing
         assignments:
           - Reading 08
         items:
@@ -233,13 +233,13 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=686df24f-ea8b-4460-af6b-af3f0110de2b
 
       - date:           Wed 11/02
-        topics:         Generative Computer Vision
+        topics:         Computer Vision
         items:
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b2a86534-dbfb-4598-8b5a-af410116313c
 
       - date:           Fri 11/04
-        topics:         Series Forecasting, LSTMs, and Markovs
+        topics:         Generative Computer Vision
         items:
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b
