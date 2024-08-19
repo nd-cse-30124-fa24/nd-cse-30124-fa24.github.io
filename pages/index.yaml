@@ -39,15 +39,13 @@ body:       |
 
     Upon successful completion of this course, students will be able to:
 
-    1. **Parse** a variety of inputs and model problems.
+    1. **Evaluate** which model is appropriate for a given problem.
 
-    2. **Utilize** appropriate data structures to represent and solve problems.
+    2. **Utilize** modern python libraries for ML and AI.
 
-    3. **Implement** common problem solving techniques and algorithms.
+    3. **Implement** basic ML and AI models.
 
-    4. **Employ** modern software development methods and tools.
-
-    5. **Debug** and **test** code within an automated testing environment.
+    4. **Assess** AI/ML implementations for common issues.
 
     </div>
 
