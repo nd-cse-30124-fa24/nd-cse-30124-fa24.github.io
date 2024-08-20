@@ -238,7 +238,7 @@ body:       |
                     <td class="text-strong text-center">
                     {% for assignment in day.get('assignments', []) %}
                       {% set assignment_id = ''.join(assignment.lower().split()) %}
-                      {% if assignment_id.startswith('reading') %}
+                      {% if assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
                       {% else %}
                         {% set assignment_label = 'caution' %}
