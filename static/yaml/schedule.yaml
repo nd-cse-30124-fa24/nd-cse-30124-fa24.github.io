@@ -74,48 +74,31 @@
       - date:           Mon 09/26
         topics:         Introduction to Deep Learning and Function Approximation
         assignments:
-          - Reading 05
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/16phiiZ9pOjapHyHA8dXBazR_eKNjz7_aKLxMsoDVLEE/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=589a149f-64e3-4454-a9c8-af1c01155e8f
+          - Homework 06
 
       - date:           Wed 09/28
         topics:         Mathematics for Deep Learning and Perceptrons
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1Mq8A5hAvEROjmO_4-z2fAKSYEVu8Nm0g7IRTFUze6rw/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eea7b4ba-0995-44d6-a7c5-af1e011287be
+        assignments:
+          - Quiz 05
 
-      - date:           Fri 09/30
+      - date:           Mon 10/03
         topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1YqNHJ0591GDk_fNX1I5Ln_SSmkOCcnIbfw22sxfv0HE/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef24495c-3fae-42a3-b959-af20011074da
+        assignments:
+          - Quiz 06
+          - Homework 07
 
 - name:     Dynamic Programming
   days:
-      - date:           Mon 10/03
-        topics:         Training Networks and Formally Introducing Pytorch
-        assignments:
-          - Reading 06
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1ataFbUODdUlzbpJj6M0h5DKsvAcTk1fRnTndodox89o/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=072b8617-0531-4325-8ac6-af2301135fe9
-
       - date:           Wed 10/05
-        topics:         Backpropogation
-        items:
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79e08acf-b78c-469e-bf73-af2501116ffb
+        topics:         Training Networks and Formally Introducing Pytorch
 
-      - date:           Fri 10/07
+      - date:           Mon 10/05
+        topics:         Backpropogation
+        assignments:
+          - Quiz 07
+          - Homework 08
+
+      - date:           Wed 10/07
         topics:         Optimization Techniques and Gradient Descent
 
 - name:     Midterm 02
