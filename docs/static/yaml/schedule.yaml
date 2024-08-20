@@ -112,21 +112,13 @@
 
 - name:     Misc.
   days:
-      - date:           Mon 10/24
+      - date:           Wed 10/24
         topics:         Series Forecasting, LSTMs, and Markovs
         assignments:
           - Reading 07
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1KDy3UVhQn3ehLzoT3tF_WbNcdeoJIL7EPxUTwCOe7Xg/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9a9c5496-9608-49c2-a7c6-af380110c151
 
       - date:           Wed 10/26
         topics:         Search and Reinforcement Learning
-        items:
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c687335b-16dd-43dc-892b-af3a0114c320
 
 - name:     Natural Language Processing (NLP)
   days:
@@ -137,25 +129,14 @@
         topics:         Post-GPT Natural Language Processing
         assignments:
           - Reading 08
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/16K7s0K-MTjKP_dV3Xy1IovbXNWI_rWvAXW9e87qHOSY/edit?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=686df24f-ea8b-4460-af6b-af3f0110de2b
 
 - name:     Computer Vision (CV)
   days:
       - date:           Wed 11/02
         topics:         Computer Vision
-        items:
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b2a86534-dbfb-4598-8b5a-af410116313c
 
       - date:           Fri 11/04
         topics:         Generative Computer Vision
-        items:
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b
 
 - name:     Final Exam
   days:
