@@ -3,7 +3,8 @@
       - date:           Wed 08/28
         topics:         Syllabus, ML as Function Approximation
         assignments:
-          - Reading 00
+          - Homework 00
+          - Homework 01
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/10wOlND3jCN9jn1EZB3hsMJCLZyZFFfZr7UmLe0DL61k/edit?usp=sharing
@@ -24,8 +25,6 @@
 
       - date:           Wed 09/04
         topics:         Linear Regression and Machine Learning Experiments
-        assignments:
-          - Homework 01
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing
@@ -34,6 +33,8 @@
 
       - date:           Mon 09/09
         topics:         Supervised Learning and Non-linear Regressions
+        assignments:
+          - Homework 02
 
       - date:           Wed 09/11
         topics:         Statistics Review and Information Theory
