@@ -1,4 +1,4 @@
-title:      "Challenge 01: License Plates"
+title:      "Homework 01"
 icon:       fa-code
 navigation:
   - name: "Home"
@@ -123,38 +123,25 @@ body:       |
     To submit your work, follow the same procedure you used for [Reading 00]:
 
         :::bash
-        $ cd path/to/cse-30872-fa22-assignments     # Go to assignments repository
+        $ cd path/to/cse-30124-fa24-assignments     # Go to assignments repository
         $ git checkout master                       # Make sure we are on master
         $ git pull --rebase                         # Pull any changes from GitHub
 
-        $ git checkout -b challenge01               # Create and checkout challenge01 branch
+        $ git checkout -b homework01               # Create and checkout homework01 branch
 
-        $ $EDITOR challenge01/program.cpp           # Edit your code
+        $ $EDITOR homework01/answers.ipynb           # Edit your code
 
-        $ git add challenge01/program.cpp           # Stage your changes
-        $ git commit -m "challenge01: done"         # Commit your changes
+        $ git add homework01/answers.ipynb           # Stage your changes
+        $ git commit -m "homework01: done"         # Commit your changes
 
-        $ git push -u origin challenge01            # Send changes to GitHub
-
-    To check your code, you can use the `.scripts/check.py` script or [curl]:
-
-        :::bash
-        $ .scripts/check.py
-        Checking challenge01 program.cpp ...
-          Result Success
-            Time 0.02
-           Score 6.00 / 6.00
-
-        $ curl -F source=@challenge01/program.cpp https://dredd.h4x0r.space/code/cse-30872-fa22/challenge01
-        {"result": "Success", "score": 6, "time": 0.0016994476318359375, "value": 6, "status": 0}
-
+        $ git push -u origin homework01            # Send changes to GitHub
 
     <div class="alert alert-success" markdown="1">
     #### <i class="fa fa-github"></i> Pull Request
 
     Once you have committed your work and pushed it to [GitHub], remember to
     create a **pull request** and assign it to the appropriate teaching
-    assistant from the [Reading 01 TA List].
+    assistant from the [Homework 01 TA List].
 
     </div>
 
