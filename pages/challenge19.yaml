@@ -149,7 +149,7 @@ body:       |
     To submit your work, follow the same procedure you used for [Reading 00]:
 
         :::bash
-        $ cd path/to/cse-30872-fa22-assignments     # Go to assignments repository
+        $ cd path/to/cse-30124-fa24-assignments     # Go to assignments repository
         $ git checkout master                       # Make sure we are on master
         $ git pull --rebase                         # Pull any changes from GitHub
 
@@ -171,7 +171,7 @@ body:       |
             Time 0.03
            Score 6.00 / 6.00
 
-        $ curl -F source=@challenge19/program.cpp https://dredd.h4x0r.space/code/cse-30872-fa22/challenge19
+        $ curl -F source=@challenge19/program.cpp https://dredd.h4x0r.space/code/cse-30124-fa24/challenge19
         {"result": "Success", "score": 6, "time": 0.032061100006103516, "value": 6, "status": 0}
 
     <div class="alert alert-success" markdown="1">

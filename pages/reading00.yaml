@@ -10,7 +10,7 @@ body:       |
 
     **Everyone**:
 
-    Welcome to [CSE 30872 Programming Challenges], which (as the syllabus
+    Welcome to [CSE 30124 Programming Challenges], which (as the syllabus
     states) is a "course that revolves around solving *brain-teaser* and
     *puzzle-type* problems that often appear in programming contests, online
     challenges, and job interviews".  What this means is that we will be
@@ -77,14 +77,14 @@ body:       |
     ## Task 1: Slack
 
     For communication outside of our meeting time, we will be using [Slack],
-    specifically the `#cse-30872-fa22` channel:
+    specifically the `#cse-30124-fa24` channel:
 
-    > [https://nd-cse.slack.com/messages/cse-30872-fa22/](https://nd-cse.slack.com/messages/cse-30872-fa22/)
+    > [https://nd-cse.slack.com/messages/cse-30124-fa24/](https://nd-cse.slack.com/messages/cse-30124-fa24/)
 
     There is a [class mailing list], but most day-to-day communication
     (including office hours and homework help) should take place on [Slack].
 
-    [class mailing list]: mailto:fa22-cse-30872-01-group@nd.edu
+    [class mailing list]: mailto:fa24-cse-30124-01-group@nd.edu
 
     <div class="alert alert-warning" markdown="1">
     <p>Be aware of the following:</p><br>
@@ -111,15 +111,15 @@ body:       |
 
         > [https://classroom.github.com/a/-7yToW4Y](https://classroom.github.com/a/-7yToW4Y)
 
-        This will create a **private** `cse-30872-fa22-assignments-$USERNAME`
-        repository under your own account and linked to the [nd-cse-30872-fa22]
+        This will create a **private** `cse-30124-fa24-assignments-$USERNAME`
+        repository under your own account and linked to the [nd-cse-30124-fa24]
         organization.
 
     3. Once this is done, you can [clone] your [git] repository to your local
     machine (or the **student** machines:
 
             :::bash
-            $ git clone git@github.com:nd-cse-30872-fa22/cse-30872-fa22-assignments-$USERNAME.git
+            $ git clone git@github.com:nd-cse-30124-fa24/cse-30124-fa24-assignments-$USERNAME.git
 
         <div class="alert alert-danger" markdown="1">
         **Note**, that [GitHub] has recently shutdown [password authentication].
@@ -204,7 +204,7 @@ body:       |
 
     The readings for **Wednesday, August 24** are
 
-    1. [CSE 30872 Programming Challenges (Fall 2022)](index.html)
+    1. [CSE 30124 Programming Challenges (Fall 2022)](index.html)
 
     2. [Competitive Programmer's Handbook]
 
@@ -408,7 +408,7 @@ body:       |
 
     </div>
 
-    [CSE 30872 Programming Challenges]:     index.html
+    [CSE 30124 Programming Challenges]:     index.html
     [Competitive Programmer's Handbook]:    https://cses.fi/book.html
     [Reading 00 Quiz]:                      static/json/reading00.json
     [GitHub]:                               https://github.com
@@ -418,6 +418,6 @@ body:       |
     [HackerRank]:                           https://www.hackerrank.com/
     [LeetCode]:                             https://leetcode.com/
     [SSH Keys]:                             https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
-    [nd-cse-30872-fa22]:                    https://github.com/nd-cse-30872-fa22
+    [nd-cse-30124-fa24]:                    https://github.com/nd-cse-30124-fa24
     [git-branch]:                           https://git-scm.com/docs/git-branch
     [JSON]:                                 https://json.org
