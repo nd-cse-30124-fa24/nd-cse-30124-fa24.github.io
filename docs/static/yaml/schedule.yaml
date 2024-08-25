@@ -98,55 +98,51 @@
       - date:           Wed 11/06
         topics:         Training Networks and Formally Introducing Pytorch
 
-      - date:           Mon 11/13
+      - date:           Mon 11/11
         topics:         Backpropogation, Optimization Techniques, and Gradient Descent
         assignments:
           - Quiz 07
           - Homework 08
 
-      - date:           Wed 11/18
+      - date:           Wed 11/13
         topics:         Transformers
+        assignments:
+          - Quiz 07
+          - Homework 08
 
-- name:     Midterm 02
-  days:
-      - date:           Mon 11/20
+      - date:           Mon 11/18
         topics:         ''
         items:
           - name:       Exam 02
+
+- name:     Midterm 02
+  days:
+      - date:           Wed 11/20
+        topics:         Series Forecasting, LSTMs, Markovs
 
 - name:     'Unit 03: Applications'
 
 - name:     Misc.
   days:
-      - date:           Wed 11/25
-        topics:         Series Forecasting, LSTMs, and Markovs
+      - date:           Mon 11/25
+        topics:         Search
         assignments:
           - Reading 07
 
       - date:           Mon 12/02
-        topics:         Search
+        topics:         Reinforcement Learning
 
 - name:     Natural Language Processing (NLP)
   days:
       - date:           Wed 12/04
-        topics:         Search
+        topics:         Reinforcement Learning
 
       - date:           Mon 12/09
-        topics:         Reinforcement Learning
+        topics:         Natural Language Processing
         assignments:
           - Reading 08
 
 - name:     Computer Vision (CV)
   days:
       - date:           Wed 12/11
-        topics:         Reinforcement Learning
-
-      - date:           Mon 11/04
-        topics:         NLP
-
-- name:     Final Exam
-  days:
-      - date:           Wed 10/10
-        topics:         ''
-        items:
-          - name:       Final Exam
+        topics:         Computer Vision
