@@ -6,10 +6,10 @@
           - Homework 00
 
       - date:           Mon 09/02
-        topics:         blah
+        topics:         Linear Algebra Review and Introduction to ML
 
       - date:           Wed 09/04 
-        topics:         blah blah
+        topics:         Linear Regression and ML Experiments and Packages
       
       - date:           Mon 09/09
         topics:         Supervised Learning and Non-linear Regressions
@@ -17,21 +17,21 @@
           - Homework 01
 
       - date:           Wed 09/11
-        topics:         Statistics Review and Information Theory
+        topics:         ML Experiments and Packages
 
 - name:     Searching, Sorting
   days:
       - date:           Mon 09/16
-        topics:         Probability Review and Bayesian Statistics
+        topics:         ML Experiments and Packages
         assignments:
           - Quiz 01
           - Homework 02
 
       - date:           Wed 09/18
-        topics:         Bayesian Networks
+        topics:         Statistics Review and Information Theory
 
       - date:           Mon 09/23
-        topics:         Classification Problems
+        topics:         Probability, Bayesian Statistics, and Bayesian Networks
         assignments:
           - Quiz 02
           - Homework 03
@@ -39,10 +39,10 @@
 - name:     Associative Containers
   days:
       - date:           Wed 09/25
-        topics:         Unsupervised Learning
+        topics:         Classification Problems
 
       - date:           Mon 09/30
-        topics:         Clustering
+        topics:         Unsupervised Learning and Clustering
         assignments:
           - Quiz 03
           - Homework 04
@@ -53,16 +53,16 @@
 - name:     Complete Search
   days:
       - date:           Mon 10/07
-        topics:         Feature Engineering and Selection
+        topics:         Evaluation and Validation of ML Systems
         assignments:
           - Quiz 04
           - Homework 05
 
       - date:           Wed 10/09
-        topics:         Regularization Techniques - L1, L2
+        topics:         Evaluation and Validation of ML Systems
 
       - date:           Mon 10/14
-        topics:         Evaluation of Machine Learning Systems
+        topics:         Evaluation and Validation of ML Systems
 
 - name:     Midterm 01
   days:
@@ -99,13 +99,13 @@
         topics:         Training Networks and Formally Introducing Pytorch
 
       - date:           Mon 11/13
-        topics:         Backpropogation
+        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
         assignments:
           - Quiz 07
           - Homework 08
 
       - date:           Wed 11/18
-        topics:         Optimization Techniques and Gradient Descent
+        topics:         Transformers
 
 - name:     Midterm 02
   days:
@@ -123,30 +123,30 @@
         assignments:
           - Reading 07
 
-      - date:           Wed 12/02
-        topics:         Search and Reinforcement Learning
+      - date:           Mon 12/02
+        topics:         Search
 
 - name:     Natural Language Processing (NLP)
   days:
-      - date:           Fri 12/04
-        topics:         Pre-GPT Natural Language Processing
+      - date:           Wed 12/04
+        topics:         Search
 
       - date:           Mon 12/09
-        topics:         Post-GPT Natural Language Processing
+        topics:         Reinforcement Learning
         assignments:
           - Reading 08
 
 - name:     Computer Vision (CV)
   days:
       - date:           Wed 12/11
-        topics:         Computer Vision
+        topics:         Reinforcement Learning
 
-      - date:           Fri 11/04
-        topics:         Generative Computer Vision
+      - date:           Mon 11/04
+        topics:         NLP
 
 - name:     Final Exam
   days:
-      - date:           Mon 10/10
+      - date:           Wed 10/10
         topics:         ''
         items:
           - name:       Final Exam
