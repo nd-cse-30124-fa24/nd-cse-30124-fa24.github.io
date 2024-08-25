@@ -5,6 +5,12 @@
         assignments:
           - Homework 00
 
+      - date:           Mon 09/02
+        topics:         blah
+
+      - date:           Wed 09/04 
+        topics:         blah blah
+      
       - date:           Mon 09/09
         topics:         Supervised Learning and Non-linear Regressions
         assignments:
@@ -71,17 +77,17 @@
 
 - name:     Bit Manipulation, Greedy Algorithms
   days:
-      - date:           Mon 09/26
+      - date:           Mon 10/28
         topics:         Introduction to Deep Learning and Function Approximation
         assignments:
           - Homework 06
 
-      - date:           Wed 09/28
+      - date:           Wed 10/30
         topics:         Mathematics for Deep Learning and Perceptrons
         assignments:
           - Quiz 05
 
-      - date:           Mon 10/03
+      - date:           Mon 11/04
         topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
         assignments:
           - Quiz 06
@@ -89,21 +95,21 @@
 
 - name:     Dynamic Programming
   days:
-      - date:           Wed 10/05
+      - date:           Wed 11/06
         topics:         Training Networks and Formally Introducing Pytorch
 
-      - date:           Mon 10/05
+      - date:           Mon 11/13
         topics:         Backpropogation
         assignments:
           - Quiz 07
           - Homework 08
 
-      - date:           Wed 10/07
+      - date:           Wed 11/18
         topics:         Optimization Techniques and Gradient Descent
 
 - name:     Midterm 02
   days:
-      - date:           Mon 11/18
+      - date:           Mon 11/20
         topics:         ''
         items:
           - name:       Exam 02
@@ -112,27 +118,27 @@
 
 - name:     Misc.
   days:
-      - date:           Wed 10/24
+      - date:           Wed 11/25
         topics:         Series Forecasting, LSTMs, and Markovs
         assignments:
           - Reading 07
 
-      - date:           Wed 10/26
+      - date:           Wed 12/02
         topics:         Search and Reinforcement Learning
 
 - name:     Natural Language Processing (NLP)
   days:
-      - date:           Fri 10/28
+      - date:           Fri 12/04
         topics:         Pre-GPT Natural Language Processing
 
-      - date:           Mon 10/31
+      - date:           Mon 12/09
         topics:         Post-GPT Natural Language Processing
         assignments:
           - Reading 08
 
 - name:     Computer Vision (CV)
   days:
-      - date:           Wed 11/02
+      - date:           Wed 12/11
         topics:         Computer Vision
 
       - date:           Fri 11/04
