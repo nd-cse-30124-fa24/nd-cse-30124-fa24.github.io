@@ -107,19 +107,20 @@
       - date:           Wed 11/13
         topics:         Transformers
 
+- name:     Midterm 02
       - date:           Mon 11/18
         topics:         ''
         items:
           - name:       Exam 02
 
-- name:     Midterm 02
+- name:     'Unit 03: Applications'
+
+- name:     Misc.
   days:
       - date:           Wed 11/20
         topics:         Series Forecasting, LSTMs, Markovs
 
-- name:     'Unit 03: Applications'
 
-- name:     Misc.
   days:
       - date:           Mon 11/25
         topics:         Search
@@ -133,11 +134,11 @@
           - Quiz 09
           - Homework 10
 
+      - date:           Wed 12/04
+        topics:         Symbolic Reasoning and Knowledge Representation
+
 - name:     Natural Language Processing (NLP)
   days:
-      - date:           Wed 12/04
-        topics:         Reinforcement Learning
-
       - date:           Mon 12/09
         topics:         Natural Language Processing
         assignments:
