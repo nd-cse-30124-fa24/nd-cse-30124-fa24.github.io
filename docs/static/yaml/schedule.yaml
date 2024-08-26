@@ -5,55 +5,57 @@
         assignments:
           - Homework 00
 
+- name:     'Unit 01: History of Artificial Intelligence'
+
+- name:     History of Artificial Intelligence
+  days:
       - date:           Mon 09/02
-        topics:         Linear Algebra Review and Introduction to ML
+        topics:         Search and Agents
 
       - date:           Wed 09/04 
-        topics:         Linear Regression and ML Experiments and Packages
+        topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
       
       - date:           Mon 09/09
-        topics:         Supervised Learning and Non-linear Regressions
+        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
         assignments:
           - Homework 01
 
       - date:           Wed 09/11
-        topics:         ML Experiments and Packages
+        topics:         Bayesian Statistics and Bayesian Networks
 
-- name:     Searching, Sorting
-  days:
       - date:           Mon 09/16
-        topics:         ML Experiments and Packages
+        topics:         Decisions and Perceptrons
         assignments:
           - Quiz 01
           - Homework 02
 
+- name:     'Unit 02: Machine Learning'
+
+- name:     Machine Learning
+  days:
       - date:           Wed 09/18
-        topics:         Statistics Review and Information Theory
+        topics:         Linear Algebra Review and Introduction to Machine Learning
 
       - date:           Mon 09/23
-        topics:         Probability, Bayesian Statistics, and Bayesian Networks
+        topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
         assignments:
           - Quiz 02
           - Homework 03
 
-- name:     Associative Containers
-  days:
       - date:           Wed 09/25
-        topics:         Classification Problems
+        topics:         Machine Learning Experiments and Packages
 
       - date:           Mon 09/30
-        topics:         Unsupervised Learning and Clustering
+        topics:         Classification Problems
         assignments:
           - Quiz 03
           - Homework 04
 
       - date:           Wed 10/02
-        topics:         Dimensionality Reduction
+        topics:         Unsupervised Learning and Clustering
 
-- name:     Complete Search
-  days:
       - date:           Mon 10/07
-        topics:         Evaluation and Validation of ML Systems
+        topics:         Dimensionality Reduction
         assignments:
           - Quiz 04
           - Homework 05
@@ -73,7 +75,7 @@
 
 - name:     'Fall Break'
 
-- name:     'Unit 02: Deep Learning'
+- name:     'Unit 03: Deep Learning'
 
 - name:     Bit Manipulation, Greedy Algorithms
   days:
@@ -114,36 +116,36 @@
         items:
           - name:       Exam 02
 
-- name:     'Unit 03: Applications and Other Things'
+- name:     'Unit 04: Applications and Other Things'
 
 - name:     Misc.
   days:
       - date:           Wed 11/20
-        topics:         Series Forecasting, LSTMs, Markovs
+        topics:         Computer Vision
 
       - date:           Mon 11/25
-        topics:         Search
+        topics:         Generative Computer Vision
         assignments:
           - Quiz 08
           - Homework 09
 
       - date:           Mon 12/02
-        topics:         Reinforcement Learning
+        topics:         Series Forecasting, LSTMs, and Markovs
         assignments:
           - Quiz 09
           - Homework 10
 
       - date:           Wed 12/04
-        topics:         Symbolic Reasoning and Knowledge Representation
+        topics:         Classical Natural Language Processing
 
 - name:     Natural Language Processing (NLP)
   days:
       - date:           Mon 12/09
-        topics:         Natural Language Processing
+        topics:         Modern Natural Language Processing
         assignments:
           - Quiz 10
 
 - name:     Computer Vision (CV)
   days:
       - date:           Wed 12/11
-        topics:         Computer Vision
+        topics:         Agents and Reinforcement Learning
