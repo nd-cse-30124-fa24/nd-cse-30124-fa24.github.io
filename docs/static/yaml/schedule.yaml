@@ -16,6 +16,7 @@
       - date:           Mon 09/09
         topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
         assignments:
+          - Quiz 01
           - Homework 00
           - Homework 01
 
@@ -25,7 +26,7 @@
       - date:           Mon 09/16
         topics:         Decisions and Perceptrons
         assignments:
-          - Quiz 01
+          - Quiz 02
           - Homework 02
 
 - name:     'Unit 02: Machine Learning'
@@ -38,7 +39,7 @@
       - date:           Mon 09/23
         topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
         assignments:
-          - Quiz 02
+          - Quiz 03
           - Homework 03
 
       - date:           Wed 09/25
@@ -47,7 +48,7 @@
       - date:           Mon 09/30
         topics:         Classification Problems
         assignments:
-          - Quiz 03
+          - Quiz 04
           - Homework 04
 
 - name:     Unsupervised Learning
@@ -58,7 +59,7 @@
       - date:           Mon 10/07
         topics:         Dimensionality Reduction
         assignments:
-          - Quiz 04
+          - Quiz 05
           - Homework 05
 
 - name:     Using Machine Learning
@@ -90,12 +91,12 @@
       - date:           Wed 10/30
         topics:         Mathematics for Deep Learning and Perceptrons
         assignments:
-          - Quiz 05
+          - Quiz 06
 
       - date:           Mon 11/04
         topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
         assignments:
-          - Quiz 06
+          - Quiz 07
           - Homework 07
 
 - name:     Implementation of Deep Learning
@@ -106,7 +107,7 @@
       - date:           Mon 11/11
         topics:         Backpropogation, Optimization Techniques, and Gradient Descent
         assignments:
-          - Quiz 07
+          - Quiz 08
           - Homework 08
 
       - date:           Wed 11/13
@@ -129,7 +130,7 @@
       - date:           Mon 11/25
         topics:         Generative Computer Vision
         assignments:
-          - Quiz 08
+          - Quiz 09
           - Homework 09
 
 - name:     Series and Sequences
@@ -145,7 +146,7 @@
       - date:           Mon 12/09
         topics:         Modern Natural Language Processing
         assignments:
-          - Quiz 09/10
+          - Quiz 10
           - Homework 10
 
 - name:     Looking Foward
