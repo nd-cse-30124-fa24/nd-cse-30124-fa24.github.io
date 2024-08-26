@@ -121,8 +121,6 @@
       - date:           Wed 11/20
         topics:         Series Forecasting, LSTMs, Markovs
 
-
-  days:
       - date:           Mon 11/25
         topics:         Search
         assignments:
