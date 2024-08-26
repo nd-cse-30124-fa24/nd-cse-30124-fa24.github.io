@@ -106,9 +106,6 @@
 
       - date:           Wed 11/13
         topics:         Transformers
-        assignments:
-          - Quiz 07
-          - Homework 08
 
       - date:           Mon 11/18
         topics:         ''
@@ -127,10 +124,14 @@
       - date:           Mon 11/25
         topics:         Search
         assignments:
-          - Reading 07
+          - Quiz 08
+          - Homework 09
 
       - date:           Mon 12/02
         topics:         Reinforcement Learning
+        assignments:
+          - Quiz 09
+          - Homework 10
 
 - name:     Natural Language Processing (NLP)
   days:
@@ -140,7 +141,7 @@
       - date:           Mon 12/09
         topics:         Natural Language Processing
         assignments:
-          - Reading 08
+          - Quiz 10
 
 - name:     Computer Vision (CV)
   days:
