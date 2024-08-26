@@ -108,6 +108,7 @@
         topics:         Transformers
 
 - name:     Midterm 02
+  days:
       - date:           Mon 11/18
         topics:         ''
         items:
