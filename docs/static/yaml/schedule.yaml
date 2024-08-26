@@ -2,8 +2,6 @@
   days:
       - date:           Wed 08/28
         topics:         Syllabus, ML as Function Approximation
-        assignments:
-          - Homework 00
 
 - name:     'Unit 01: History of Artificial Intelligence'
 
@@ -18,6 +16,7 @@
       - date:           Mon 09/09
         topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
         assignments:
+          - Homework 00
           - Homework 01
 
       - date:           Wed 09/11
@@ -137,9 +136,6 @@
   days:
       - date:           Mon 12/02
         topics:         Series Forecasting, LSTMs, and Markovs
-        assignments:
-          - Quiz 09
-          - Homework 10
 
 - name:     Natural Language Processing (NLP)
   days:
@@ -149,7 +145,8 @@
       - date:           Mon 12/09
         topics:         Modern Natural Language Processing
         assignments:
-          - Quiz 10
+          - Quiz 09/10
+          - Homework 10
 
 - name:     Looking Foward
   days:
