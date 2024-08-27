@@ -9,6 +9,8 @@
   days:
       - date:           Mon 09/02
         topics:         Search and Agents
+        assignments:
+          - Homework 00
 
       - date:           Wed 09/04 
         topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
@@ -17,7 +19,6 @@
         topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
         assignments:
           - Quiz 01
-          - Homework 00
           - Homework 01
 
       - date:           Wed 09/11
