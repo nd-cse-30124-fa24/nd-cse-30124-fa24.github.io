@@ -149,7 +149,7 @@ body:       |
       <div class="col-md-12">
         <h3>Office Hours</h3>
         <div class="thumbnail">
-            <img src="static/img/office-hours.svg">
+            <img src="static/img/office-hours.png">
         </div>
       <div>
       <div class="alert alert-success" markdown="1">
