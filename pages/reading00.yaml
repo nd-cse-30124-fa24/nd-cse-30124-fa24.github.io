@@ -1,4 +1,4 @@
-title:      "Homework 00: Orientation"
+title:      "Homework 00: Orientation and Notebooks"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -80,7 +80,7 @@ body:       |
 
     2. **Fork** the class assignments repository from the following template:
 
-        > [https://classroom.github.com/a/-7yToW4Y](https://classroom.github.com/a/-7yToW4Y)
+        > [https://classroom.github.com/a/BRyH4v1R](https://classroom.github.com/a/BRyH4v1R)
 
         This will create a **private** `cse-30124-fa24-assignments-$USERNAME`
         repository under your own account and linked to the [nd-cse-30124-fa24]
