@@ -229,7 +229,7 @@ body:       |
     do the following:
 
             :::bash
-            $ git checkout master         # Make sure we are in master branch
+            $ git checkout main         # Make sure we are in master branch
             $ git pull --rebase           # Make sure we are up-to-date with github repository
 
             $ git checkout -b homework00   # Create homework00 branch and check it out
@@ -239,7 +239,7 @@ body:       |
 
             :::bash
             $ git branch
-              master
+              main
             * homework00
 
         The `*` indicates that we are currently on the `homework00` branch.
@@ -266,21 +266,21 @@ body:       |
         **New pull request** button for the appropriate branch:
 
             <div class="thumbnail">
-            <img src="static/img/github-branches.png" class="img-responsive"/>
+            <img src="static/img/pr_step_1.png" class="img-responsive"/>
             </div>
 
         - Next, edit the **pull request** title to "Homework 00", write a
           comment if necessary and then press the "Create pull request" button.
 
             <div class="thumbnail">
-            <img src="static/img/github-new-pull-request.png" class="img-responsive"/>
+            <img src="static/img/pr_step_2.png" class="img-responsive"/>
             </div>
 
         - Finally, assign the **pull request** to the **teaching assistant**
           assigned to you for the given week. 
 
             <div class="thumbnail">
-            <img src="static/img/github-pull-request.png" class="img-responsive"/>
+            <img src="static/img/pr_step_3.png" class="img-responsive"/>
             </div>
 
     <div class="alert alert-info" markdown="1">
