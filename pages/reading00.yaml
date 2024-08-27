@@ -233,6 +233,10 @@ body:       |
 
     <iframe src="static/notebooks/notebook00.html" width="100%" height="800px"></iframe>
 
+    <div class="alert alert-success" markdown="1">
+    [DOWNLOAD NOTEBOOK](static/notebooks/notebook00.ipynb)
+    </div>
+
     <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
     To submit your answers, you will need create a `answers.json` or
