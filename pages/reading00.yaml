@@ -1,4 +1,4 @@
-title:      "Reading 00: Orientation, I/O"
+title:      "Homework 00: Orientation"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -10,24 +10,20 @@ body:       |
 
     **Everyone**:
 
-    Welcome to [CSE 30124 Programming Challenges], which (as the syllabus
-    states) is a "course that revolves around solving *brain-teaser* and
-    *puzzle-type* problems that often appear in programming contests, online
-    challenges, and job interviews".  What this means is that we will be
-    studying common data structures, algorithms, and programming techniques
-    that are useful in tackling a variety of problems.
-
-    Additionally, this semester we will also learn about different software
-    development techniques such as debugging, testing, profiling, and
-    packaging. Sneed. Coping.
+    Welcome to [CSE 30124 Introduction to Artifical Intelligence], which (as the syllabus
+    states) is a broad introduction to the field of artificial intelligence. We
+    will begin the semester with a brief history of the field and review of relevant
+    mathematical concepts that form the foundation of AI. As the semester continues
+    we will dive into Machine and Deep Learning and then at the very end loop back
+    around to where we started.
 
     <div class="alert alert-info" markdown="1">
 
     #### <i class="fa fa-bookmark"></i> TL;DR
 
     For this week, you should familiarize yourself with using [Slack], setup
-    your [GitHub] assignments repository, read about I/O and complexity, and
-    then submit your responses to the [Reading 00 Quiz].
+    your [GitHub] assignments repository, decide how you will run the notebook
+    software used in this course and then submit your notebook for the first homework.
 
     </div>
 
@@ -202,9 +198,9 @@ body:       |
 
     ## Task 3: Reading
 
-    The readings for **Wednesday, August 24** are
+    The readings for **Monday, September 2nd** are
 
-    1. [CSE 30124 Programming Challenges (Fall 2022)](index.html)
+    1. [CSE 30124 Introduction to Artificial Intelligence](index.html)
 
     2. [Competitive Programmer's Handbook]
 
@@ -217,7 +213,7 @@ body:       |
     this is the first week of class.
     </div>
 
-    ## Task 4: Quiz
+    ## Task 4: Notebook
 
     Once you have done the readings, answer the following [Reading 00 Quiz]
     questions:
@@ -328,9 +324,9 @@ body:       |
 
             :::bash
             $ git add answers.json                # Add answers.json to staging area
-            $ git commit -m "Reading 00: Done"    # Commit work
+            $ git commit -m "Homework 00: Done"    # Commit work
 
-            $ git push -u origin reading00        # Push branch to GitHub
+            $ git push -u origin homework00        # Push branch to GitHub
 
         <div class="alert alert-success" markdown="1">
         **Note**: You may edit and commit changes to your branch as many times
@@ -348,7 +344,7 @@ body:       |
             <img src="static/img/github-branches.png" class="img-responsive"/>
             </div>
 
-        - Next, edit the **pull request** title to "Reading 00", write a
+        - Next, edit the **pull request** title to "Homework 00", write a
           comment if necessary and then press the "Create pull request" button.
 
             <div class="thumbnail">
@@ -356,25 +352,16 @@ body:       |
             </div>
 
         - Finally, assign the **pull request** to the **teaching assistant**
-          assigned to you for the given week and make sure all the checks have
-          **passed**.
+          assigned to you for the given week. 
 
             <div class="thumbnail">
             <img src="static/img/github-pull-request.png" class="img-responsive"/>
             </div>
 
-        - Every commit on [GitHub] will automatically check your quiz or code with
-          [dredd] and the results of each run is displayed in the **Checks** tab
-          of each commit as shown below:
-
-            <div class="thumbnail">
-            <img src="static/img/github-checks.png" class="img-responsive"/>
-            </div>
-
     <div class="alert alert-info" markdown="1">
     #### <i class="fa fa-gavel"></i> Graders
 
-    Please refer to the [Reading 00 TA List](reading00_tas.html) to determine
+    Please refer to the [Homework 00 TA List](homework00_tas.html) to determine
     who your grader is for this week.
 
     </div>
@@ -408,16 +395,10 @@ body:       |
 
     </div>
 
-    [CSE 30124 Programming Challenges]:     index.html
-    [Competitive Programmer's Handbook]:    https://cses.fi/book.html
-    [Reading 00 Quiz]:                      static/json/reading00.json
+    [CSE 30124 Introduction to Artificial Intelligence]:     index.html
     [GitHub]:                               https://github.com
-    [dredd]:                                https://dredd.h4x0r.space
     [Zoom]:                                 https://notredame.zoom.us/
     [Slack]:                                https://nd-cse.slack.com/
-    [HackerRank]:                           https://www.hackerrank.com/
-    [LeetCode]:                             https://leetcode.com/
     [SSH Keys]:                             https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
     [nd-cse-30124-fa24]:                    https://github.com/nd-cse-30124-fa24
     [git-branch]:                           https://git-scm.com/docs/git-branch
-    [JSON]:                                 https://json.org
