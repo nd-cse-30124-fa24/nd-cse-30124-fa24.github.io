@@ -212,9 +212,9 @@ body:       |
 
         - [Google Colab]()
 
-    Please read all three, but for the purposes of this course you just
-    need to get one of them working to run your notebooks. Notebooks
-    can also be run locally through something like VSCode, however as
+    Please at least skim all four, but for the purposes of this course you just
+    need to get one of the methods working to run your notebooks. Notebooks
+    can be run locally through something like VSCode, however as
     we get into more powerful AI models, your machine may be unable to
     keep up. Services like Kaggle Notebooks and Google Colab provide
     access to free GPUs which will likely prove useful. If you have
@@ -222,11 +222,11 @@ body:       |
     to discuss them.
 
     <div class="alert alert-success" markdown="1">
-    **Note**: Don't worry if you don't get the readings done by Monday, as
+    **Note**: Don't worry if you don't get the homework done by Monday, as
     this is the first week of class.
     </div>
 
-    ## Task 4: Notebook
+    ## Task 4: Notebooks
 
     Once you have done the readings, run the following notebook using
     the method of your choosing:
@@ -242,9 +242,11 @@ body:       |
 
     <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
-    To submit your answers, you will need create a `answers.json` or
-    `answers.yaml` file in the `reading00` folder of your **assignments**
-    repository:
+    To submit your answers, you will need add your `homework00.ipynb` file
+    in the `homework00` folder of your **assignments** repository:
+
+    Answer the questions in your notebook file using the method of your choice and
+    once you are finished, follow the instructions below to submit your notebook.
 
     1. For this class, you must use a **separate [git] branch for each
     assignment**.  This means that the work for each reading and challenge must
@@ -255,7 +257,7 @@ body:       |
             $ git checkout master         # Make sure we are in master branch
             $ git pull --rebase           # Make sure we are up-to-date with github repository
 
-            $ git checkout -b reading00   # Create reading00 branch and check it out
+            $ git checkout -b homework00   # Create homework00 branch and check it out
 
         Once you do the above, you should see the following output for the
         [git-branch] command:
@@ -263,76 +265,11 @@ body:       |
             :::bash
             $ git branch
               master
-            * reading00
+            * homework00
 
-        The `*` indicates that we are currently on the `reading00` branch.
+        The `*` indicates that we are currently on the `homework00` branch.
 
-    2. You can either hand-write the `answers` file using your favorite text
-    editor or you can use the online form to generate the [JSON] data.
-
-        A hand-written `answers.yaml` may look like the following:
-
-            :::text
-            q1:     [python,perl,ruby]
-            q2:     [n2,nf,nlogn,1,n,sqrtn,logn]
-            q3:     n
-            q4:     n
-
-        The equivalent `answers.json` generated using the online form may look
-        like the following:
-
-            :::json
-            {
-              "q1": [
-                "python",
-                "perl",
-                "ruby"
-              ],
-              "q2": [
-                "n2",
-                "nf",
-                "nlogn",
-                "1",
-                "n",
-                "sqrtn",
-                "logn"
-              ],
-              "q3": "n",
-              "q4": "n"
-            }
-
-        You may use either format.  To determine which symbols correspond to
-        which response, take a look at the [Reading 00 Quiz] file.
-
-        To check your answers, you can use the provided `.scripts/check.py`
-        script:
-
-            :::bash
-            $ cd reading00                        # Go into reading00 folder
-            $ $EDITOR answers.json                # Edit your answers.json file
-
-            $ ../.scripts/check.py                # Submit reading00
-            Checking reading00 quiz ...
-                  Q1 0.14
-                  Q2 0.14
-                  Q3 0.00
-                  Q4 0.00
-                  Q5 0.00
-               Score 0.29 / 3.00
-              Status Failure
-
-        This script will send your `reading00/answers.json` file to [dredd],
-        which is the automated grading system.  [dredd] will take your answers
-        and return to you a score as shown above.  Each reading is worth
-        **3.0** points.
-
-        <div class="alert alert-success" markdown="1">
-        **Note**: You may check your quiz answers as many times as you want;
-        [dredd] does not keep track of who checks what or how many times.  It
-        simply returns a score.
-        </div>
-
-    3. Once you have your answers file, you need to add, commit the file, and
+    2. Once you have your notebook filled out, you need to add, commit the file, and
     push your commits to [GitHub]:
 
             :::bash
@@ -347,7 +284,7 @@ body:       |
         branch and then perform a `git push` when you are done.
         </div>
 
-    4. When you are ready for your final submission, you need to create a
+    3. When you are ready for your final submission, you need to create a
     **pull request** via the [GitHub] interface:
 
         - First, go to your repository's **Branches** page and then press the
