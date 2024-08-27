@@ -231,10 +231,10 @@ body:       |
     Once you have done the readings, run the following notebook using
     the method of your choosing:
 
-    <iframe src="static/notebooks/notebook00.html" width="100%" height="800px"></iframe>
+    <iframe src="static/Notebooks/notebook00.html" width="100%" height="800px"></iframe>
 
     <div class="alert alert-success" markdown="1">
-    [DOWNLOAD NOTEBOOK](static/notebooks/notebook00.ipynb)
+    [DOWNLOAD NOTEBOOK](static/Notebooks/notebook00.ipynb)
     </div>
 
     <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
