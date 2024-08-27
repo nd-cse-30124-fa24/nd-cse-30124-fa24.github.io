@@ -10,7 +10,7 @@ body:       |
 
     **Everyone**:
 
-    Welcome to [CSE 30124 Introduction to Artifical Intelligence], which (as the syllabus
+    Welcome to [CSE 30124 Introduction to Artifical Intelligence](index.html), which (as the syllabus
     states) is a broad introduction to the field of artificial intelligence. We
     will begin the semester with a brief history of the field and review of relevant
     mathematical concepts that form the foundation of AI. As the semester continues
@@ -179,13 +179,13 @@ body:       |
 
     2. Introduction to Notebooks
 
-        - [Jupyter Notebooks]()
+        - [Jupyter Notebooks](https://realpython.com/jupyter-notebook-introduction/)
 
-        - [VSCode Notebooks]()
+        - [VSCode Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
-        - [Kaggle Notebooks]()
+        - [Kaggle Notebooks](https://www.kaggle.com/code/alexisbcook/creating-your-own-notebooks)
 
-        - [Google Colab]()
+        - [Google Colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
     Please at least skim all four, but for the purposes of this course you just
     need to get one of the methods working to run your notebooks. Notebooks
