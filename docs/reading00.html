@@ -229,19 +229,19 @@ adversely impact your grade.</p>
 </ul>
 </li>
 </ol>
-<p>Please read all three, but for the purposes of this course you just
-need to get one of them working to run your notebooks. Notebooks
-can also be run locally through something like VSCode, however as
+<p>Please at least skim all four, but for the purposes of this course you just
+need to get one of the methods working to run your notebooks. Notebooks
+can be run locally through something like VSCode, however as
 we get into more powerful AI models, your machine may be unable to
 keep up. Services like Kaggle Notebooks and Google Colab provide
 access to free GPUs which will likely prove useful. If you have
 other methods, please feel free to reach out to your instructor
 to discuss them.</p>
 <div class="alert alert-success">
-<p><strong>Note</strong>: Don't worry if you don't get the readings done by Monday, as
+<p><strong>Note</strong>: Don't worry if you don't get the homework done by Monday, as
 this is the first week of class.</p>
 </div>
-<h2 id="task-4-notebook">Task 4: Notebook<a class="headerlink" href="#task-4-notebook" title="Permanent link">&para;</a></h2>
+<h2 id="task-4-notebooks">Task 4: Notebooks<a class="headerlink" href="#task-4-notebooks" title="Permanent link">&para;</a></h2>
 <p>Once you have done the readings, run the following notebook using
 the method of your choosing:</p>
 <div class="alert alert-success">
@@ -253,9 +253,10 @@ find it easier to download the raw notebook file given above.</p>
 
 <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
-<p>To submit your answers, you will need create a <code>answers.json</code> or
-<code>answers.yaml</code> file in the <code>reading00</code> folder of your <strong>assignments</strong>
-repository:</p>
+<p>To submit your answers, you will need add your <code>homework00.ipynb</code> file
+in the <code>homework00</code> folder of your <strong>assignments</strong> repository:</p>
+<p>Answer the questions in your notebook file using the method of your choice and
+once you are finished, follow the instructions below to submit your notebook.</p>
 <ol>
 <li>
 <p>For this class, you must use a <strong>separate <a href="https://git-scm.com/">git</a> branch for each
@@ -265,80 +266,20 @@ do the following:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ git checkout master         <span style="color: #3D7B7B; font-style: italic"># Make sure we are in master branch</span>
 $ git pull --rebase           <span style="color: #3D7B7B; font-style: italic"># Make sure we are up-to-date with github repository</span>
 
-$ git checkout -b reading00   <span style="color: #3D7B7B; font-style: italic"># Create reading00 branch and check it out</span>
+$ git checkout -b homework00   <span style="color: #3D7B7B; font-style: italic"># Create homework00 branch and check it out</span>
 </code></pre></div>
 
 <p>Once you do the above, you should see the following output for the
 <a href="https://git-scm.com/docs/git-branch">git-branch</a> command:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ git branch
   master
-* reading00
+* homework00
 </code></pre></div>
 
-<p>The <code>*</code> indicates that we are currently on the <code>reading00</code> branch.</p>
+<p>The <code>*</code> indicates that we are currently on the <code>homework00</code> branch.</p>
 </li>
 <li>
-<p>You can either hand-write the <code>answers</code> file using your favorite text
-editor or you can use the online form to generate the [JSON] data.</p>
-<p>A hand-written <code>answers.yaml</code> may look like the following:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>q1:     [python,perl,ruby]
-q2:     [n2,nf,nlogn,1,n,sqrtn,logn]
-q3:     n
-q4:     n
-</code></pre></div>
-
-<p>The equivalent <code>answers.json</code> generated using the online form may look
-like the following:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">&quot;q1&quot;</span>:<span style="color: #bbbbbb"> </span>[<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;python&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;perl&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;ruby&quot;</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span>],<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">&quot;q2&quot;</span>:<span style="color: #bbbbbb"> </span>[<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;n2&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;nf&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;nlogn&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;1&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;n&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;sqrtn&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #BA2121">&quot;logn&quot;</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span>],<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">&quot;q3&quot;</span>:<span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;n&quot;</span>,<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">&quot;q4&quot;</span>:<span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;n&quot;</span><span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
-</code></pre></div>
-
-<p>You may use either format.  To determine which symbols correspond to
-which response, take a look at the [Reading 00 Quiz] file.</p>
-<p>To check your answers, you can use the provided <code>.scripts/check.py</code>
-script:</p>
-<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> reading00                        <span style="color: #3D7B7B; font-style: italic"># Go into reading00 folder</span>
-$ <span style="color: #19177C">$EDITOR</span> answers.json                <span style="color: #3D7B7B; font-style: italic"># Edit your answers.json file</span>
-
-$ ../.scripts/check.py                <span style="color: #3D7B7B; font-style: italic"># Submit reading00</span>
-Checking reading00 quiz ...
-      Q1 <span style="color: #666666">0</span>.14
-      Q2 <span style="color: #666666">0</span>.14
-      Q3 <span style="color: #666666">0</span>.00
-      Q4 <span style="color: #666666">0</span>.00
-      Q5 <span style="color: #666666">0</span>.00
-   Score <span style="color: #666666">0</span>.29 / <span style="color: #666666">3</span>.00
-  Status Failure
-</code></pre></div>
-
-<p>This script will send your <code>reading00/answers.json</code> file to [dredd],
-which is the automated grading system.  [dredd] will take your answers
-and return to you a score as shown above.  Each reading is worth
-<strong>3.0</strong> points.</p>
-<p><div class="alert alert-success" markdown="1">
-<strong>Note</strong>: You may check your quiz answers as many times as you want;
-[dredd] does not keep track of who checks what or how many times.  It
-simply returns a score.
-</div></p>
-</li>
-<li>
-<p>Once you have your answers file, you need to add, commit the file, and
+<p>Once you have your notebook filled out, you need to add, commit the file, and
 push your commits to <a href="https://github.com">GitHub</a>:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ git add homework00.ipynb                <span style="color: #3D7B7B; font-style: italic"># Add answers.json to staging area</span>
 $ git commit -m <span style="color: #BA2121">&quot;Homework 00: Done&quot;</span>    <span style="color: #3D7B7B; font-style: italic"># Commit work</span>
