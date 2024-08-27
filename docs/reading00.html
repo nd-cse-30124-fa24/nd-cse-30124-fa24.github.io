@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Reading 00: Orientation, I/O</title>
+	<title>Homework 00: Orientation</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="static/css/blugold.css" rel="stylesheet">
@@ -35,26 +35,23 @@
 			<li><a href="index.html"><i class="fa fa-gavel"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
 			
 		    </ul>
-		    <h1><i class="fa fa-book"></i> Reading 00: Orientation, I/O</h1>
+		    <h1><i class="fa fa-book"></i> Homework 00: Orientation</h1>
 		</div>
 	    </div>
 
             
 <p><strong>Everyone</strong>:</p>
-<p>Welcome to <a href="index.html">CSE 30124 Programming Challenges</a>, which (as the syllabus
-states) is a "course that revolves around solving <em>brain-teaser</em> and
-<em>puzzle-type</em> problems that often appear in programming contests, online
-challenges, and job interviews".  What this means is that we will be
-studying common data structures, algorithms, and programming techniques
-that are useful in tackling a variety of problems.</p>
-<p>Additionally, this semester we will also learn about different software
-development techniques such as debugging, testing, profiling, and
-packaging. Sneed. Coping.</p>
+<p>Welcome to [CSE 30124 Introduction to Artifical Intelligence], which (as the syllabus
+states) is a broad introduction to the field of artificial intelligence. We
+will begin the semester with a brief history of the field and review of relevant
+mathematical concepts that form the foundation of AI. As the semester continues
+we will dive into Machine and Deep Learning and then at the very end loop back
+around to where we started.</p>
 <div class="alert alert-info">
 <h4 id="tldr"><i class="fa fa-bookmark"></i> TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h4>
 <p>For this week, you should familiarize yourself with using <a href="https://nd-cse.slack.com/">Slack</a>, setup
-your <a href="https://github.com">GitHub</a> assignments repository, read about I/O and complexity, and
-then submit your responses to the <a href="static/json/reading00.json">Reading 00 Quiz</a>.</p>
+your <a href="https://github.com">GitHub</a> assignments repository, decide how you will run the notebook
+software used in this course and then submit your notebook for the first homework.</p>
 </div>
 <h2 id="course-overview">Course Overview<a class="headerlink" href="#course-overview" title="Permanent link">&para;</a></h2>
 <p>Last semester, many of you took the <strong>Data Structures</strong> course where you
@@ -73,7 +70,7 @@ challenges will be <strong>reading assignments</strong> to ensure you have a con
 background knowledge for what we will be discussing in class.  As with last
 semester in <a href="https://www3.nd.edu/~pbui/teaching/cse.20289.sp22/">Systems Programming</a>, the reading assignments will be
 automatically graded.</p>
-<p>In fact all of your assignments will be automatically graded by <a href="https://dredd.h4x0r.space">dredd</a> via
+<p>In fact all of your assignments will be automatically graded by [dredd] via
 the <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a> system provided by <a href="https://github.com">GitHub</a>.  As you may have
 experienced during your internship this summer, <strong>testing</strong> is an important
 part of software engineering and we will therefore explore various aspects
@@ -86,7 +83,7 @@ are expected to come to class <strong>regularly</strong> and <strong>on-time</st
 will have <strong>two in-class programming contests</strong> where you will get to work
 in groups of <code>3</code> (similar to the <a href="https://icpc.baylor.edu/">ACM Programming Contest</a>).  Likewise, you
 will also have to participate in <strong>two external programming contests</strong> such
-as those provided by <a href="https://www.hackerrank.com/">HackerRank</a> or <a href="https://leetcode.com/">LeetCode</a>.</p>
+as those provided by [HackerRank] or [LeetCode].</p>
 <h2 id="task-1-slack">Task 1: Slack<a class="headerlink" href="#task-1-slack" title="Permanent link">&para;</a></h2>
 <p>For communication outside of our meeting time, we will be using <a href="https://nd-cse.slack.com/">Slack</a>,
 specifically the <code>#cse-30124-fa24</code> channel:</p>
@@ -209,13 +206,13 @@ permissions set.  Failure to properly configure your repository will
 adversely impact your grade.</p>
 </div>
 <h2 id="task-3-reading">Task 3: Reading<a class="headerlink" href="#task-3-reading" title="Permanent link">&para;</a></h2>
-<p>The readings for <strong>Wednesday, August 24</strong> are</p>
+<p>The readings for <strong>Monday, September 2nd</strong> are</p>
 <ol>
 <li>
-<p><a href="index.html">CSE 30124 Programming Challenges (Fall 2022)</a></p>
+<p><a href="index.html">CSE 30124 Introduction to Artificial Intelligence</a></p>
 </li>
 <li>
-<p><a href="https://cses.fi/book.html">Competitive Programmer's Handbook</a></p>
+<p>[Competitive Programmer's Handbook]</p>
 <ul>
 <li>
 <p>Chapter 1 Introduction</p>
@@ -230,8 +227,8 @@ adversely impact your grade.</p>
 <p><strong>Note</strong>: Don't worry if you don't get the readings done by Monday, as
 this is the first week of class.</p>
 </div>
-<h2 id="task-4-quiz">Task 4: Quiz<a class="headerlink" href="#task-4-quiz" title="Permanent link">&para;</a></h2>
-<p>Once you have done the readings, answer the following <a href="static/json/reading00.json">Reading 00 Quiz</a>
+<h2 id="task-4-notebook">Task 4: Notebook<a class="headerlink" href="#task-4-notebook" title="Permanent link">&para;</a></h2>
+<p>Once you have done the readings, answer the following [Reading 00 Quiz]
 questions:</p>
 <div id="quiz-questions"></div>
 
@@ -270,7 +267,7 @@ $ git checkout -b reading00   <span style="color: #3D7B7B; font-style: italic">#
 </li>
 <li>
 <p>You can either hand-write the <code>answers</code> file using your favorite text
-editor or you can use the online form to generate the <a href="https://json.org">JSON</a> data.</p>
+editor or you can use the online form to generate the [JSON] data.</p>
 <p>A hand-written <code>answers.yaml</code> may look like the following:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>q1:     [python,perl,ruby]
 q2:     [n2,nf,nlogn,1,n,sqrtn,logn]
@@ -301,7 +298,7 @@ like the following:</p>
 </code></pre></div>
 
 <p>You may use either format.  To determine which symbols correspond to
-which response, take a look at the <a href="static/json/reading00.json">Reading 00 Quiz</a> file.</p>
+which response, take a look at the [Reading 00 Quiz] file.</p>
 <p>To check your answers, you can use the provided <code>.scripts/check.py</code>
 script:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ <span style="color: #008000">cd</span> reading00                        <span style="color: #3D7B7B; font-style: italic"># Go into reading00 folder</span>
@@ -318,13 +315,13 @@ Checking reading00 quiz ...
   Status Failure
 </code></pre></div>
 
-<p>This script will send your <code>reading00/answers.json</code> file to <a href="https://dredd.h4x0r.space">dredd</a>,
-which is the automated grading system.  <a href="https://dredd.h4x0r.space">dredd</a> will take your answers
+<p>This script will send your <code>reading00/answers.json</code> file to [dredd],
+which is the automated grading system.  [dredd] will take your answers
 and return to you a score as shown above.  Each reading is worth
 <strong>3.0</strong> points.</p>
 <p><div class="alert alert-success" markdown="1">
 <strong>Note</strong>: You may check your quiz answers as many times as you want;
-<a href="https://dredd.h4x0r.space">dredd</a> does not keep track of who checks what or how many times.  It
+[dredd] does not keep track of who checks what or how many times.  It
 simply returns a score.
 </div></p>
 </li>
@@ -332,9 +329,9 @@ simply returns a score.
 <p>Once you have your answers file, you need to add, commit the file, and
 push your commits to <a href="https://github.com">GitHub</a>:</p>
 <div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>$ git add answers.json                <span style="color: #3D7B7B; font-style: italic"># Add answers.json to staging area</span>
-$ git commit -m <span style="color: #BA2121">&quot;Reading 00: Done&quot;</span>    <span style="color: #3D7B7B; font-style: italic"># Commit work</span>
+$ git commit -m <span style="color: #BA2121">&quot;Homework 00: Done&quot;</span>    <span style="color: #3D7B7B; font-style: italic"># Commit work</span>
 
-$ git push -u origin reading00        <span style="color: #3D7B7B; font-style: italic"># Push branch to GitHub</span>
+$ git push -u origin homework00        <span style="color: #3D7B7B; font-style: italic"># Push branch to GitHub</span>
 </code></pre></div>
 
 <p><div class="alert alert-success" markdown="1">
@@ -355,7 +352,7 @@ branch and then perform a <code>git push</code> when you are done.
 </div></p>
 </li>
 <li>
-<p>Next, edit the <strong>pull request</strong> title to "Reading 00", write a
+<p>Next, edit the <strong>pull request</strong> title to "Homework 00", write a
   comment if necessary and then press the "Create pull request" button.</p>
 <p><div class="thumbnail">
 <img src="static/img/github-new-pull-request.png" class="img-responsive"/>
@@ -363,18 +360,9 @@ branch and then perform a <code>git push</code> when you are done.
 </li>
 <li>
 <p>Finally, assign the <strong>pull request</strong> to the <strong>teaching assistant</strong>
-  assigned to you for the given week and make sure all the checks have
-  <strong>passed</strong>.</p>
+  assigned to you for the given week. </p>
 <p><div class="thumbnail">
 <img src="static/img/github-pull-request.png" class="img-responsive"/>
-</div></p>
-</li>
-<li>
-<p>Every commit on <a href="https://github.com">GitHub</a> will automatically check your quiz or code with
-  <a href="https://dredd.h4x0r.space">dredd</a> and the results of each run is displayed in the <strong>Checks</strong> tab
-  of each commit as shown below:</p>
-<p><div class="thumbnail">
-<img src="static/img/github-checks.png" class="img-responsive"/>
 </div></p>
 </li>
 </ul>
@@ -382,7 +370,7 @@ branch and then perform a <code>git push</code> when you are done.
 </ol>
 <div class="alert alert-info">
 <h4 id="graders"><i class="fa fa-gavel"></i> Graders<a class="headerlink" href="#graders" title="Permanent link">&para;</a></h4>
-<p>Please refer to the <a href="reading00_tas.html">Reading 00 TA List</a> to determine
+<p>Please refer to the <a href="homework00_tas.html">Homework 00 TA List</a> to determine
 who your grader is for this week.</p>
 </div>
 <p>Once you have made the <strong>pull request</strong>, the instructor or teaching
