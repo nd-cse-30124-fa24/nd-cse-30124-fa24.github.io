@@ -29,46 +29,21 @@ body:       |
 
     ## Course Overview
 
-    Last semester, many of you took the **Data Structures** course where you
-    learned about the properties and characteristics of different data
-    structures (and perhaps you even implemented a few).  The focus of this
-    class, however, is not in the *construction* of these data structures, but
-    rather their *application*.  This means we will focus on *when* to use
-    these data structures and algorithms and *how* to utilize them effectively
-    rather than *what* they are.  In concrete terms, we will not be
-    implementing say a [hash table]; instead we will use one to solve a variety
-    of problems.
+    Artificial Intelligence is an extremely broad field and while no doubt all of
+    you will be familiar with some aspects of it, likely the GPT family, these
+    tools are only a small subset of what the field encompasses as a whole.
 
-    Following the [Hands-On Imperative], you will have the opportunity to put
-    the material we discuss in class into practice via a *respectful* number of
-    weekly **programming challenges** (**two a week**).  Along with these
-    challenges will be **reading assignments** to ensure you have a context or
-    background knowledge for what we will be discussing in class.  As with last
-    semester in [Systems Programming], the reading assignments will be
-    automatically graded.
+    <div class="thumbnail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Unraveling_AI_Complexity_-_A_Comparative_View_of_AI%2C_Machine_Learning%2C_Deep_Learning%2C_and_Generative_AI.png">
+    </div>
 
-    In fact all of your assignments will be automatically graded by [dredd] via
-    the [continuous integration] system provided by [GitHub].  As you may have
-    experienced during your internship this summer, **testing** is an important
-    part of software engineering and we will therefore explore various aspects
-    of **software development** including debugging, profiling, testing,
-    packaging and more throughout the semester (*if there is time*).
+    We will begin the course at the top of the circle and work our way down.
+    However at the end of the semester and the bottom of the circles we will
+    find that we start to wrap back around again to the top.
 
     Although each class will involve some amount of lecture, there will also be
-    a lot of in-class activities and hands-on learning.  Because of this, you
+    a (nearly) weekly quiz during the lecture on Monday. Because of this, you
     are expected to come to class **regularly** and **on-time**.
-
-    Fortunately, however, there are **no exams** in this class.  Instead, we
-    will have **two in-class programming contests** where you will get to work
-    in groups of `3` (similar to the [ACM Programming Contest]).  Likewise, you
-    will also have to participate in **two external programming contests** such
-    as those provided by [HackerRank] or [LeetCode].
-
-    [Hands-On Imperative]:      https://en.wikipedia.org/wiki/Hacker_ethic#Hands-On_Imperative
-    [Continuous Integration]:   https://en.wikipedia.org/wiki/Continuous_integration
-    [ACM Programming Contest]:  https://icpc.baylor.edu/
-    [hash table]:               https://en.wikipedia.org/wiki/Hash_table
-    [Systems Programming]:      https://www3.nd.edu/~pbui/teaching/cse.20289.sp22/
 
     ## Task 1: Slack
 
