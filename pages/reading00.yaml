@@ -231,11 +231,14 @@ body:       |
     Once you have done the readings, run the following notebook using
     the method of your choosing:
 
-    <iframe src="static/Notebooks/notebook00.html" width="100%" height="800px"></iframe>
-
     <div class="alert alert-success" markdown="1">
-    [DOWNLOAD NOTEBOOK](static/Notebooks/notebook00.ipynb)
+    [DOWNLOAD NOTEBOOK](static/Notebooks/homework00.ipynb)
     </div>
+
+    For your convenience the notebook is displayed below as HTML but you will likely
+    find it easier to download the raw notebook file given above.
+
+    <iframe src="static/Notebooks/notebook00.html" width="100%" height="800px"></iframe>
 
     <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
@@ -333,7 +336,7 @@ body:       |
     push your commits to [GitHub]:
 
             :::bash
-            $ git add answers.json                # Add answers.json to staging area
+            $ git add homework00.ipynb                # Add answers.json to staging area
             $ git commit -m "Homework 00: Done"    # Commit work
 
             $ git push -u origin homework00        # Push branch to GitHub
