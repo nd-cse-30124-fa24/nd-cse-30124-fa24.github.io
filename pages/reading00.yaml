@@ -202,11 +202,24 @@ body:       |
 
     1. [CSE 30124 Introduction to Artificial Intelligence](index.html)
 
-    2. [Competitive Programmer's Handbook]
+    2. Introduction to Notebooks
 
-        - Chapter 1 Introduction
+        - [Jupyter Notebooks]()
 
-        - Chapter 2 Time Complexity
+        - [VSCode Notebooks]()
+
+        - [Kaggle Notebooks]()
+
+        - [Google Colab]()
+
+    Please read all three, but for the purposes of this course you just
+    need to get one of them working to run your notebooks. Notebooks
+    can also be run locally through something like VSCode, however as
+    we get into more powerful AI models, your machine may be unable to
+    keep up. Services like Kaggle Notebooks and Google Colab provide
+    access to free GPUs which will likely prove useful. If you have
+    other methods, please feel free to reach out to your instructor
+    to discuss them.
 
     <div class="alert alert-success" markdown="1">
     **Note**: Don't worry if you don't get the readings done by Monday, as
@@ -215,17 +228,10 @@ body:       |
 
     ## Task 4: Notebook
 
-    Once you have done the readings, answer the following [Reading 00 Quiz]
-    questions:
+    Once you have done the readings, run the following notebook using
+    the method of your choosing:
 
-    <div id="quiz-questions"></div>
-
-    <div id="quiz-responses"></div>
-
-    <script src="static/js/dredd-quiz.js"></script>
-    <script>
-    loadQuiz('static/json/reading00.json');
-    </script>
+    <iframe src="static/notebooks/notebook00.html" width="100%" height="800px"></iframe>
 
     <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
