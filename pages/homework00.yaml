@@ -82,7 +82,7 @@ body:       |
 
         > [https://classroom.github.com/a/BRyH4v1R](https://classroom.github.com/a/BRyH4v1R)
 
-        This will create a **private** `cse-30124-fa24-assignments-$USERNAME`
+        This will create a **private** `assignments-$USERNAME`
         repository under your own account and linked to the [nd-cse-30124-fa24]
         organization.
 
@@ -90,7 +90,7 @@ body:       |
     machine (or the **student** machines:
 
             :::bash
-            $ git clone git@github.com:nd-cse-30124-fa24/cse-30124-fa24-assignments-$USERNAME.git
+            $ git clone git@github.com:nd-cse-30124-fa24/assignments-$USERNAME.git
 
         <div class="alert alert-danger" markdown="1">
         **Note**, that [GitHub] has recently shutdown [password authentication].
