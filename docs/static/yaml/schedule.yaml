@@ -1,7 +1,7 @@
 - name:     Welcome
   days:
       - date:           Wed 08/28
-        topics:         Syllabus, ML as Function Approximation
+        topics:         Syllabus, <a href="https://machinelearningmastery.com/a-gentle-introduction-to-approximation/">ML as Function Approximation</a>
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1JgEEvBj9gdo9-e4fNgqDf0LgyXXglzuR/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
