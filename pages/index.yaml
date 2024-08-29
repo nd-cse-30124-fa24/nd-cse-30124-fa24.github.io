@@ -145,6 +145,15 @@ body:       |
     </div>
     </div>
 
+    <div class="row" markdown="1">
+      <div class="col-md-12">
+        <h3>Office Hours</h3>
+        <div class="thumbnail">
+            <img src="static/img/office-hours.png">
+        </div>
+      </div>
+    </div>
+
     <div class="row">
         <div class="page-header">
             <h2 id="schedule"><i class="fa fa-calendar"></i> Schedule</h2>
@@ -503,6 +512,43 @@ body:       |
             Code Violation Report</a> or a formal report to the College of
             Engineering Honesty Committee.</p>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-warning">
+            <h4><i class="fa fa-medkit"></i> Health and Safety Protocols</h4>
+            <p>In this class, as elsewhere on campus, <b>students must comply with
+            all University health and safety protocols</b>, including:</p>
+
+            <p>
+            <ul>
+
+            <li>Students who are not fully vaccinated must wear masks inside
+            campus buildings.</li>
+
+            <li>Students are expected to carry a mask at all times.</li>
+
+            <li>Students are to be considerate and understanding of the medical
+            needs and personal beliefs of others.</li>
+
+            </ul>
+            </p>
+
+            <p><b>We are part of a community of learning in which compassionate
+            care for one another is part of our spiritual and social charter</b>.
+            Consequently, compliance with these protocols is an expectation for
+            everyone enrolled in this course. If a student refuses to comply
+            with the University’s health and safety protocols, the student must
+            leave the classroom and will earn an unexcused absence for the
+            class period and any associated assignments/assessments for the
+            day. Persistent deviation from expected health and safety
+            guidelines may be considered a violation of the University’s <a
+            href="https://dulac.nd.edu/community-standards/standards/">"Standards
+            of Conduct,”</a> as articulated in <a href="https://dulac.nd.edu/">du Lac: A
+            Guide for Student Life</a>, and will be referred accordingly.</p>
             </div>
         </div>
     </div>
