@@ -14,6 +14,9 @@
         topics:         Agents and A*
         assignments:
           - Homework 00
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1WNzaM-qazzR9GEC171lJw87qhUaJXsv-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Wed 09/04 
         topics:         Adversarial Search
