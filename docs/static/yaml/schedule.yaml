@@ -11,142 +11,147 @@
 - name:     History of Artificial Intelligence
   days:
       - date:           Mon 09/02
-        topics:         Search and Agents
+        topics:         Agents and A*
         assignments:
           - Homework 00
 
       - date:           Wed 09/04 
-        topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
+        topics:         Adversarial Search
       
       - date:           Mon 09/09
-        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
+        topics:         Constraint Satisfaction
         assignments:
           - Quiz 01
           - Homework 01
 
       - date:           Wed 09/11
-        topics:         Bayesian Statistics and Bayesian Networks
+        topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
 
       - date:           Mon 09/16
-        topics:         Decisions and Perceptrons
+        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
         assignments:
           - Quiz 02
           - Homework 02
+
+      - date:           Wed 09/18
+        topics:         Bayesian Statistics and Bayesian Networks
+
+      - date:           Mon 09/23
+        topics:         Decisions and Perceptrons
+        assignments:
+          - Quiz 03
+          - Homework 03
+
+- name:     Exam 01
+  days:
+      - date:           Wed 09/25
+        topics:         ''
+        items:
+          - name:       Exam 01
 
 - name:     'Unit 02: Machine Learning'
 
 - name:     Supervised Learning
   days:
-      - date:           Wed 09/18
-        topics:         Linear Algebra Review and Introduction to Machine Learning
-
-      - date:           Mon 09/23
-        topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
-        assignments:
-          - Quiz 03
-          - Homework 03
-
-      - date:           Wed 09/25
-        topics:         Machine Learning Experiments and Packages
-
       - date:           Mon 09/30
-        topics:         Classification Problems
+        topics:         Linear Algebra Review and Introduction to Machine Learning
         assignments:
           - Quiz 04
           - Homework 04
 
-- name:     Unsupervised Learning
-  days:
       - date:           Wed 10/02
-        topics:         Unsupervised Learning and Clustering
+        topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
 
       - date:           Mon 10/07
-        topics:         Dimensionality Reduction
+        topics:         Machine Learning Experiments and Packages
         assignments:
           - Quiz 05
           - Homework 05
 
-- name:     Using Machine Learning
-  days:
       - date:           Wed 10/09
-        topics:         Evaluation and Validation of ML Systems
+        topics:         Classification Problems
 
+- name:     Unsupervised Learning
+  days:
       - date:           Mon 10/14
-        topics:         Evaluation and Validation of ML Systems
+        topics:         Unsupervised Learning and Clustering
 
-- name:     Midterm 01
   days:
       - date:           Wed 10/16
-        topics:         ''
-        items:
-          - name:       Exam 01
+        topics:         Dimensionality Reduction
 
 - name:     'Fall Break'
 
-- name:     'Unit 03: Deep Learning'
-
-- name:     Introduction to Deep Learning
+- name:     Using Machine Learning
   days:
       - date:           Mon 10/28
-        topics:         Introduction to Deep Learning and Function Approximation
+        topics:         Evaluation and Validation of ML Systems
         assignments:
           - Homework 06
 
       - date:           Wed 10/30
-        topics:         Mathematics for Deep Learning and Perceptrons
+        topics:         Evaluation and Validation of ML Systems
         assignments:
           - Quiz 06
 
+- name:     Midterm 02
+  days:
       - date:           Mon 11/04
-        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
+        topics:         
         assignments:
           - Quiz 07
           - Homework 07
+        items:
+          - name:       Exam 02
+
+- name:     'Unit 03: Deep Learning'
 
 - name:     Implementation of Deep Learning
   days:
       - date:           Wed 11/06
-        topics:         Training Networks and Formally Introducing Pytorch
+        topics:         Introduction to Deep Learning and Function Approximation
 
       - date:           Mon 11/11
-        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
+        topics:         Mathematics for Deep Learning and Perceptrons
         assignments:
           - Quiz 08
           - Homework 08
 
       - date:           Wed 11/13
-        topics:         Transformers
+        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
 
-- name:     Midterm 02
-  days:
       - date:           Mon 11/18
-        topics:         ''
+        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
         items:
           - name:       Exam 02
+
+      - date:           Wed 11/20
+        topics:         Transformers
+
+- name:     Midterm 03
+  days:
+      - date:           Mon 11/25
+        topics:         ''
+        assignments:
+          - Quiz 09
+          - Homework 09
+        items:
+          - name:       Exam 03
 
 - name:     'Unit 04: Applications and Other Things'
 
 - name:     Computer Vision
   days:
-      - date:           Wed 11/20
+      - date:           Mon 12/02
         topics:         Computer Vision
-
-      - date:           Mon 11/25
-        topics:         Generative Computer Vision
-        assignments:
-          - Quiz 09
-          - Homework 09
 
 - name:     Series and Sequences
   days:
-      - date:           Mon 12/02
+      - date:           Wed 12/04
         topics:         Series Forecasting, LSTMs, and Markovs
 
 - name:     Natural Language Processing (NLP)
   days:
-      - date:           Wed 12/04
-        topics:         Classical Natural Language Processing
-
       - date:           Mon 12/09
         topics:         Modern Natural Language Processing
         assignments:
