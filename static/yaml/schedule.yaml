@@ -43,6 +43,7 @@
           - Homework 03
 
 - name:     Exam 01
+  days:
       - date:           Wed 09/25
         topics:         ''
         items:
