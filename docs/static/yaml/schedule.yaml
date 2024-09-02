@@ -55,9 +55,6 @@
   days:
       - date:           Mon 09/30
         topics:         Linear Algebra Review and Introduction to Machine Learning
-        assignments:
-          - Quiz 04
-          - Homework 04
 
       - date:           Wed 10/02
         topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
@@ -65,8 +62,8 @@
       - date:           Mon 10/07
         topics:         Machine Learning Experiments and Packages
         assignments:
-          - Quiz 05
-          - Homework 05
+          - Quiz 04
+          - Homework 04
 
       - date:           Wed 10/09
         topics:         Classification Problems
@@ -75,6 +72,9 @@
   days:
       - date:           Mon 10/14
         topics:         Unsupervised Learning and Clustering
+        assignments:
+          - Quiz 05
+          - Homework 05
 
       - date:           Wed 10/16
         topics:         Dimensionality Reduction
@@ -96,7 +96,7 @@
 - name:     Midterm 02
   days:
       - date:           Mon 11/04
-        topics:         
+        topics:         ''
         assignments:
           - Quiz 07
           - Homework 07
