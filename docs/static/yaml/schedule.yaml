@@ -97,9 +97,6 @@
   days:
       - date:           Mon 11/04
         topics:         ''
-        assignments:
-          - Quiz 07
-          - Homework 07
         items:
           - name:       Exam 02
 
@@ -113,16 +110,17 @@
       - date:           Mon 11/11
         topics:         Mathematics for Deep Learning and Perceptrons
         assignments:
-          - Quiz 08
-          - Homework 08
+          - Quiz 07
+          - Homework 07
 
       - date:           Wed 11/13
         topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
 
       - date:           Mon 11/18
         topics:         Backpropogation, Optimization Techniques, and Gradient Descent
-        items:
-          - name:       Exam 02
+        assignments:
+          - Quiz 08
+          - Homework 08
 
       - date:           Wed 11/20
         topics:         Transformers
