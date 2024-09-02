@@ -129,9 +129,6 @@
   days:
       - date:           Mon 11/25
         topics:         ''
-        assignments:
-          - Quiz 09
-          - Homework 09
         items:
           - name:       Exam 03
 
@@ -141,6 +138,9 @@
   days:
       - date:           Mon 12/02
         topics:         Computer Vision
+        assignments:
+          - Quiz 09
+          - Homework 09
 
 - name:     Series and Sequences
   days:
