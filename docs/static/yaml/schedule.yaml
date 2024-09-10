@@ -29,6 +29,9 @@
         assignments:
           - Quiz 01
           - Homework 01
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1Y7e_r619tvdiYyqc2zfs4aozUoNOyoHO/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Wed 09/11
         topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
