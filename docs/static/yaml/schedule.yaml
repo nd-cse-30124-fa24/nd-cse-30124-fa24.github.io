@@ -35,6 +35,9 @@
 
       - date:           Wed 09/11
         topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Mon 09/16
         topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
