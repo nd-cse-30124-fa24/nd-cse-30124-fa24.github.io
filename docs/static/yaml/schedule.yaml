@@ -40,13 +40,13 @@
             link:       https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Mon 09/16
-        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
+        topics:         Bayesian Statistics and Bayesian Networks
         assignments:
           - Quiz 02
           - Homework 02
 
       - date:           Wed 09/18
-        topics:         Bayesian Statistics and Bayesian Networks
+        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
 
       - date:           Mon 09/23
         topics:         Decisions and Perceptrons
