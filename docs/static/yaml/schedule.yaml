@@ -44,6 +44,8 @@
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/14hMVPCV0SAOln9C2919FLY_L69LaqeRp?usp=sharing
         assignments:
           - Quiz 02
           - Homework 02
