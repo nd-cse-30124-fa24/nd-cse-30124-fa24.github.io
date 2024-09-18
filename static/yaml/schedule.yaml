@@ -51,7 +51,10 @@
           - Homework 02
 
       - date:           Wed 09/18
-        topics:         Fuzzy Logic, Probability, and Monte Carlo Methods
+        topics:         Review
+        items:
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1DjFXTEuUV8Y1f3-gCgRvlmAlTxmzZFkf?usp=sharing
 
       - date:           Mon 09/23
         topics:         Decisions and Perceptrons
