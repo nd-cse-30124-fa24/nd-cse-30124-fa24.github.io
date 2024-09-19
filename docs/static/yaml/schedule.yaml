@@ -55,6 +55,8 @@
         items:
           - name:       Notebook
             link:       https://colab.research.google.com/drive/1DjFXTEuUV8Y1f3-gCgRvlmAlTxmzZFkf?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=af7d70b7-452c-4eb5-a0ea-b1ef01599512
 
       - date:           Mon 09/23
         topics:         Decisions and Perceptrons
