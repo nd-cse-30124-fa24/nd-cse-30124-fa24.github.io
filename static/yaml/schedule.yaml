@@ -40,7 +40,7 @@
             link:       https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Mon 09/16
-        topics:         Bayesian Statistics and Bayesian Networks
+        topics:         Bayesian Statistics and Naive Bayes
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
@@ -59,10 +59,17 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=af7d70b7-452c-4eb5-a0ea-b1ef01599512
 
       - date:           Mon 09/23
-        topics:         Decisions and Perceptrons
+        topics:         Perceptrons
         assignments:
           - Quiz 03
           - Homework 03
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/19gxtaMIzxr0YHx94XZowW8HWESrlclmQ/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1j0MaFm1QBY8_l6Z8Fv_iCZMW2aC-CHKx?usp=sharing
+          - name:       Panopto
+            link:       
 
 - name:     Exam 01
   days:
