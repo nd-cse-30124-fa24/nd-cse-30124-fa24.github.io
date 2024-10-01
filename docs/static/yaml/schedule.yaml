@@ -84,6 +84,9 @@
   days:
       - date:           Mon 09/30
         topics:         Linear Algebra Review and Introduction to Machine Learning
+        items:
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
 
       - date:           Wed 10/02
         topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
