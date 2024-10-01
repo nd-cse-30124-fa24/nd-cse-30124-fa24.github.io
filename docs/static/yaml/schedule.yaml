@@ -142,22 +142,22 @@
         topics:         Introduction to Deep Learning and Function Approximation
 
       - date:           Mon 11/11
-        topics:         Mathematics for Deep Learning and Perceptrons
+        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
         assignments:
           - Quiz 07
           - Homework 07
 
       - date:           Wed 11/13
-        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
+        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
 
       - date:           Mon 11/18
-        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
+        topics:         Transformers
         assignments:
           - Quiz 08
           - Homework 08
 
       - date:           Wed 11/20
-        topics:         Transformers
+        topics:         Review
 
 - name:     Midterm 03
   days:
