@@ -89,27 +89,29 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
 
       - date:           Wed 10/02
-        topics:         Linear Regressions, Machine Learning Experiments, and Machine Learning Packages
+        topics:         Linear Regressions, Machine Learning Experiments and Packages
 
       - date:           Mon 10/07
-        topics:         Machine Learning Experiments and Packages
+        topics:         Classification Problems, Machine Learning Experiments and Packages
         assignments:
           - Quiz 04
           - Homework 04
 
-      - date:           Wed 10/09
-        topics:         Classification Problems
-
 - name:     Unsupervised Learning
   days:
-      - date:           Mon 10/14
+      - date:           Wed 10/09
         topics:         Unsupervised Learning and Clustering
+
+      - date:           Mon 10/14
+        topics:         Dimensionality Reduction
         assignments:
           - Quiz 05
           - Homework 05
 
+- name:     Using Machine Learning
+  days:
       - date:           Wed 10/16
-        topics:         Dimensionality Reduction
+        topics:         Evaluation and Validation of ML Systems
 
 - name:     'Fall Break'
 
@@ -121,7 +123,7 @@
           - Homework 06
 
       - date:           Wed 10/30
-        topics:         Evaluation and Validation of ML Systems
+        topics:         Review
         assignments:
           - Quiz 06
 
