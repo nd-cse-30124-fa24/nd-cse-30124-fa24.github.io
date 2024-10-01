@@ -85,6 +85,8 @@
       - date:           Mon 09/30
         topics:         Linear Algebra Review and Introduction to Machine Learning
         items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1hFxRLRT5YBsKCRRL9p3OoWcBLj6MMXbz/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
 
