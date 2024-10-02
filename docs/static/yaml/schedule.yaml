@@ -92,6 +92,11 @@
 
       - date:           Wed 10/02
         topics:         Linear Regressions, Machine Learning Experiments and Packages
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Panopto
+            link:       
 
       - date:           Mon 10/07
         topics:         Classification Problems, Machine Learning Experiments and Packages
