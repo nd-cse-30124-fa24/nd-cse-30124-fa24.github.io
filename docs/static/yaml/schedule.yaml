@@ -97,6 +97,8 @@
             link:       https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
           - name:       Panopto
             link:       
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1yDDX961aZ2jzZ5Dsfp-WpoEAJgsHb-Tg?usp=sharing
 
       - date:           Mon 10/07
         topics:         Classification Problems, Machine Learning Experiments and Packages
