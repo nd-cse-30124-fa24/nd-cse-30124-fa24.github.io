@@ -102,6 +102,13 @@
 
       - date:           Mon 10/07
         topics:         Classification Problems, Machine Learning Experiments and Packages
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/18p1yWNNJIDHOpEFqtbukmEa5-ll61tLE/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing
+          - name:       Panopto
+            link:       
         assignments:
           - Quiz 04
           - Homework 04
