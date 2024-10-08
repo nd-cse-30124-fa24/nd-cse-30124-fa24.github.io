@@ -106,9 +106,7 @@
           - name:       Slides
             link:       https://drive.google.com/file/d/1d2oaNzwoCInM3_Q7HYu52ZL-ufLzRAJc/view?usp=drive_link
           - name:       Notebook
-            link:       https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing
-          - name:       Panopto
-            link:       
+            link:       https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing  
         assignments:
           - Quiz 04
           - Homework 04
