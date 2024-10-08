@@ -1,3 +1,4 @@
 pages/*.html
 *.pyc
 *.swp
+*_solutions.ipynb
