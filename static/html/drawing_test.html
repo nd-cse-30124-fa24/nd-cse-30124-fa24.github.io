@@ -8,10 +8,7 @@
     <style>
         #drawingCanvas {
             border: 2px solid black;
-        }
-
-        #drawingCanvas2 {
-            border: 2px solid black;
+            touch-action: none; /* Prevent touch actions like scrolling */
         }
     </style>
 </head>
@@ -20,57 +17,23 @@
     <canvas id="drawingCanvas" width="800" height="400"></canvas>
 
     <script>
+        // Initialize the Fabric.js canvas
         const canvas = new fabric.Canvas('drawingCanvas', {
-            isDrawingMode: true
+            isDrawingMode: true // Enable drawing mode
         });
 
+        // Set brush color and width
         canvas.freeDrawingBrush.color = "black";
         canvas.freeDrawingBrush.width = 5;
 
-        // Enable drawing mode for both mouse and touch devices
+        // Disable touch actions (scrolling/panning) to allow drawing
+        canvas.upperCanvasEl.style.touchAction = "none";
+
+        // Optional: Log touch events to ensure they are being captured
         canvas.on('touch:gesture', function(e) {
+            console.log('Touch gesture detected');
             canvas.isDrawingMode = true;
         });
-    </script>
-
-    <h1>Draw with Apple Pencil</h1>
-    <canvas id="drawingCanvas2" width="800" height="400"></canvas>
-
-    <script>
-        const canvas = document.getElementById('drawingCanvas2');
-        const ctx = canvas.getContext('2d');
-
-        let drawing = false;
-
-        function startDrawing(event) {
-            drawing = true;
-            ctx.beginPath();
-            ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-        }
-
-        function draw(event) {
-            if (!drawing) return;
-            ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = 2;
-            ctx.stroke();
-        }
-
-        function stopDrawing() {
-            drawing = false;
-            ctx.closePath();
-        }
-
-        // Mouse events for desktop
-        canvas.addEventListener('mousedown', startDrawing);
-        canvas.addEventListener('mousemove', draw);
-        canvas.addEventListener('mouseup', stopDrawing);
-        canvas.addEventListener('mouseout', stopDrawing);
-
-        // Touch events for mobile and iPad (Apple Pencil)
-        canvas.addEventListener('touchstart', (e) => startDrawing(e.touches[0]));
-        canvas.addEventListener('touchmove', (e) => draw(e.touches[0]));
-        canvas.addEventListener('touchend', stopDrawing);
     </script>
 </body>
 </html>
