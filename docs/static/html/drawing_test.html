@@ -9,8 +9,8 @@
         color: #ccc;
       }
       canvas {
-        width: 300px;
-        height: 300px;
+        width: 300px; /* Display size */
+        height: 300px; /* Display size */
         border: 4px solid black;
         display: block;
         margin-bottom: 20px;
@@ -72,18 +72,18 @@
         penColors[canvasId] = color;
       }
   
-      // Function to get the correct mouse or touch position within the canvas
-      function getPos(canvas, event) {
+      // Function to get the correct mouse or touch position within the canvas, accounting for the resolution scale
+      function getPos(canvas, event, resolution) {
         const rect = canvas.getBoundingClientRect();
         if (event.touches) {
           return {
-            x: (event.touches[0].clientX - rect.left) * (canvas.width / rect.width),
-            y: (event.touches[0].clientY - rect.top) * (canvas.height / rect.height)
+            x: (event.touches[0].clientX - rect.left) * (canvas.width / rect.width) / resolution,
+            y: (event.touches[0].clientY - rect.top) * (canvas.height / rect.height) / resolution
           };
         } else {
           return {
-            x: (event.clientX - rect.left) * (canvas.width / rect.width),
-            y: (event.clientY - rect.top) * (canvas.height / rect.height)
+            x: (event.clientX - rect.left) * (canvas.width / rect.width) / resolution,
+            y: (event.clientY - rect.top) * (canvas.height / rect.height) / resolution
           };
         }
       }
@@ -92,11 +92,12 @@
       function setupCanvasForDrawing(canvas) {
         const ctx = canvas.getContext('2d');
   
-        // Set canvas resolution for smooth drawing
-        canvas.width = 900;  // Increase resolution for smoother lines
-        canvas.height = 900; // You can adjust these values
-        ctx.scale(3, 3); // Scale the drawing so it doesn't appear too large
-  
+        // Set canvas resolution for smooth drawing (increasing actual resolution)
+        const resolution = 2;  // Multiplier for high resolution canvas
+        canvas.width = 300 * resolution;
+        canvas.height = 300 * resolution;
+        ctx.scale(resolution, resolution); // Scale to match the higher resolution
+        
         // Smooth out line caps and joins
         ctx.lineCap = 'round';  // Make line ends round
         ctx.lineJoin = 'round'; // Make line joins round
@@ -106,7 +107,7 @@
         // Start drawing
         function startDrawing(e) {
           drawing = true;
-          const pos = getPos(canvas, e);
+          const pos = getPos(canvas, e, resolution);
           ctx.beginPath(); // Start a new path
           ctx.moveTo(pos.x, pos.y); // Move the pen to the starting point
         }
@@ -115,7 +116,7 @@
         function draw(e) {
           if (!drawing) return;
           e.preventDefault(); // Prevent scrolling on touch
-          const pos = getPos(canvas, e);
+          const pos = getPos(canvas, e, resolution);
           ctx.lineTo(pos.x, pos.y); // Draw a line to the current position
           ctx.strokeStyle = penColors[canvas.id]; // Set the stroke color based on the selected pen color
           ctx.lineWidth = 2; // Set the line width
