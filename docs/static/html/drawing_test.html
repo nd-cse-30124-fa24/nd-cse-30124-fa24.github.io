@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Pencil Drawing with Fabric.js</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script>
+    <style>
+        #drawingCanvas {
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Draw with Apple Pencil (Fabric.js)</h1>
@@ -18,7 +23,7 @@
         canvas.freeDrawingBrush.color = "black";
         canvas.freeDrawingBrush.width = 5;
 
-        // Make sure the drawing mode is enabled for touch events
+        // Enable drawing mode for both mouse and touch devices
         canvas.on('touch:gesture', function(e) {
             canvas.isDrawingMode = true;
         });
