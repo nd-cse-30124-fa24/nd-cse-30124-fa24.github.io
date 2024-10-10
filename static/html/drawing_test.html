@@ -17,23 +17,25 @@
     <canvas id="drawingCanvas" width="800" height="400"></canvas>
 
     <script>
-        // Initialize the Fabric.js canvas
+        // Create a new Fabric.js canvas instance
         const canvas = new fabric.Canvas('drawingCanvas', {
-            isDrawingMode: true // Enable drawing mode
+            isDrawingMode: true // Enable drawing mode by default
         });
 
-        // Set brush color and width
-        canvas.freeDrawingBrush.color = "black";
-        canvas.freeDrawingBrush.width = 5;
+        // Set up free drawing brush properties
+        canvas.freeDrawingBrush.color = 'black';
+        canvas.freeDrawingBrush.width = 5; // Set the width of the brush strokes
 
-        // Disable touch actions (scrolling/panning) to allow drawing
-        canvas.upperCanvasEl.style.touchAction = "none";
+        // Handle Apple Pencil and touch inputs
+        document.getElementById('drawingCanvas').style.touchAction = 'none'; // Disable touch scrolling
 
-        // Optional: Log touch events to ensure they are being captured
-        canvas.on('touch:gesture', function(e) {
-            console.log('Touch gesture detected');
-            canvas.isDrawingMode = true;
+        // iOS-Specific Event Handling for Pencil Input
+        canvas.on('path:created', function() {
+            console.log('A new path was created!');
         });
+
+        // Optional: Customize the canvas behavior (e.g., undo/redo, save image, etc.)
+        // You can extend this by adding more features like saving the drawing or changing brush properties
     </script>
 </body>
 </html>
