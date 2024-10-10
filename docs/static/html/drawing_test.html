@@ -27,6 +27,7 @@
       height: 100%;
       left: 0;
       top: 0;
+      border: 4px solid black;
     }
     #info {
       z-index: 1;
@@ -40,10 +41,7 @@
   <div id="force"></div>
   <div id="touches"></div>
   <canvas>Sorry, your browser is too old for this demo.</canvas>
-  <div id="info">
-    <a href="https://github.com/quietshu/apple-pencil-safari-api-test" target="_blank">GitHub</a>
-    <button onclick="undoDraw()">Undo</button>
-  </div>
+  <iframe src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1" width="100%" height="500px"></iframe>
   <script>
     const $force = document.querySelectorAll('#force')[0]
     const $touches = document.querySelectorAll('#touches')[0]
