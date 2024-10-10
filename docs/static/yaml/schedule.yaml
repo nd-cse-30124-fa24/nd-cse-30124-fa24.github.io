@@ -118,9 +118,11 @@
         topics:         Unsupervised Learning and Clustering
         items:
           - name:        Slides
-            link:        https://docs.google.com/presentation/d/1Oaaqkd0O4j-9Sh2g-8LJgKMv1_W29Kaz/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+            link:        https://drive.google.com/file/d/1XSWTSD8Vwv9Zjszctagr9a4SISvlqeld/view?usp=sharing
           - name:        Notebook
             link:        https://colab.research.google.com/drive/1iDuhlezSbOxsTECyuLfXzaaKw0PsBFEs?usp=sharing
+          - name:        Panopto
+            link:        https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cdf1728e-5667-4ea6-9a55-b204015a3dc2
 
       - date:           Mon 10/14
         topics:         Dimensionality Reduction
