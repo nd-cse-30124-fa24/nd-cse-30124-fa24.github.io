@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Touch API Test</title>
+    <title>Touch and Mouse Drawing</title>
     <style>
       h1 {
         margin-top: 0;
@@ -37,47 +37,62 @@
     <iframe src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"></iframe>
   
     <script>
-      // Function to get the correct mouse position within the canvas
-      function getMousePos(canvas, event) {
+      // Function to get the correct mouse or touch position within the canvas
+      function getPos(canvas, event) {
         const rect = canvas.getBoundingClientRect();
-        return {
-          x: (event.clientX - rect.left) * (canvas.width / rect.width),
-          y: (event.clientY - rect.top) * (canvas.height / rect.height)
-        };
+        if (event.touches) {
+          return {
+            x: (event.touches[0].clientX - rect.left) * (canvas.width / rect.width),
+            y: (event.touches[0].clientY - rect.top) * (canvas.height / rect.height)
+          };
+        } else {
+          return {
+            x: (event.clientX - rect.left) * (canvas.width / rect.width),
+            y: (event.clientY - rect.top) * (canvas.height / rect.height)
+          };
+        }
       }
   
-      // Freehand drawing implementation
+      // Freehand drawing implementation for both mouse and touch
       function setupCanvasForDrawing(canvas) {
         const ctx = canvas.getContext('2d');
         let drawing = false;
   
-        // Mouse down event to start drawing
-        canvas.addEventListener('mousedown', function(e) {
+        // Start drawing
+        function startDrawing(e) {
           drawing = true;
-          const pos = getMousePos(canvas, e);
+          const pos = getPos(canvas, e);
           ctx.beginPath(); // Start a new path
           ctx.moveTo(pos.x, pos.y); // Move the pen to the starting point
-        });
+        }
   
-        // Mouse move event to draw when the mouse is pressed down
-        canvas.addEventListener('mousemove', function(e) {
+        // Drawing function (mousemove or touchmove)
+        function draw(e) {
           if (!drawing) return;
-          const pos = getMousePos(canvas, e);
-          ctx.lineTo(pos.x, pos.y); // Draw a line to the current mouse position
+          e.preventDefault(); // Prevent scrolling on touch
+          const pos = getPos(canvas, e);
+          ctx.lineTo(pos.x, pos.y); // Draw a line to the current position
           ctx.strokeStyle = 'red'; // Set the stroke color
           ctx.lineWidth = 2; // Set the line width
           ctx.stroke(); // Apply the stroke
-        });
+        }
   
-        // Mouse up event to stop drawing
-        canvas.addEventListener('mouseup', function() {
+        // Stop drawing
+        function stopDrawing() {
           drawing = false;
-        });
+        }
   
-        // Mouse out event to stop drawing if the mouse leaves the canvas
-        canvas.addEventListener('mouseout', function() {
-          drawing = false;
-        });
+        // Mouse events
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+  
+        // Touch events
+        canvas.addEventListener('touchstart', startDrawing);
+        canvas.addEventListener('touchmove', draw);
+        canvas.addEventListener('touchend', stopDrawing);
+        canvas.addEventListener('touchcancel', stopDrawing);
       }
   
       // Initialize both canvases for freehand drawing
