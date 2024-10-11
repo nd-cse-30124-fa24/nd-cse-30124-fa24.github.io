@@ -228,8 +228,8 @@
                 // Redraw the previous content
                 ctx.drawImage(tempCanvas, 0, 0);
 
-                // Restore the scroll position
-                container.scrollTop = scrollPosition;
+                // Restore the scroll position and scroll down a bit
+                container.scrollTop = scrollPosition + 10;
 
                 // Update overlay position
                 overlay.style.top = `${newHeight - bufferZone}px`;
@@ -252,18 +252,28 @@
             const img = new Image();
             img.src = canvas.style.backgroundImage.slice(5, -2); // Extract URL from style
             img.onload = () => {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                canvas.style.height = `${img.height}px`; // Set CSS height to match
+                const originalWidth = img.width;
+                const originalHeight = img.height;
+
+                // Increase the resolution
+                const resolutionMultiplier = 1000; // Increase resolution by a factor of 3
+                canvas.width = originalWidth * resolutionMultiplier;
+                canvas.height = originalHeight * resolutionMultiplier;
+                canvas.style.width = `${originalWidth}px`; // Display size
+                canvas.style.height = `${originalHeight}px`; // Display size
+
+                // Scale the context
+                ctx.scale(resolutionMultiplier, resolutionMultiplier);
 
                 // Set initial overlay position
                 const overlay = document.getElementById(`overlay${canvas.id.charAt(canvas.id.length - 1)}`);
-                overlay.style.top = `${canvas.height - 50}px`; // Position at bottom
+                overlay.style.top = `${originalHeight - 50}px`; // Position at bottom
             };
 
             // Smooth out line caps and joins
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
+            ctx.lineWidth = 0.5; // Decrease line width for finer lines
 
             let drawing = false;
 
@@ -282,11 +292,16 @@
                 const pos = getPos(canvas, e);
                 ctx.lineTo(pos.x, pos.y); // Draw a line to the current position
                 ctx.strokeStyle = penColor; // Use global pen color
-                ctx.lineWidth = 2;
                 ctx.stroke();
 
                 // Check if drawing near bottom, and extend canvas if necessary
                 extendCanvas(canvas, ctx, pos.y);
+
+                // Auto-scroll if near the bottom of the visible area
+                const container = canvas.parentElement;
+                if (pos.y > container.scrollTop + container.clientHeight - 100) {
+                    container.scrollTop += 10;
+                }
             }
 
             // Stop drawing
