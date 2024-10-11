@@ -1,149 +1,242 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Touch and Mouse Drawing with Color Selection</title>
     <style>
-      h1 {
-        margin-top: 0;
-        color: #ccc;
-      }
-      canvas {
-        width: 300px; /* Display size */
-        height: 300px; /* Display size */
-        border: 4px solid black;
-        display: block;
-        margin-bottom: 20px;
-        background-size: cover;
-        background-position: center;
-      }
-      #canvas1 {
-        background-image: url('../img/Lecture_10_Unsupervised_Learning_Clustering_1.png'); /* Updated path */
-      }
-      #canvas2 {
-        background-image: url('../img/Lecture_10_Unsupervised_Learning_Clustering_2.png'); /* Updated path */
-      }
-      iframe {
-        display: block;
-        margin-top: 20px;
-        width: 100%;
-        height: 500px;
-      }
-      .color-buttons {
-        margin-bottom: 20px;
-      }
-      .color-buttons button {
-        padding: 10px;
-        font-size: 16px;
-        margin-right: 10px;
-      }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #ccc;
+            text-align: center;
+        }
+
+        #canvas1 {
+            background-image: url('../img/Lecture_10_Unsupervised_Learning_Clustering_1.png');
+            /* Updated path */
+        }
+
+        #canvas2 {
+            background-image: url('../img/Lecture_10_Unsupervised_Learning_Clustering_2.png');
+            /* Updated path */
+        }
+
+        .slideshow-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100vw;
+            /* Make it take full viewport width */
+            height: 100vh;
+            /* Make it take most of the viewport height */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+            display: none;
+            /* Hide slides by default */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            /* Ensure the slide takes up full height */
+        }
+
+        .slide.active {
+            display: flex;
+            /* Show only active slide */
+        }
+
+        canvas {
+            width: 80%;
+            /* Increase display size */
+            height: 90%;
+            /* Increase display size */
+            border: 4px solid black;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        iframe {
+            width: 80vw;
+            height: 80vh;
+            border: none;
+        }
+
+        .color-buttons button {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        /* Previous and Next buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Demo of Apple Pencil / 3D touch API with Color Selection</h1>
-  
-    <canvas id="canvas1"></canvas>
-    <div class="color-buttons">
-      <button onclick="setPenColor('canvas1', 'red')">Red</button>
-      <button onclick="setPenColor('canvas1', 'blue')">Blue</button>
-      <button onclick="setPenColor('canvas1', 'green')">Green</button>
-      <button onclick="setPenColor('canvas1', 'black')">Black</button>
+</head>
+
+<body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- First slide -->
+        <div class="slide active" id="slide1">
+            <canvas id="canvas1"></canvas>
+            <div class="color-buttons">
+                <button onclick="setPenColor('canvas1', 'red')">Red</button>
+                <button onclick="setPenColor('canvas1', 'blue')">Blue</button>
+                <button onclick="setPenColor('canvas1', 'green')">Green</button>
+                <button onclick="setPenColor('canvas1', 'black')">Black</button>
+            </div>
+        </div>
+
+        <!-- Second slide -->
+        <div class="slide" id="slide2">
+            <canvas id="canvas2"></canvas>
+            <div class="color-buttons">
+                <button onclick="setPenColor('canvas2', 'red')">Red</button>
+                <button onclick="setPenColor('canvas2', 'blue')">Blue</button>
+                <button onclick="setPenColor('canvas2', 'green')">Green</button>
+                <button onclick="setPenColor('canvas2', 'black')">Black</button>
+            </div>
+        </div>
+
+        <!-- Third slide (iFrame REPL) -->
+        <div class="slide" id="slide3">
+            <iframe src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"></iframe>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="changeSlide(-1)">❮ Previous</button>
+        <button class="next" onclick="changeSlide(1)">Next ❯</button>
     </div>
-  
-    <canvas id="canvas2"></canvas>
-    <div class="color-buttons">
-      <button onclick="setPenColor('canvas2', 'red')">Red</button>
-      <button onclick="setPenColor('canvas2', 'blue')">Blue</button>
-      <button onclick="setPenColor('canvas2', 'green')">Green</button>
-      <button onclick="setPenColor('canvas2', 'black')">Black</button>
-    </div>
-  
-    <iframe src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"></iframe>
-  
+
     <script>
-      // Initialize pen color for each canvas
-      let penColors = {
-        'canvas1': 'red',
-        'canvas2': 'red'
-      };
-  
-      // Function to set the pen color for a specific canvas
-      function setPenColor(canvasId, color) {
-        penColors[canvasId] = color;
-      }
-  
-      // Function to get the correct mouse or touch position within the canvas, accounting for the resolution scale
-      function getPos(canvas, event, resolution) {
-        const rect = canvas.getBoundingClientRect();
-        if (event.touches) {
-          return {
-            x: (event.touches[0].clientX - rect.left) * (canvas.width / rect.width) / resolution,
-            y: (event.touches[0].clientY - rect.top) * (canvas.height / rect.height) / resolution
-          };
-        } else {
-          return {
-            x: (event.clientX - rect.left) * (canvas.width / rect.width) / resolution,
-            y: (event.clientY - rect.top) * (canvas.height / rect.height) / resolution
-          };
+        // Initialize pen color for each canvas
+        let penColors = {
+            'canvas1': 'blue',
+            'canvas2': 'blue'
+        };
+
+        // Function to set the pen color for a specific canvas
+        function setPenColor(canvasId, color) {
+            penColors[canvasId] = color;
         }
-      }
-  
-      // Freehand drawing implementation for both mouse and touch
-      function setupCanvasForDrawing(canvas) {
-        const ctx = canvas.getContext('2d');
-  
-        // Set canvas resolution for smooth drawing (increasing actual resolution)
-        const resolution = 2;  // Multiplier for high resolution canvas
-        canvas.width = 300 * resolution;
-        canvas.height = 300 * resolution;
-        ctx.scale(resolution, resolution); // Scale to match the higher resolution
-        
-        // Smooth out line caps and joins
-        ctx.lineCap = 'round';  // Make line ends round
-        ctx.lineJoin = 'round'; // Make line joins round
-  
-        let drawing = false;
-  
-        // Start drawing
-        function startDrawing(e) {
-          drawing = true;
-          const pos = getPos(canvas, e, resolution);
-          ctx.beginPath(); // Start a new path
-          ctx.moveTo(pos.x, pos.y); // Move the pen to the starting point
+
+        // Function to get the correct mouse or touch position within the canvas, accounting for the resolution scale
+        function getPos(canvas, event, resolution) {
+            const rect = canvas.getBoundingClientRect();
+            if (event.touches) {
+                return {
+                    x: (event.touches[0].clientX - rect.left) * (canvas.width / rect.width) / resolution,
+                    y: (event.touches[0].clientY - rect.top) * (canvas.height / rect.height) / resolution
+                };
+            } else {
+                return {
+                    x: (event.clientX - rect.left) * (canvas.width / rect.width) / resolution,
+                    y: (event.clientY - rect.top) * (canvas.height / rect.height) / resolution
+                };
+            }
         }
-  
-        // Drawing function (mousemove or touchmove)
-        function draw(e) {
-          if (!drawing) return;
-          e.preventDefault(); // Prevent scrolling on touch
-          const pos = getPos(canvas, e, resolution);
-          ctx.lineTo(pos.x, pos.y); // Draw a line to the current position
-          ctx.strokeStyle = penColors[canvas.id]; // Set the stroke color based on the selected pen color
-          ctx.lineWidth = 2; // Set the line width
-          ctx.stroke(); // Apply the stroke
+
+        // Freehand drawing implementation for both mouse and touch
+        function setupCanvasForDrawing(canvas) {
+            const ctx = canvas.getContext('2d');
+
+            // Set canvas resolution for smooth drawing (increasing actual resolution)
+            const resolution = 2;  // Multiplier for high resolution canvas
+            canvas.width = 400 * resolution;
+            canvas.height = 400 * resolution;
+            ctx.scale(resolution, resolution); // Scale to match the higher resolution
+
+            // Smooth out line caps and joins
+            ctx.lineCap = 'round';  // Make line ends round
+            ctx.lineJoin = 'round'; // Make line joins round
+
+            let drawing = false;
+
+            // Start drawing
+            function startDrawing(e) {
+                drawing = true;
+                const pos = getPos(canvas, e, resolution);
+                ctx.beginPath(); // Start a new path
+                ctx.moveTo(pos.x, pos.y); // Move the pen to the starting point
+            }
+
+            // Drawing function (mousemove or touchmove)
+            function draw(e) {
+                if (!drawing) return;
+                e.preventDefault(); // Prevent scrolling on touch
+                const pos = getPos(canvas, e, resolution);
+                ctx.lineTo(pos.x, pos.y); // Draw a line to the current position
+                ctx.strokeStyle = penColors[canvas.id]; // Set the stroke color based on the selected pen color
+                ctx.lineWidth = 2; // Set the line width
+                ctx.stroke(); // Apply the stroke
+            }
+
+            // Stop drawing
+            function stopDrawing() {
+                drawing = false;
+            }
+
+            // Mouse events
+            canvas.addEventListener('mousedown', startDrawing);
+            canvas.addEventListener('mousemove', draw);
+            canvas.addEventListener('mouseup', stopDrawing);
+            canvas.addEventListener('mouseout', stopDrawing);
+
+            // Touch events
+            canvas.addEventListener('touchstart', startDrawing);
+            canvas.addEventListener('touchmove', draw);
+            canvas.addEventListener('touchend', stopDrawing);
+            canvas.addEventListener('touchcancel', stopDrawing);
         }
-  
-        // Stop drawing
-        function stopDrawing() {
-          drawing = false;
+
+        // Initialize both canvases for freehand drawing
+        setupCanvasForDrawing(document.getElementById('canvas1'));
+        setupCanvasForDrawing(document.getElementById('canvas2'));
+
+        // Slideshow functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
         }
-  
-        // Mouse events
-        canvas.addEventListener('mousedown', startDrawing);
-        canvas.addEventListener('mousemove', draw);
-        canvas.addEventListener('mouseup', stopDrawing);
-        canvas.addEventListener('mouseout', stopDrawing);
-  
-        // Touch events
-        canvas.addEventListener('touchstart', startDrawing);
-        canvas.addEventListener('touchmove', draw);
-        canvas.addEventListener('touchend', stopDrawing);
-        canvas.addEventListener('touchcancel', stopDrawing);
-      }
-  
-      // Initialize both canvases for freehand drawing
-      setupCanvasForDrawing(document.getElementById('canvas1'));
-      setupCanvasForDrawing(document.getElementById('canvas2'));
     </script>
-  </body>
+</body>
+
 </html>
