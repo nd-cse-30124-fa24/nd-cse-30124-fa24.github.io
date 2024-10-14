@@ -215,3 +215,10 @@
   days:
       - date:           Wed 12/11
         topics:         Agents and Reinforcement Learning
+
+- name:     Final
+  days:
+      - date:           Tue 12/17
+        topics:         8:00 AM - 11:00 AM
+        items:
+          - name:       Final Exam
