@@ -126,6 +126,13 @@
 
       - date:           Mon 10/14
         topics:         Dimensionality Reduction
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1bQf8Hxap7boT64y3ez2xqxxZOcO4ZX3L/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Notebook
+            link:       
+          - name:       Panopto
+            link:       
         assignments:
           - Quiz 05
           - Homework 05
