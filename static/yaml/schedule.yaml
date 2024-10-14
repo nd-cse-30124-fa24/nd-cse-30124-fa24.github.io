@@ -218,7 +218,7 @@
 
 - name:     Final
   days:
-      - date:           Tue 12/17
-        topics:         8:00 AM - 11:00 AM
+      - date:           Tue 12/17 \n 8:00 AM - 11:00 AM
+        topics:         
         items:
-          - name:       Final Exam
+          - name:       Exam, Final
