@@ -146,18 +146,17 @@
   days:
       - date:           Mon 10/28
         topics:         Machine Learning Practicum
-        assignments:
-          - Homework 06
 
       - date:           Wed 10/30
         topics:         Review
-        assignments:
-          - Quiz 06
 
 - name:     Midterm 02
   days:
       - date:           Mon 11/04
         topics:         ''
+        assignments:
+          - Homework 06
+          - Quiz 06
         items:
           - name:       Exam 02
 
