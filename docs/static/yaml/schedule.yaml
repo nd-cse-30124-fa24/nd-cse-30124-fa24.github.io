@@ -146,6 +146,13 @@
   days:
       - date:           Mon 10/28
         topics:         Machine Learning Practicum
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1qcndpOpiSJKS-Bp4pxvSJ7mGYhCAwe5W/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Panopto
+            link:       
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1xNUX-4MnKfV_NcG23zm5yChBxsn95cLA?usp=sharing
 
       - date:           Wed 10/30
         topics:         Review
