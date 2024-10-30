@@ -156,6 +156,9 @@
 
       - date:           Wed 10/30
         topics:         Review
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1z8lVUK7wsVgMSwxlHQ0gL94eLCICFK5q/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
 - name:     Midterm 02
   days:
