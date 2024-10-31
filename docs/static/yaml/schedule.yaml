@@ -3,7 +3,7 @@ class_days:
 - Wed
 schedule:
 - days:
-  - date: Wed 08/28
+  - date: Mon 01/13
     items:
     - link: https://docs.google.com/presentation/d/1JgEEvBj9gdo9-e4fNgqDf0LgyXXglzuR/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -13,12 +13,12 @@ schedule:
 - days:
   - assignments:
     - Homework 00
-    date: Mon 09/02
+    date: Wed 01/15
     items:
     - link: https://docs.google.com/presentation/d/1WNzaM-qazzR9GEC171lJw87qhUaJXsv-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
     topics: Agents and A*
-  - date: Wed 09/04
+  - date: Mon 01/20
     items:
     - link: https://docs.google.com/presentation/d/1r_Om-RWFSosiYqnf7AN9dybTx9uS7dE9/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -26,14 +26,14 @@ schedule:
   - assignments:
     - Quiz 01
     - Homework 01
-    date: Mon 09/09
+    date: Wed 01/22
     items:
     - link: https://docs.google.com/presentation/d/1Y7e_r619tvdiYyqc2zfs4aozUoNOyoHO/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
     - link: static/solutions/quiz01_solutions.pdf
       name: Quiz 01 Solutions
     topics: Constraint Satisfaction
-  - date: Wed 09/11
+  - date: Mon 01/27
     items:
     - link: https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -41,7 +41,7 @@ schedule:
   - assignments:
     - Quiz 02
     - Homework 02
-    date: Mon 09/16
+    date: Wed 01/29
     items:
     - link: https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -50,7 +50,7 @@ schedule:
     - link: static/solutions/quiz02_solutions.pdf
       name: Quiz 02 Solutions
     topics: Bayesian Statistics and Naive Bayes
-  - date: Wed 09/18
+  - date: Mon 02/03
     items:
     - link: https://colab.research.google.com/drive/1DjFXTEuUV8Y1f3-gCgRvlmAlTxmzZFkf?usp=sharing
       name: Notebook
@@ -60,7 +60,7 @@ schedule:
   - assignments:
     - Quiz 03
     - Homework 03
-    date: Mon 09/23
+    date: Wed 02/05
     items:
     - link: https://docs.google.com/presentation/d/19gxtaMIzxr0YHx94XZowW8HWESrlclmQ/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -73,7 +73,7 @@ schedule:
     topics: Perceptrons
   name: History of Artificial Intelligence
 - days:
-  - date: Wed 09/25
+  - date: Mon 02/10
     items:
     - link: static/solutions/exam01_solutions.pdf
       name: Exam 01
@@ -81,14 +81,14 @@ schedule:
   name: Exam 01
 - name: 'Unit 02: Machine Learning'
 - days:
-  - date: Mon 09/30
+  - date: Wed 02/12
     items:
     - link: https://docs.google.com/presentation/d/1hFxRLRT5YBsKCRRL9p3OoWcBLj6MMXbz/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
     - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
       name: Panopto
     topics: Linear Algebra Review and Introduction to Machine Learning
-  - date: Wed 10/02
+  - date: Mon 02/17
     items:
     - link: https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
       name: Slides
@@ -100,7 +100,7 @@ schedule:
   - assignments:
     - Quiz 04
     - Homework 04
-    date: Mon 10/07
+    date: Wed 02/19
     items:
     - link: https://drive.google.com/file/d/1d2oaNzwoCInM3_Q7HYu52ZL-ufLzRAJc/view?usp=drive_link
       name: Slides
@@ -111,7 +111,7 @@ schedule:
     topics: Support Vector Machines
   name: Supervised Learning
 - days:
-  - date: Wed 10/09
+  - date: Mon 02/24
     items:
     - link: https://drive.google.com/file/d/1XSWTSD8Vwv9Zjszctagr9a4SISvlqeld/view?usp=sharing
       name: Slides
@@ -123,7 +123,7 @@ schedule:
   - assignments:
     - Quiz 05
     - Homework 05
-    date: Mon 10/14
+    date: Wed 02/26
     items:
     - link: https://drive.google.com/file/d/1ON93kq0pGkSAtSwqOg0h8-aL1kPZuskZ/view?usp=sharing
       name: Slides
@@ -134,19 +134,19 @@ schedule:
     topics: Dimensionality Reduction
   name: Unsupervised Learning
 - days:
-  - date: Wed 10/16
+  - date: Mon 03/03
     topics: Cancelled - Evaluating Machine Learning Models
   name: Using Machine Learning
 - name: Fall Break
 - days:
-  - date: Mon 10/28
+  - date: Wed 03/05
     items:
     - link: https://drive.google.com/file/d/1NRo2lVdNqrfNZybS4Wos8cZikdlZP0LS/view?usp=sharing
       name: Slides
     - link: https://drive.google.com/file/d/1ZX_CHcD7BzoF-XrIPS3rBCMu94mmJPxq/view?usp=sharing
       name: Notebook
     topics: Machine Learning Practicum
-  - date: Wed 10/30
+  - date: Mon 03/10
     items:
     - link: https://drive.google.com/file/d/1h-tWbt92RWEy8aHkilHw1DMA1M6MRedo/view?usp=sharing
       name: Slides
@@ -158,7 +158,7 @@ schedule:
   - assignments:
     - Homework 06
     - Quiz 06
-    date: Mon 11/04
+    date: Wed 03/12
     items:
     - name: Exam 02
     - link: static/solutions/quiz06_solutions.pdf
@@ -167,25 +167,25 @@ schedule:
   name: Midterm 02
 - name: 'Unit 03: Deep Learning'
 - days:
-  - date: Wed 11/06
+  - date: Mon 03/17
     topics: Introduction to Deep Learning
   - assignments:
     - Quiz 07
     - Homework 07
-    date: Mon 11/11
+    date: Wed 03/19
     topics: Multi-layer Perceptron Networks and Feed-Forward Networks
-  - date: Wed 11/13
+  - date: Mon 03/24
     topics: Backpropogation, Optimization Techniques, and Gradient Descent
   - assignments:
     - Quiz 08
     - Homework 08
-    date: Mon 11/18
+    date: Wed 03/26
     topics: Transformers
-  - date: Wed 11/20
+  - date: Mon 03/31
     topics: Review
   name: Implementation of Deep Learning
 - days:
-  - date: Mon 11/25
+  - date: Wed 04/02
     items:
     - name: Exam 03
     topics: ''
@@ -195,26 +195,26 @@ schedule:
   - assignments:
     - Quiz 09
     - Homework 09
-    date: Mon 12/02
+    date: Mon 04/07
     topics: Computer Vision
   name: Computer Vision
 - days:
-  - date: Wed 12/04
+  - date: Wed 04/09
     topics: Series Forecasting, LSTMs, and Markovs
   name: Series and Sequences
 - days:
   - assignments:
     - Quiz 10
     - Homework 10
-    date: Mon 12/09
+    date: Mon 04/14
     topics: Modern Natural Language Processing
   name: Natural Language Processing (NLP)
 - days:
-  - date: Wed 12/11
+  - date: Wed 04/16
     topics: Agents and Reinforcement Learning
   name: Looking Foward
 - days:
-  - date: Tue 12/17
+  - date: Mon 04/21
     items:
     - name: Exam, Final
     topics: 8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
