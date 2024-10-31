@@ -226,7 +226,7 @@ body:       |
                       {% set assignment_id = ''.join(assignment.lower().split()) %}
                       {% if assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
-                        <a href="static/quiz_solutions/{{ assignment_id }}_solutions.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                        <a href="static/solutions/{{ assignment_id }}_solutions.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% else %}
                         {% set assignment_label = 'caution' %}
                         <a href="{{ assignment_id }}.html" class="label label-{{ assignment_label }}">{{ assignment }}</a>
