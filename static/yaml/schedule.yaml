@@ -2,6 +2,20 @@ semester_start: '2024-08-28'
 semester_end:   '2024-12-13'
 class_days:    ['Mon', 'Wed']
 
+holidays:
+  - name:     'Fall Break'
+    start:    '10-14'
+    length:   2
+  - name:     'Thanksgiving Break'
+    start:    '11-25'
+    length:   1
+  - name:     'Spring Break'
+    start:    '03-10'
+    length:   2
+  - name:     'Easter Break'
+    start:    '04-14'
+    length:   1
+
 schedule:
   - name:     Welcome
     days:
