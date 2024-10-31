@@ -44,10 +44,6 @@ def load_page_from_yaml(path):
     if 'prefix' not in data:
         data['prefix'] = ''
 
-    # Load the schedule data
-    if data['external']:
-        data['schedule'] = data['external'].get('schedule')
-
     return Page(**data)
 
 def render_page(page):
