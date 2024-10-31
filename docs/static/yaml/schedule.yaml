@@ -191,31 +191,33 @@ schedule:
     - name: Exam 03
     topics: ''
   name: Midterm 03
+- length: 1
+  name: Thanksgiving Break
 - name: 'Unit 04: Applications and Other Things'
 - days:
   - assignments:
     - Quiz 09
     - Homework 09
-    date: Wed 11/27
+    date: Mon 12/02
     topics: Computer Vision
   name: Computer Vision
 - days:
-  - date: Mon 12/02
+  - date: Wed 12/04
     topics: Series Forecasting, LSTMs, and Markovs
   name: Series and Sequences
 - days:
   - assignments:
     - Quiz 10
     - Homework 10
-    date: Wed 12/04
+    date: Mon 12/09
     topics: Modern Natural Language Processing
   name: Natural Language Processing (NLP)
 - days:
-  - date: Mon 12/09
+  - date: Wed 12/11
     topics: Agents and Reinforcement Learning
   name: Looking Foward
 - days:
-  - date: Wed 12/11
+  - date: Tue 12/17
     items:
     - name: Exam, Final
     topics: 8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
