@@ -1,6 +1,6 @@
-semester_start: 2024-08-28
-semester_end: 2024-12-13
-class_days: ['Mon', 'Wed']
+semester_start: '2024-08-28'
+semester_end:   '2024-12-13'
+class_days:    ['Mon', 'Wed']
 
 - name:     Welcome
   days:
