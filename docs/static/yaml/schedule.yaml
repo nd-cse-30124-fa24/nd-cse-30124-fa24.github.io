@@ -1,6 +1,19 @@
 class_days:
 - Mon
 - Wed
+holidays:
+- length: 2
+  name: Fall Break
+  start: 10-14
+- length: 1
+  name: Thanksgiving Break
+  start: 11-25
+- length: 2
+  name: Spring Break
+  start: 03-10
+- length: 1
+  name: Easter Break
+  start: 04-14
 schedule:
 - days:
   - date: Wed 08/28
@@ -137,8 +150,6 @@ schedule:
   - date: Wed 10/16
     topics: Cancelled - Evaluating Machine Learning Models
   name: Using Machine Learning
-- length: 2
-  name: Fall Break
 - days:
   - date: Mon 10/28
     items:
@@ -191,8 +202,6 @@ schedule:
     - name: Exam 03
     topics: ''
   name: Midterm 03
-- length: 1
-  name: Thanksgiving Break
 - name: 'Unit 04: Applications and Other Things'
 - days:
   - assignments:
