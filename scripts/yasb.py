@@ -46,11 +46,7 @@ def load_page_from_yaml(path):
 
     # Load the schedule data
     if data['external']:
-        schedule_path = data['external'].get('schedule' )
-        if schedule_path:
-            with open(schedule_path, 'r') as schedule_file:
-                schedule_data = yaml.safe_load(schedule_file)
-                data['schedule'] = schedule_data.get('schedule', [])
+        data['schedule'] = data['external'].get('schedule')
 
     return Page(**data)
 
