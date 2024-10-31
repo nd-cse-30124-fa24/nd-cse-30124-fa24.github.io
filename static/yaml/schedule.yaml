@@ -1,5 +1,5 @@
-semester_start: '2025-08-28'
-semester_end:   '2025-12-13'
+semester_start: '2024-08-28'
+semester_end:   '2024-12-13'
 class_days:    ['Mon', 'Wed']
 
 schedule:
@@ -156,6 +156,7 @@ schedule:
           topics:         Cancelled - Evaluating Machine Learning Models
 
   - name:     'Fall Break'
+    length:     2
 
   - name:     Using Machine Learning
     days:

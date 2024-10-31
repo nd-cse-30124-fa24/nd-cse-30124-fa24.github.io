@@ -99,11 +99,15 @@ def update_schedule_yaml(yaml_path):
 
     # Update the schedule with generated dates
     for theme in schedule_data['schedule']:
-        if isinstance(theme, dict) and 'days' in theme:
-            for day in theme['days']:
-                if date_index < len(generated_dates):
-                    day['date'] = generated_dates[date_index]
-                    date_index += 1
+        # Skip themes that are breaks
+        if 'days' not in theme:
+            date_index += theme.get(['length'], 0)
+            continue
+
+        for day in theme['days']:
+            if date_index < len(generated_dates):
+                day['date'] = generated_dates[date_index]
+                date_index += 1
 
     # Write the updated schedule back to the YAML file
     with open(yaml_path, 'w') as file:
