@@ -140,7 +140,7 @@ def update_schedule_yaml(yaml_path):
 
 def main():
     # Update the schedule.yaml with generated dates
-    update_schedule_yaml('static/yaml/schedule.yaml')
+    #update_schedule_yaml('static/yaml/schedule.yaml')
 
     for path in sys.argv[1:]:
         page = load_page_from_yaml(path)
