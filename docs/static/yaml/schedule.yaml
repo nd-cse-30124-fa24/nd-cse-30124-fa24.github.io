@@ -32,6 +32,8 @@
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1Y7e_r619tvdiYyqc2zfs4aozUoNOyoHO/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Quiz 01 Solutions
+            link:       static/solutions/quiz01_solutions.pdf
 
       - date:           Wed 09/11
         topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
@@ -46,6 +48,8 @@
             link:       https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
           - name:       Notebook
             link:       https://colab.research.google.com/drive/14hMVPCV0SAOln9C2919FLY_L69LaqeRp?usp=sharing
+          - name:       Quiz 02 Solutions
+            link:       static/solutions/quiz02_solutions.pdf
         assignments:
           - Quiz 02
           - Homework 02
@@ -70,6 +74,8 @@
             link:       https://colab.research.google.com/drive/1j0MaFm1QBY8_l6Z8Fv_iCZMW2aC-CHKx?usp=sharing
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c8f4183-689e-44f0-8d0a-b1f401553e7c
+          - name:       Quiz 03 Solutions
+            link:       static/solutions/quiz03_solutions.pdf
 
 - name:     Exam 01
   days:
@@ -92,7 +98,7 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
 
       - date:           Wed 10/02
-        topics:         Linear Regressions, Machine Learning Experiments and Packages
+        topics:         Linear Regressions
         items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
@@ -102,12 +108,14 @@
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da35a632-0b51-41a6-90a6-b1fd0156fba2
 
       - date:           Mon 10/07
-        topics:         Classification Problems, Machine Learning Experiments and Packages
+        topics:         Support Vector Machines
         items:
           - name:       Slides
             link:       https://drive.google.com/file/d/1d2oaNzwoCInM3_Q7HYu52ZL-ufLzRAJc/view?usp=drive_link
           - name:       Notebook
             link:       https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing  
+          - name:       Quiz 04 Solutions
+            link:       static/solutions/quiz04_solutions.pdf
         assignments:
           - Quiz 04
           - Homework 04
@@ -115,7 +123,7 @@
 - name:     Unsupervised Learning
   days:
       - date:           Wed 10/09
-        topics:         Unsupervised Learning and Clustering
+        topics:         Clustering
         items:
           - name:        Slides
             link:        https://drive.google.com/file/d/1XSWTSD8Vwv9Zjszctagr9a4SISvlqeld/view?usp=sharing
@@ -131,6 +139,8 @@
             link:       https://drive.google.com/file/d/1ON93kq0pGkSAtSwqOg0h8-aL1kPZuskZ/view?usp=sharing
           - name:       Panopto
             link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=39e62a47-61eb-4067-8128-b2090158787b 
+          - name:       Quiz 05 Solutions
+            link:       static/solutions/quiz05_solutions.pdf
         assignments:
           - Quiz 05
           - Homework 05
@@ -169,6 +179,8 @@
           - Quiz 06
         items:
           - name:       Exam 02
+          - name:       Quiz 06 Solutions
+            link:       static/solutions/quiz06_solutions.pdf            
 
 - name:     'Unit 03: Deep Learning'
 
