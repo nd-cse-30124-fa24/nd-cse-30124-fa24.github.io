@@ -207,12 +207,12 @@ body:       |
                       <i class="text-muted">Intro to AI</i>
                     {% end %}
                     {% for item in day.get('items', []) %}
-                    {% if item['name'].lower().startswith('exam') %}
+                    {% if 'solutions' in item['name'].lower() %}
+                      {% set item['label'] = 'success' %}
+                    {% elif item['name'].lower().startswith('exam') %}
                       {% set item['label'] = 'danger' %}
                     {% elif item['name'].lower().startswith('panopto') %}
                       {% set item['label'] = 'primary' %}
-                    {% elif item['name'].lower().contains('solutions') %}
-                      {% set item['label'] = 'success' %}
                     {% else %}
                       {% set item['label'] = 'default' %}
                     {% end %}
