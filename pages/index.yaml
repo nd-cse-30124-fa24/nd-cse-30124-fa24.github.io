@@ -1,5 +1,7 @@
 title:      Introduction to Artificial Intelligence
 icon:       fa-rocket
+semester_start: 2024-08-28
+semester_end:   2024-12-13
 navigation:
     - name: "Logistics"
       link: "#logistics"
@@ -565,4 +567,5 @@ body:       |
     One of the benefits of ML/AI being extremely popular is there are many online resources
     available for learning it. The best teachers of the topics release much of their material
     avaible for free online. If something in class seemed unclear, you're encouraged
-    to seek out an explanation that makes the most sense to you!
+    to seek out an explanation that makes the most sense to you! If you find one that you really
+    like, please share it with the rest of the class.

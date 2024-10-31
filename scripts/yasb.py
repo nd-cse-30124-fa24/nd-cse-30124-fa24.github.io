@@ -27,6 +27,8 @@ import markdown.extensions.codehilite
 import markdown.extensions.toc
 import yaml
 
+from datetime import datetime, timedelta
+
 # Page
 
 PageFields = 'title prefix icon navigation internal external body'.split()
@@ -64,9 +66,55 @@ def render_page(page):
     }
     print(template.generate(**settings).decode())
 
+# Function to generate class dates
+def generate_schedule(start_date, end_date, class_days):
+    start_date = datetime.strptime(start_date, '%Y-%m-%d')
+    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+    delta = timedelta(days=1)
+    current_date = start_date
+    schedule = []
+
+    day_map = {'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3, 'Fri': 4, 'Sat': 5, 'Sun': 6}
+    class_days_numbers = [day_map[day] for day in class_days]
+
+    while current_date <= end_date:
+        if current_date.weekday() in class_days_numbers:
+            schedule.append(current_date.strftime('%a %m/%d'))
+        current_date += delta
+
+    return schedule
+
+def update_schedule_yaml(yaml_path):
+    with open(yaml_path, 'r') as file:
+        schedule_data = yaml.safe_load(file)
+
+    # Access the start and end dates and class days from the YAML file
+    start_date = schedule_data['semester_start']
+    end_date = schedule_data['semester_end']
+    class_days = schedule_data['class_days']
+
+    # Generate the schedule
+    generated_dates = generate_schedule(start_date, end_date, class_days)
+    date_index = 0
+
+    # Update the schedule with generated dates
+    for theme in schedule_data:
+        if isinstance(theme, dict) and 'days' in theme:
+            for day in theme['days']:
+                if date_index < len(generated_dates):
+                    day['date'] = generated_dates[date_index]
+                    date_index += 1
+
+    # Write the updated schedule back to the YAML file
+    with open(yaml_path, 'w') as file:
+        yaml.dump(schedule_data, file)
+
 # Main Execution
 
 def main():
+    # Update the schedule.yaml with generated dates
+    update_schedule_yaml('static/yaml/schedule.yaml')
+
     for path in sys.argv[1:]:
         page = load_page_from_yaml(path)
         render_page(page)
