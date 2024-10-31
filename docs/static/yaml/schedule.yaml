@@ -1,250 +1,223 @@
-- name:     Welcome
-  days:
-      - date:           Wed 08/28
-        topics:         Syllabus, ML as Function Approximation
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1JgEEvBj9gdo9-e4fNgqDf0LgyXXglzuR/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-
-- name:     'Unit 01: History of Artificial Intelligence'
-
-- name:     History of Artificial Intelligence
-  days:
-      - date:           Mon 09/02
-        topics:         Agents and A*
-        assignments:
-          - Homework 00
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1WNzaM-qazzR9GEC171lJw87qhUaJXsv-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-
-      - date:           Wed 09/04 
-        topics:         Adversarial Search
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1r_Om-RWFSosiYqnf7AN9dybTx9uS7dE9/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-      
-      - date:           Mon 09/09
-        topics:         Constraint Satisfaction
-        assignments:
-          - Quiz 01
-          - Homework 01
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1Y7e_r619tvdiYyqc2zfs4aozUoNOyoHO/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Quiz 01 Solutions
-            link:       static/solutions/quiz01_solutions.pdf
-
-      - date:           Wed 09/11
-        topics:         Formal Logic, Symbolic Reasoning, and Knowledge Representation
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-
-      - date:           Mon 09/16
-        topics:         Bayesian Statistics and Naive Bayes
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Notebook
-            link:       https://colab.research.google.com/drive/14hMVPCV0SAOln9C2919FLY_L69LaqeRp?usp=sharing
-          - name:       Quiz 02 Solutions
-            link:       static/solutions/quiz02_solutions.pdf
-        assignments:
-          - Quiz 02
-          - Homework 02
-
-      - date:           Wed 09/18
-        topics:         Review
-        items:
-          - name:       Notebook
-            link:       https://colab.research.google.com/drive/1DjFXTEuUV8Y1f3-gCgRvlmAlTxmzZFkf?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=af7d70b7-452c-4eb5-a0ea-b1ef01599512
-
-      - date:           Mon 09/23
-        topics:         Perceptrons
-        assignments:
-          - Quiz 03
-          - Homework 03
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/19gxtaMIzxr0YHx94XZowW8HWESrlclmQ/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Notebook
-            link:       https://colab.research.google.com/drive/1j0MaFm1QBY8_l6Z8Fv_iCZMW2aC-CHKx?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c8f4183-689e-44f0-8d0a-b1f401553e7c
-          - name:       Quiz 03 Solutions
-            link:       static/solutions/quiz03_solutions.pdf
-
-- name:     Exam 01
-  days:
-      - date:           Wed 09/25
-        topics:         ''
-        items:
-          - name:       Exam 01
-            link:       static/solutions/exam01_solutions.pdf
-
-- name:     'Unit 02: Machine Learning'
-
-- name:     Supervised Learning
-  days:
-      - date:           Mon 09/30
-        topics:         Linear Algebra Review and Introduction to Machine Learning
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1hFxRLRT5YBsKCRRL9p3OoWcBLj6MMXbz/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
-
-      - date:           Wed 10/02
-        topics:         Linear Regressions
-        items:
-          - name:       Slides
-            link:       https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Notebook
-            link:       https://colab.research.google.com/drive/1yDDX961aZ2jzZ5Dsfp-WpoEAJgsHb-Tg?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da35a632-0b51-41a6-90a6-b1fd0156fba2
-
-      - date:           Mon 10/07
-        topics:         Support Vector Machines
-        items:
-          - name:       Slides
-            link:       https://drive.google.com/file/d/1d2oaNzwoCInM3_Q7HYu52ZL-ufLzRAJc/view?usp=drive_link
-          - name:       Notebook
-            link:       https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing  
-          - name:       Quiz 04 Solutions
-            link:       static/solutions/quiz04_solutions.pdf
-        assignments:
-          - Quiz 04
-          - Homework 04
-
-- name:     Unsupervised Learning
-  days:
-      - date:           Wed 10/09
-        topics:         Clustering
-        items:
-          - name:        Slides
-            link:        https://drive.google.com/file/d/1XSWTSD8Vwv9Zjszctagr9a4SISvlqeld/view?usp=sharing
-          - name:        Notebook
-            link:        https://colab.research.google.com/drive/1iDuhlezSbOxsTECyuLfXzaaKw0PsBFEs?usp=sharing
-          - name:        Panopto
-            link:        https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cdf1728e-5667-4ea6-9a55-b204015a3dc2
-
-      - date:           Mon 10/14
-        topics:         Dimensionality Reduction
-        items:
-          - name:       Slides
-            link:       https://drive.google.com/file/d/1ON93kq0pGkSAtSwqOg0h8-aL1kPZuskZ/view?usp=sharing
-          - name:       Panopto
-            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=39e62a47-61eb-4067-8128-b2090158787b 
-          - name:       Quiz 05 Solutions
-            link:       static/solutions/quiz05_solutions.pdf
-        assignments:
-          - Quiz 05
-          - Homework 05
-
-- name:     Using Machine Learning
-  days:
-      - date:           Wed 10/16
-        topics:         Cancelled - Evaluating Machine Learning Models
-
-- name:     'Fall Break'
-
-- name:     Using Machine Learning
-  days:
-      - date:           Mon 10/28
-        topics:         Machine Learning Practicum
-        items:
-          - name:       Slides
-            link:       https://drive.google.com/file/d/1NRo2lVdNqrfNZybS4Wos8cZikdlZP0LS/view?usp=sharing
-          - name:       Notebook
-            link:       https://drive.google.com/file/d/1ZX_CHcD7BzoF-XrIPS3rBCMu94mmJPxq/view?usp=sharing
-
-      - date:           Wed 10/30
-        topics:         Review
-        items:
-          - name:       Slides
-            link:       https://drive.google.com/file/d/1h-tWbt92RWEy8aHkilHw1DMA1M6MRedo/view?usp=sharing
-          - name:       Panopto
-            link: 
-
-- name:     Midterm 02
-  days:
-      - date:           Mon 11/04
-        topics:         ''
-        assignments:
-          - Homework 06
-          - Quiz 06
-        items:
-          - name:       Exam 02
-          - name:       Quiz 06 Solutions
-            link:       static/solutions/quiz06_solutions.pdf            
-
-- name:     'Unit 03: Deep Learning'
-
-- name:     Implementation of Deep Learning
-  days:
-      - date:           Wed 11/06
-        topics:         Introduction to Deep Learning
-
-      - date:           Mon 11/11
-        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
-        assignments:
-          - Quiz 07
-          - Homework 07
-
-      - date:           Wed 11/13
-        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
-
-      - date:           Mon 11/18
-        topics:         Transformers
-        assignments:
-          - Quiz 08
-          - Homework 08
-
-      - date:           Wed 11/20
-        topics:         Review
-
-- name:     Midterm 03
-  days:
-      - date:           Mon 11/25
-        topics:         ''
-        items:
-          - name:       Exam 03
-
-- name:     'Unit 04: Applications and Other Things'
-
-- name:     Computer Vision
-  days:
-      - date:           Mon 12/02
-        topics:         Computer Vision
-        assignments:
-          - Quiz 09
-          - Homework 09
-
-- name:     Series and Sequences
-  days:
-      - date:           Wed 12/04
-        topics:         Series Forecasting, LSTMs, and Markovs
-
-- name:     Natural Language Processing (NLP)
-  days:
-      - date:           Mon 12/09
-        topics:         Modern Natural Language Processing
-        assignments:
-          - Quiz 10
-          - Homework 10
-
-- name:     Looking Foward
-  days:
-      - date:           Wed 12/11
-        topics:         Agents and Reinforcement Learning
-
-- name:     Final
-  days:
-      - date:           Tue 12/17 
-        topics:         8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
-        items:
-          - name:       Exam, Final
+class_days:
+- Mon
+- Wed
+schedule:
+- days:
+  - date: Wed 08/28
+    items:
+    - link: https://docs.google.com/presentation/d/1JgEEvBj9gdo9-e4fNgqDf0LgyXXglzuR/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    topics: Syllabus, ML as Function Approximation
+  name: Welcome
+- name: 'Unit 01: History of Artificial Intelligence'
+- days:
+  - assignments:
+    - Homework 00
+    date: Mon 09/02
+    items:
+    - link: https://docs.google.com/presentation/d/1WNzaM-qazzR9GEC171lJw87qhUaJXsv-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    topics: Agents and A*
+  - date: Wed 09/04
+    items:
+    - link: https://docs.google.com/presentation/d/1r_Om-RWFSosiYqnf7AN9dybTx9uS7dE9/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    topics: Adversarial Search
+  - assignments:
+    - Quiz 01
+    - Homework 01
+    date: Mon 09/09
+    items:
+    - link: https://docs.google.com/presentation/d/1Y7e_r619tvdiYyqc2zfs4aozUoNOyoHO/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    - link: static/solutions/quiz01_solutions.pdf
+      name: Quiz 01 Solutions
+    topics: Constraint Satisfaction
+  - date: Wed 09/11
+    items:
+    - link: https://docs.google.com/presentation/d/1xkB-aw3K2D7dPOX7ALc1gX1uY1fwi_6_/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    topics: Formal Logic, Symbolic Reasoning, and Knowledge Representation
+  - assignments:
+    - Quiz 02
+    - Homework 02
+    date: Mon 09/16
+    items:
+    - link: https://docs.google.com/presentation/d/1PhCUExgcsqIrP1GdOZcsGu11ThncyuGm/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    - link: https://colab.research.google.com/drive/14hMVPCV0SAOln9C2919FLY_L69LaqeRp?usp=sharing
+      name: Notebook
+    - link: static/solutions/quiz02_solutions.pdf
+      name: Quiz 02 Solutions
+    topics: Bayesian Statistics and Naive Bayes
+  - date: Wed 09/18
+    items:
+    - link: https://colab.research.google.com/drive/1DjFXTEuUV8Y1f3-gCgRvlmAlTxmzZFkf?usp=sharing
+      name: Notebook
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=af7d70b7-452c-4eb5-a0ea-b1ef01599512
+      name: Panopto
+    topics: Review
+  - assignments:
+    - Quiz 03
+    - Homework 03
+    date: Mon 09/23
+    items:
+    - link: https://docs.google.com/presentation/d/19gxtaMIzxr0YHx94XZowW8HWESrlclmQ/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    - link: https://colab.research.google.com/drive/1j0MaFm1QBY8_l6Z8Fv_iCZMW2aC-CHKx?usp=sharing
+      name: Notebook
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c8f4183-689e-44f0-8d0a-b1f401553e7c
+      name: Panopto
+    - link: static/solutions/quiz03_solutions.pdf
+      name: Quiz 03 Solutions
+    topics: Perceptrons
+  name: History of Artificial Intelligence
+- days:
+  - date: Wed 09/25
+    items:
+    - link: static/solutions/exam01_solutions.pdf
+      name: Exam 01
+    topics: ''
+  name: Exam 01
+- name: 'Unit 02: Machine Learning'
+- days:
+  - date: Mon 09/30
+    items:
+    - link: https://docs.google.com/presentation/d/1hFxRLRT5YBsKCRRL9p3OoWcBLj6MMXbz/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=407862d1-3463-4035-9387-b1fb015e3749
+      name: Panopto
+    topics: Linear Algebra Review and Introduction to Machine Learning
+  - date: Wed 10/02
+    items:
+    - link: https://docs.google.com/presentation/d/1k4GaB_L0I7Exbuwld2lzVRFw1hvcUBB-/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+      name: Slides
+    - link: https://colab.research.google.com/drive/1yDDX961aZ2jzZ5Dsfp-WpoEAJgsHb-Tg?usp=sharing
+      name: Notebook
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da35a632-0b51-41a6-90a6-b1fd0156fba2
+      name: Panopto
+    topics: Linear Regressions
+  - assignments:
+    - Quiz 04
+    - Homework 04
+    date: Mon 10/07
+    items:
+    - link: https://drive.google.com/file/d/1d2oaNzwoCInM3_Q7HYu52ZL-ufLzRAJc/view?usp=drive_link
+      name: Slides
+    - link: https://colab.research.google.com/drive/1a5zQ7aXY_NGk8p7sHYLgMEzZ0SMOXkqN?usp=sharing
+      name: Notebook
+    - link: static/solutions/quiz04_solutions.pdf
+      name: Quiz 04 Solutions
+    topics: Support Vector Machines
+  name: Supervised Learning
+- days:
+  - date: Wed 10/09
+    items:
+    - link: https://drive.google.com/file/d/1XSWTSD8Vwv9Zjszctagr9a4SISvlqeld/view?usp=sharing
+      name: Slides
+    - link: https://colab.research.google.com/drive/1iDuhlezSbOxsTECyuLfXzaaKw0PsBFEs?usp=sharing
+      name: Notebook
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cdf1728e-5667-4ea6-9a55-b204015a3dc2
+      name: Panopto
+    topics: Clustering
+  - assignments:
+    - Quiz 05
+    - Homework 05
+    date: Mon 10/14
+    items:
+    - link: https://drive.google.com/file/d/1ON93kq0pGkSAtSwqOg0h8-aL1kPZuskZ/view?usp=sharing
+      name: Slides
+    - link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=39e62a47-61eb-4067-8128-b2090158787b
+      name: Panopto
+    - link: static/solutions/quiz05_solutions.pdf
+      name: Quiz 05 Solutions
+    topics: Dimensionality Reduction
+  name: Unsupervised Learning
+- days:
+  - date: Wed 10/16
+    topics: Cancelled - Evaluating Machine Learning Models
+  name: Using Machine Learning
+- name: Fall Break
+- days:
+  - date: Mon 10/28
+    items:
+    - link: https://drive.google.com/file/d/1NRo2lVdNqrfNZybS4Wos8cZikdlZP0LS/view?usp=sharing
+      name: Slides
+    - link: https://drive.google.com/file/d/1ZX_CHcD7BzoF-XrIPS3rBCMu94mmJPxq/view?usp=sharing
+      name: Notebook
+    topics: Machine Learning Practicum
+  - date: Wed 10/30
+    items:
+    - link: https://drive.google.com/file/d/1h-tWbt92RWEy8aHkilHw1DMA1M6MRedo/view?usp=sharing
+      name: Slides
+    - link: null
+      name: Panopto
+    topics: Review
+  name: Using Machine Learning
+- days:
+  - assignments:
+    - Homework 06
+    - Quiz 06
+    date: Mon 11/04
+    items:
+    - name: Exam 02
+    - link: static/solutions/quiz06_solutions.pdf
+      name: Quiz 06 Solutions
+    topics: ''
+  name: Midterm 02
+- name: 'Unit 03: Deep Learning'
+- days:
+  - date: Wed 11/06
+    topics: Introduction to Deep Learning
+  - assignments:
+    - Quiz 07
+    - Homework 07
+    date: Mon 11/11
+    topics: Multi-layer Perceptron Networks and Feed-Forward Networks
+  - date: Wed 11/13
+    topics: Backpropogation, Optimization Techniques, and Gradient Descent
+  - assignments:
+    - Quiz 08
+    - Homework 08
+    date: Mon 11/18
+    topics: Transformers
+  - date: Wed 11/20
+    topics: Review
+  name: Implementation of Deep Learning
+- days:
+  - date: Mon 11/25
+    items:
+    - name: Exam 03
+    topics: ''
+  name: Midterm 03
+- name: 'Unit 04: Applications and Other Things'
+- days:
+  - assignments:
+    - Quiz 09
+    - Homework 09
+    date: Mon 12/02
+    topics: Computer Vision
+  name: Computer Vision
+- days:
+  - date: Wed 12/04
+    topics: Series Forecasting, LSTMs, and Markovs
+  name: Series and Sequences
+- days:
+  - assignments:
+    - Quiz 10
+    - Homework 10
+    date: Mon 12/09
+    topics: Modern Natural Language Processing
+  name: Natural Language Processing (NLP)
+- days:
+  - date: Wed 12/11
+    topics: Agents and Reinforcement Learning
+  name: Looking Foward
+- days:
+  - date: Tue 12/17
+    items:
+    - name: Exam, Final
+    topics: 8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
+  name: Final
+semester_end: '2024-12-13'
+semester_start: '2024-08-28'
