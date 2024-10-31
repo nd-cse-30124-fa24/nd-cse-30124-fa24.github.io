@@ -70,12 +70,17 @@ def render_page(page):
 def generate_schedule(start_date, end_date, class_days, holidays, existing_schedule):
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%Y-%m-%d')
-    #delta = timedelta(days=1)
-    #current_date = start_date
-    schedule = []
+    delta = timedelta(days=1)
+    current_date = start_date
+    possible_dates = []
 
-    #day_map = {'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3, 'Fri': 4, 'Sat': 5, 'Sun': 6}
-    #class_days_numbers = [day_map[day] for day in class_days]
+    day_map = {'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3, 'Fri': 4, 'Sat': 5, 'Sun': 6}
+    class_days_numbers = [day_map[day] for day in class_days]
+
+    while current_date <= end_date:
+        if current_date.weekday() in class_days_numbers:
+            possible_dates.append(current_date.strftime('%a %m/%d'))
+        current_date += delta
 
     # Convert holiday start dates to datetime objects
     holiday_periods = []
@@ -83,28 +88,26 @@ def generate_schedule(start_date, end_date, class_days, holidays, existing_sched
         holiday_start = datetime.strptime(f"{start_date.year}-{holiday['start']}", '%Y-%m-%d')
         holiday_periods.append((holiday_start, holiday['length'], holiday['name']))
 
+    schedule = []
     # Iterate over existing schedule
+    curr_date_index = 0
     for theme in existing_schedule:
         if 'days' in theme:
             new_days = []
             for day in theme['days']:
-                day_date = datetime.strptime(day['date'], '%a %m/%d')
                 # Check if the current date falls within any holiday period
-                holiday_name = None
                 for holiday_start, length, name in holiday_periods:
-                    if holiday_start <= day_date < holiday_start + timedelta(days=length * 7 // len(class_days)):
-                        holiday_name = name
+                    if holiday_start <= possible_dates[curr_date_index] < holiday_start + timedelta(days=length * 7 // len(class_days)):
+                        schedule.append({
+                            'name': name,
+                        })
+                        curr_date_index += length
                         break
-
-                if holiday_name:
-                    # Add a new theme for the holiday
-                    schedule.append({
-                        'name': holiday_name,
-                        #'days': [{'date': day['date'], 'topics': holiday_name}]
-                    })
-                else:
-                    # Keep the existing class day
-                    new_days.append(day)
+                
+                # Keep the existing class day
+                day['date'] = possible_dates[curr_date_index]
+                curr_date_index += 1
+                new_days.append(day)
 
             if new_days:
                 schedule.append({'name': theme['name'], 'days': new_days})
