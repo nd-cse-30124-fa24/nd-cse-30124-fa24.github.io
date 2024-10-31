@@ -101,7 +101,7 @@ def update_schedule_yaml(yaml_path):
     for theme in schedule_data['schedule']:
         # Skip themes that are breaks
         if 'days' not in theme:
-            date_index += theme.get(['length'], 0)
+            date_index += theme.get('length', 0)
             continue
 
         for day in theme['days']:
