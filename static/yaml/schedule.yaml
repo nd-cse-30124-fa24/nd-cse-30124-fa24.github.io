@@ -187,7 +187,7 @@
 - name:     Implementation of Deep Learning
   days:
       - date:           Wed 11/06
-        topics:         Introduction to Deep Learning and Function Approximation
+        topics:         Introduction to Deep Learning
 
       - date:           Mon 11/11
         topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
