@@ -67,7 +67,7 @@ def render_page(page):
     print(template.generate(**settings).decode())
 
 # Function to generate class dates
-def generate_schedule(start_date, end_date, class_days, holidays):
+def generate_schedule(start_date, end_date, class_days, holidays, existing_schedule):
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%Y-%m-%d')
     delta = timedelta(days=1)
@@ -78,26 +78,38 @@ def generate_schedule(start_date, end_date, class_days, holidays):
     class_days_numbers = [day_map[day] for day in class_days]
 
     # Convert holiday start dates to datetime objects
+    holiday_periods = []
     for holiday in holidays:
-        holidays['start'] = datetime.strptime(f"{start_date.year}-{holiday['start']}", '%Y-%m-%d')
-        holidays['period'].append((holidays['start'], holiday['length']))
+        holiday_start = datetime.strptime(f"{start_date.year}-{holiday['start']}", '%Y-%m-%d')
+        holiday_periods.append((holiday_start, holiday['length'], holiday['name']))
 
-    while current_date <= end_date:
-        # Check if the current date is a class day
-        if current_date.weekday() in class_days_numbers:
-            # Check if the current date falls within any holiday period
-            holiday_name = None
-            for holiday_start, length in holidays['period']:
-                if holiday_start <= current_date < holiday_start + timedelta(days=length * 7 // len(class_days)):
-                    holiday_name = holidays['name']
-                    break
+    # Iterate over existing schedule
+    for theme in existing_schedule:
+        if 'days' in theme:
+            new_days = []
+            for day in theme['days']:
+                day_date = datetime.strptime(day['date'], '%a %m/%d')
+                # Check if the current date falls within any holiday period
+                holiday_name = None
+                for holiday_start, length, name in holiday_periods:
+                    if holiday_start <= day_date < holiday_start + timedelta(days=length * 7 // len(class_days)):
+                        holiday_name = name
+                        break
 
-            if holiday_name:
-                schedule.append({'date': current_date.strftime('%a %m/%d'), 'name': holiday_name})
-            else:
-                schedule.append({'date': current_date.strftime('%a %m/%d')})
+                if holiday_name:
+                    # Add a new theme for the holiday
+                    schedule.append({
+                        'name': holiday_name,
+                        'days': [{'date': day['date'], 'topics': holiday_name}]
+                    })
+                else:
+                    # Keep the existing class day
+                    new_days.append(day)
 
-        current_date += delta
+            if new_days:
+                schedule.append({'name': theme['name'], 'days': new_days})
+        else:
+            schedule.append(theme)
 
     return schedule
 
@@ -105,29 +117,17 @@ def update_schedule_yaml(yaml_path):
     with open(yaml_path, 'r') as file:
         schedule_data = yaml.safe_load(file)
 
-    # Access the start and end dates and class days from the YAML file
     start_date = schedule_data['semester_start']
     end_date = schedule_data['semester_end']
     class_days = schedule_data['class_days']
     holidays = schedule_data['holidays']
+    existing_schedule = schedule_data['schedule']
 
     # Generate the schedule
-    generated_dates = generate_schedule(start_date, end_date, class_days, holidays)
-    date_index = 0
+    updated_schedule = generate_schedule(start_date, end_date, class_days, holidays, existing_schedule)
 
     # Update the schedule with generated dates
-    for theme in schedule_data['schedule']:
-        # Skip themes that are breaks
-        if 'days' not in theme:
-            #date_index += theme.get('length', 0)
-            continue
-
-        for day in theme['days']:
-            if date_index < len(generated_dates):
-                day['date'] = generated_dates[date_index]['date']
-                if 'name' in generated_dates[date_index]:
-                    day['topics'] = generated_dates[date_index]['name']
-                date_index += 1
+    schedule_data['schedule'] = updated_schedule
 
     # Write the updated schedule back to the YAML file
     with open(yaml_path, 'w') as file:

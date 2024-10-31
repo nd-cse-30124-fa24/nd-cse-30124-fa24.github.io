@@ -169,9 +169,6 @@ schedule:
         - date:           Wed 10/16
           topics:         Cancelled - Evaluating Machine Learning Models
 
-  - name:     'Fall Break'
-    length:     2
-
   - name:     Using Machine Learning
     days:
         - date:           Mon 10/28
@@ -233,9 +230,6 @@ schedule:
           topics:         ''
           items:
             - name:       Exam 03
-
-  - name:     'Thanksgiving Break'
-    length:   1
 
   - name:     'Unit 04: Applications and Other Things'
 
