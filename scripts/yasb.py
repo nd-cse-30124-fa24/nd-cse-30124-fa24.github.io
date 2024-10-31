@@ -108,10 +108,11 @@ def update_schedule_yaml(yaml_path):
     # Access the start and end dates and class days from the YAML file
     start_date = schedule_data['semester_start']
     end_date = schedule_data['semester_end']
+    class_days = schedule_data['class_days']
     holidays = schedule_data['holidays']
 
     # Generate the schedule
-    generated_dates = generate_schedule(start_date, end_date, holidays)
+    generated_dates = generate_schedule(start_date, end_date, class_days, holidays)
     date_index = 0
 
     # Update the schedule with generated dates
