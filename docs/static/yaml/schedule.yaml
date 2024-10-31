@@ -149,8 +149,6 @@
         items:
           - name:       Slides
             link:       https://drive.google.com/file/d/1NRo2lVdNqrfNZybS4Wos8cZikdlZP0LS/view?usp=sharing
-          - name:       Panopto
-            link:       
           - name:       Notebook
             link:       https://drive.google.com/file/d/1ZX_CHcD7BzoF-XrIPS3rBCMu94mmJPxq/view?usp=sharing
 
@@ -158,7 +156,9 @@
         topics:         Review
         items:
           - name:       Slides
-            link:       https://docs.google.com/presentation/d/1z8lVUK7wsVgMSwxlHQ0gL94eLCICFK5q/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+            link:       https://drive.google.com/file/d/1h-tWbt92RWEy8aHkilHw1DMA1M6MRedo/view?usp=sharing
+          - name:       Panopto
+            link: 
 
 - name:     Midterm 02
   days:
