@@ -70,12 +70,12 @@ def render_page(page):
 def generate_schedule(start_date, end_date, class_days, holidays, existing_schedule):
     start_date = datetime.strptime(start_date, '%Y-%m-%d')
     end_date = datetime.strptime(end_date, '%Y-%m-%d')
-    delta = timedelta(days=1)
-    current_date = start_date
+    #delta = timedelta(days=1)
+    #current_date = start_date
     schedule = []
 
-    day_map = {'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3, 'Fri': 4, 'Sat': 5, 'Sun': 6}
-    class_days_numbers = [day_map[day] for day in class_days]
+    #day_map = {'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3, 'Fri': 4, 'Sat': 5, 'Sun': 6}
+    #class_days_numbers = [day_map[day] for day in class_days]
 
     # Convert holiday start dates to datetime objects
     holiday_periods = []
@@ -100,7 +100,7 @@ def generate_schedule(start_date, end_date, class_days, holidays, existing_sched
                     # Add a new theme for the holiday
                     schedule.append({
                         'name': holiday_name,
-                        'days': [{'date': day['date'], 'topics': holiday_name}]
+                        #'days': [{'date': day['date'], 'topics': holiday_name}]
                     })
                 else:
                     # Keep the existing class day
