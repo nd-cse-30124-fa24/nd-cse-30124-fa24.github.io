@@ -98,7 +98,7 @@ def update_schedule_yaml(yaml_path):
     date_index = 0
 
     # Update the schedule with generated dates
-    for theme in schedule_data:
+    for theme in schedule_data['schedule']:
         if isinstance(theme, dict) and 'days' in theme:
             for day in theme['days']:
                 if date_index < len(generated_dates):
