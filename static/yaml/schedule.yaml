@@ -220,6 +220,9 @@ schedule:
           items:
             - name:       Exam 03
 
+  - name:     'Thanksgiving Break'
+    length:   1
+
   - name:     'Unit 04: Applications and Other Things'
 
   - name:     Computer Vision
