@@ -182,7 +182,6 @@ body:       |
             </thead>
             <tbody>
 
-                #{% for theme in page.external['schedule'].get('schedule', []) %}
                 {% for theme in page.external['schedule'] %}
                 {% if not theme.get('days') %}
                   <tr>
