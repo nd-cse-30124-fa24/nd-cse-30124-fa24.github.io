@@ -149,7 +149,10 @@
   days:
       - date:           Wed 10/16
         topics:         Cancelled - Evaluating Machine Learning Models
-
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1n4PhD6U7FZx-VepK0KeuDFrZisS7RtgW/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+            
 - name:     'Fall Break'
 
 - name:     Using Machine Learning
