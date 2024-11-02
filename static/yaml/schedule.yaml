@@ -86,7 +86,7 @@
             link:       static/pdf/exam01.pdf
           - name:       Exam 01 Solutions
             link:       static/solutions/exam01_solutions.pdf
-            
+
 - name:     'Unit 02: Machine Learning'
 
 - name:     Supervised Learning
@@ -153,7 +153,7 @@
         topics:         Cancelled - Evaluating Machine Learning Models
         items:
           - name:       Slides
-            link:       https://docs.google.com/presentation/d/1n4PhD6U7FZx-VepK0KeuDFrZisS7RtgW/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+            link:       https://drive.google.com/file/d/1C1X6ZNLMkpstpLKMBMoTGeIJ7IkcVDcW/view?usp=sharing
 
 - name:     'Fall Break'
 
