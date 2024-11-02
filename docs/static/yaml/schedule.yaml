@@ -206,9 +206,9 @@
 - name:     Midterm 03
   days:
       - date:           Mon 11/25
-        topics:         ''
-        items:
-          - name:       Exam 03
+        topics:         Exam 03
+        assignments:
+          - Exam 03
 
 - name:     'Unit 04: Applications and Other Things'
 
@@ -241,6 +241,6 @@
 - name:     Final
   days:
       - date:           Tue 12/17 
-        topics:         8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
-        items:
-          - name:       Exam, Final
+        topics:         Final Exam | 8:00 AM - 10:00 AM, Debart 155 (Normal Classroom)
+        assignments:
+          - Final Exam
