@@ -226,7 +226,10 @@ body:       |
                     <td class="text-strong text-center">
                     {% for assignment in day.get('assignments', []) %}
                       {% set assignment_id = ''.join(assignment.lower().split()) %}
-                      {% if assignment_id.startswith('quiz') %}
+                      {% if 'solutions' in assignment_id %}
+                        {% set assignment_label = 'success' %}
+                        <a href="static/solutions/{{ assignment_id }}_solutions.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                      {% elif assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
                         <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% else %}
