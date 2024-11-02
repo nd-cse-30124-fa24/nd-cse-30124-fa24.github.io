@@ -209,7 +209,7 @@ body:       |
                       <i class="text-muted">Intro to AI</i>
                     {% end %}
                     {% for item in day.get('items', []) %}
-                    {% if item['name'].lower().startswith('exam') %}
+                    {% if exam in item['name'].lower() %}
                       {% set item['label'] = 'danger' %}
                     {% elif item['name'].lower().startswith('panopto') %}
                       {% set item['label'] = 'success' %}
@@ -232,7 +232,7 @@ body:       |
                       {% elif assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
                         <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
-                      {% elif assignment_id.startswith('exam') %}
+                      {% elif 'exam' in assignment_id %}
                         {% set assignment_label = 'danger' %}
                         <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% else %}
