@@ -83,8 +83,10 @@
         topics:         ''
         items:
           - name:       Exam 01
+            link:       static/pdf/exam01.pdf
+          - name:       Exam 01 Solutions
             link:       static/solutions/exam01_solutions.pdf
-
+            
 - name:     'Unit 02: Machine Learning'
 
 - name:     Supervised Learning
