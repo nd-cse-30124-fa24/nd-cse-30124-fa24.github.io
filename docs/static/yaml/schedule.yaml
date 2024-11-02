@@ -77,12 +77,10 @@
 - name:     Exam 01
   days:
       - date:           Wed 09/25
-        topics:         ''
-        items:
-          - name:       Exam 01
-            link:       static/pdf/exam01.pdf
-          - name:       Exam 01 Solutions
-            link:       static/solutions/exam01_solutions.pdf
+        topics:         Exam 01
+        assignments:
+          - Exam 01
+          - Exam 01 Solutions
 
 - name:     'Unit 02: Machine Learning'
 
@@ -173,13 +171,12 @@
 - name:     Midterm 02
   days:
       - date:           Mon 11/04
-        topics:         ''
+        topics:         Exam 02
         assignments:
           - Homework 06
           - Quiz 06
           - Quiz 06 Solutions
-        items:
-          - name:       Exam 02         
+          - Exam 02        
 
 - name:     'Unit 03: Deep Learning'
 
