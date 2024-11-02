@@ -200,6 +200,8 @@ body:       |
                     {% if 'topics' in day %}
                       {% if day['topics'] == 'Office Hours' or day['topics'].startswith('Cancelled') %}
                       <i class="text-muted">{{ day.get('topics', '') }}</i>
+                      {% elif day['topics'].lower().startswith('exam') %}
+                      <i class="text-danger">{{ day.get('topics', '') }}</i>
                       {% else %}
                       {{ day.get('topics', '') }}
                       {% end %}
@@ -229,6 +231,9 @@ body:       |
                         <a href="static/solutions/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% elif assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
+                        <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                      {% elif assignment_id.startswith('exam') %}
+                        {% set assignment_label = 'danger' %}
                         <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% else %}
                         {% set assignment_label = 'caution' %}
