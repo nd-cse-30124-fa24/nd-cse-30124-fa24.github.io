@@ -225,10 +225,10 @@ body:       |
                     </td>
                     <td class="text-strong text-center">
                     {% for assignment in day.get('assignments', []) %}
-                      {% set assignment_id = ''.join(assignment.lower().split()) %}
+                      {% set assignment_id = '_'.join(assignment.lower().split()) %}
                       {% if 'solutions' in assignment_id %}
                         {% set assignment_label = 'success' %}
-                        <a href="static/solutions/{{ assignment_id }}_solutions.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                        <a href="static/solutions/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
                       {% elif assignment_id.startswith('quiz') %}
                         {% set assignment_label = 'primary' %}
                         <a href="static/pdf/{{ assignment_id }}.pdf" class="label label-{{ assignment_label }}">{{ assignment }}</a>
