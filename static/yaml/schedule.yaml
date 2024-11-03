@@ -8,7 +8,7 @@
 
 - name:     'Unit 01: History of Artificial Intelligence'
 
-- name:     History of Artificial Intelligence
+- name:     Good Old Fashioned AI (GOFAI)
   days:
       - date:           Mon 09/02
         topics:         Agents and A*
@@ -180,7 +180,7 @@
 
 - name:     'Unit 03: Deep Learning'
 
-- name:     Implementation of Deep Learning
+- name:     Deep Learning
   days:
       - date:           Wed 11/06
         topics:         Introduction to Deep Learning
@@ -210,7 +210,7 @@
         assignments:
           - Exam 03
 
-- name:     'Unit 04: Applications and Other Things'
+- name:     'Unit 04: Modern Applications of Artificial Intelligence'
 
 - name:     Computer Vision
   days:
