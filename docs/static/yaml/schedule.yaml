@@ -183,16 +183,16 @@
 - name:     Deep Learning
   days:
       - date:           Wed 11/06
-        topics:         Introduction to Deep Learning
+        topics:         Introduction to Deep Learning, MLPs and FFNs
 
       - date:           Mon 11/11
-        topics:         Multi-layer Perceptron Networks and Feed-Forward Networks
+        topics:         Gradient Descent and Optimization
         assignments:
           - Quiz 07
           - Homework 07
 
       - date:           Wed 11/13
-        topics:         Backpropogation, Optimization Techniques, and Gradient Descent
+        topics:         Backpropogation
 
       - date:           Mon 11/18
         topics:         Transformers
