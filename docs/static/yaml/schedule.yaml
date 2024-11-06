@@ -184,6 +184,11 @@
   days:
       - date:           Wed 11/06
         topics:         Introduction to Deep Learning, MLPs and FFNs
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1x0VtVsDRdK09LAXWRad5DfD3SL4WeHXd/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
+          - name:       Panopto
+            link:       
 
       - date:           Mon 11/11
         topics:         Gradient Descent and Optimization
