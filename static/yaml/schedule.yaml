@@ -186,9 +186,7 @@
         topics:         Introduction to Deep Learning, MLPs and FFNs
         items:
           - name:       Slides
-            link:       https://docs.google.com/presentation/d/1x0VtVsDRdK09LAXWRad5DfD3SL4WeHXd/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-          - name:       Panopto
-            link:       
+            link:       https://drive.google.com/file/d/1c1q8ZCSgGB7V7_uVmc5bebUZf9XNYJtE/view?usp=sharing
 
       - date:           Mon 11/11
         topics:         Gradient Descent and Optimization
