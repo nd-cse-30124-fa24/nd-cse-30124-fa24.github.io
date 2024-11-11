@@ -191,8 +191,9 @@
 
       - date:           Mon 11/11
         topics:         Gradient Descent and Optimization
-        assignments:
-          - Quiz 07
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1fC_5Em4GBW3IUNEFfUKYuHLJlnNVM_fK/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
       - date:           Wed 11/13
         topics:         Backpropogation
@@ -200,7 +201,7 @@
       - date:           Mon 11/18
         topics:         Transformers
         assignments:
-          - Quiz 08
+          - Quiz 07
           - Homework 0708
 
       - date:           Wed 11/20
@@ -212,6 +213,7 @@
         topics:         Exam 03
         assignments:
           - Exam 03
+          - Quiz 08 (Take Home)
 
 - name:     'Unit 04: Modern Applications of Artificial Intelligence'
 
