@@ -208,7 +208,7 @@
             link:       https://colab.research.google.com/drive/16sWNLONLbTXwSEJZ6F-jD1df32H6sWzQ?usp=sharing
 
       - date:           Mon 11/18
-        topics:         Transformers
+        topics:         Sequence Networks
         assignments:
           - Quiz 07
           - Homework 0708
@@ -226,18 +226,18 @@
 
 - name:     'Unit 04: Modern Applications of Artificial Intelligence'
 
-- name:     Computer Vision
+- name:     The Revolution
   days:
       - date:           Mon 12/02
-        topics:         Computer Vision
+        topics:         Transformers
         assignments:
           - Quiz 09
           - Homework 09
 
-- name:     Series and Sequences
+- name:     Computer Vision
   days:
       - date:           Wed 12/04
-        topics:         Series Forecasting, LSTMs, and Markovs
+        topics:         Computer Vision
 
 - name:     Natural Language Processing (NLP)
   days:
