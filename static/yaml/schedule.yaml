@@ -230,9 +230,6 @@
   days:
       - date:           Mon 12/02
         topics:         Transformers
-        assignments:
-          - Quiz 09
-          - Homework 09
 
 - name:     Computer Vision
   days:
@@ -244,8 +241,9 @@
       - date:           Mon 12/09
         topics:         Modern Natural Language Processing
         assignments:
-          - Quiz 10
-          - Homework 10
+          - Quiz 09
+          - Quiz 10 (Take Home)
+          - Homework 0910
 
 - name:     Looking Foward
   days:
