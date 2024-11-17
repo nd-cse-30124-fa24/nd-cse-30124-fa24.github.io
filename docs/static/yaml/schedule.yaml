@@ -244,13 +244,14 @@
         topics:         Modern Natural Language Processing
         assignments:
           - Quiz 09
-          - Quiz 10 (Take Home)
           - Homework 0910
 
 - name:     Looking Foward
   days:
       - date:           Wed 12/11
         topics:         Agents and Reinforcement Learning
+        assignments:
+          - Quiz 10 (Take Home)
 
 - name:     Final
   days:
