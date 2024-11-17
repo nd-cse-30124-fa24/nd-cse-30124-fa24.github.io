@@ -197,7 +197,7 @@
           - name:       Notebook
             link:       https://colab.research.google.com/drive/1IXS4IiZcpOZBtt5XdsTiNlI8J2B-FNa0?usp=sharing
           - name:       Panopto
-            link:       
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c03ea6da-b3e8-43f6-90b1-b225016b1613
 
       - date:           Wed 11/13
         topics:         Backpropogation
@@ -206,6 +206,8 @@
             link:       https://docs.google.com/presentation/d/1kfUMzDxF-wI79gHC3X2X4_47F4Cjehcf/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
           - name:       Notebook
             link:       https://colab.research.google.com/drive/16sWNLONLbTXwSEJZ6F-jD1df32H6sWzQ?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf974faa-5b59-45bf-8852-b2270165cfe9&start=0
 
       - date:           Mon 11/18
         topics:         Sequence Networks
