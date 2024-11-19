@@ -229,7 +229,7 @@
         topics:         Exam 03
         assignments:
           - Exam 03
-          - Quiz 08 (Take Home)
+          - Quiz 08
 
 - name:     'Unit 04: Modern Applications of Artificial Intelligence'
 
@@ -256,7 +256,7 @@
       - date:           Wed 12/11
         topics:         Agents and Reinforcement Learning
         assignments:
-          - Quiz 10 (Take Home)
+          - Quiz 10
 
 - name:     Final
   days:
