@@ -253,7 +253,6 @@
         topics:         Modern Natural Language Processing
         assignments:
           - Quiz 09
-          - Homework 0910
 
 - name:     Looking Foward
   days:
@@ -261,6 +260,7 @@
         topics:         Agents and Reinforcement Learning
         assignments:
           - Quiz 10
+          - Homework 0910
 
 - name:     Final
   days:
