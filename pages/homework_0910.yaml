@@ -8,6 +8,10 @@ internal:
 external:
 body:       |
 
+    <div class="thumbnail">
+    <img src="static/img/sentiment.png" class="img-responsive"/>
+    </div>
+
     ## Task 1: Blog Post
 
     For this bonus homework, just follow and implement the instructions in this blog post:
