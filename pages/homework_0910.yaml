@@ -1,4 +1,4 @@
-title:      "Homework 09 and 10: GPT-2"
+title:      "Homework 09 and 10: IMDB Movie Review Sentiment Analysis"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -8,20 +8,19 @@ internal:
 external:
 body:       |
 
-    ## Task 1: Notebook
+    ## Task 1: Blog Post
 
-    Run the following notebook and answer the included questions using google colab:
+    For this bonus homework, just follow and implement the instructions in this blog post:
 
-    <div class="alert alert-success" markdown="1">
-    [DOWNLOAD NOTEBOOK](static/homeworks/homework0910.ipynb)
+    <a href="https://jamesmccaffrey.wordpress.com/2022/01/17/imdb-movie-review-sentiment-analysis-using-an-lstm-with-pytorch/">IMDB Movie Review Sentiment Analysis using an LSTM with PyTorch</a>
+
+    Then either bring in your working model to demonstrate to me or a TA, or send a video of
+    it working on your machine, and submit your own version of the code.
+
+    <div class="alert alert-danger" markdown="1">
+    **Note**: I intend to ask at **least** one question about this on the final exam, 
+    blindly copy the code in the blogpost at your own discretion.
     </div>
-
-    For your convenience the notebook is displayed below as HTML but you will likely
-    find it easier to download the raw notebook file given above.
-
-    <iframe src="static/homework_htmls/homework0910.html" width="100%" height="800px"></iframe>
-
-    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
 
     To submit your answers, you will need add your `homework0910.ipynb` file
     in the `homework0910` folder of your **assignments** repository:
