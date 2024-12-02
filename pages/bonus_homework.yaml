@@ -1,4 +1,4 @@
-title:      "Homework 09 and 10: GPT-2"
+title:      "Bonus Homework: ChatGPT2"
 icon:       fa-book
 navigation:
   - name: "Home"
@@ -8,23 +8,21 @@ internal:
 external:
 body:       |
 
-    ## Task 1: Notebook
-
-    Run the following notebook and answer the included questions using google colab:
-
-    <div class="alert alert-success" markdown="1">
-    [DOWNLOAD NOTEBOOK](static/homeworks/homework0910.ipynb)
+    <div class="thumbnail">
+    <img src="static/img/meme.jpg" class="img-responsive"/>
     </div>
 
-    For your convenience the notebook is displayed below as HTML but you will likely
-    find it easier to download the raw notebook file given above.
+    ## Task 1: Blog Post
 
-    <iframe src="static/homework_htmls/homework0910.html" width="100%" height="800px"></iframe>
+    For this bonus homework, just follow and implement the instructions in this blog post:
 
-    <pre style="display: none;" id="dr-container" class="codehilite"><code id="dredd-response"></code></pre>
+    <a href="https://jaykmody.com/blog/gpt-from-scratch/">GPT in 60 Lines of NumPy</a>
 
-    To submit your answers, you will need add your `homework0910.ipynb` file
-    in the `homework0910` folder of your **assignments** repository:
+    Then either bring in your working model to demonstrate to me or a TA, or send a video of
+    it working on your machine, and submit your own version of the code.
+
+    To submit your answers, you will need add your `bonus_homework.ipynb` file
+    in the `bonus_homework` folder of your **assignments** repository:
 
     Answer the questions in your notebook file using the method of your choice and
     once you are finished, follow the instructions below to submit your notebook.
@@ -38,7 +36,7 @@ body:       |
             $ git checkout main         # Make sure we are in master branch
             $ git pull --rebase           # Make sure we are up-to-date with github repository
 
-            $ git checkout -b homework0910   # Create homework0910 branch and check it out
+            $ git checkout -b bonus_homework   # Create bonus_homework branch and check it out
 
         Once you do the above, you should see the following output for the
         [git-branch] command:
@@ -52,18 +50,18 @@ body:       |
               homework03
               homework04
               homework05
-            * homework0910
+              bonus_homework
 
-        The `*` indicates that we are currently on the `homework0910` branch.
+        The `*` indicates that we are currently on the `bonus_homework` branch.
 
     2. Once you have your notebook filled out, you need to add, commit the file, and
     push your commits to [GitHub]:
 
             :::bash
-            $ git add homework0910.ipynb                # Add answers.json to staging area
-            $ git commit -m "Homework 09 and 10: Done"    # Commit work
+            $ git add bonus_homework.ipynb                # Add answers.json to staging area
+            $ git commit -m "Bonus Homework: Done"    # Commit work
 
-            $ git push -u origin homework0910        # Push branch to GitHub
+            $ git push -u origin bonus_homework        # Push branch to GitHub
 
         <div class="alert alert-success" markdown="1">
         **Note**: You may edit and commit changes to your branch as many times
@@ -81,7 +79,7 @@ body:       |
             <img src="static/img/pr_step_1.png" class="img-responsive"/>
             </div>
 
-        - Next, edit the **pull request** title to "Homework 09 and 10", write a
+        - Next, edit the **pull request** title to "Bonus Homework", write a
           comment if necessary and then press the "Create pull request" button.
 
             <div class="thumbnail">
