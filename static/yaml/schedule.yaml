@@ -242,6 +242,8 @@
       - date:           Mon 12/02
         topics:         Attention and Transformers
         items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1h2hJo_lJodI1ncu6TQ37o-yyPlW7YDcI/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
           - name:       Notebook
             link:       https://colab.research.google.com/drive/1I_rigOabCN53RMIJGz2uh2CsobQb7W4L?usp=sharing
 
