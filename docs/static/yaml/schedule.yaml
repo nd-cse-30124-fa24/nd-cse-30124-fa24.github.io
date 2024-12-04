@@ -253,6 +253,9 @@
   days:
       - date:           Wed 12/04
         topics:         Computer Vision
+        items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1mfVlNyydEad4wbXvShd1wLcK04-74HC7/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
 - name:     Natural Language Processing (NLP)
   days:
