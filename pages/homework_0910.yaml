@@ -18,12 +18,10 @@ body:       |
 
     <a href="https://jamesmccaffrey.wordpress.com/2022/01/17/imdb-movie-review-sentiment-analysis-using-an-lstm-with-pytorch/">IMDB Movie Review Sentiment Analysis using an LSTM with PyTorch</a>
 
-    Then submit it to a git branch and make a pull request.
-
     <div class="alert alert-warning" markdown="1">
     Accessing the dataset in colab is a little trickier than I intended, but given below are the steps:
 
-    Go to this link: https://drive.google.com/drive/folders/1bpkT5JmhDxsORu-gvljkay0IyKh6XY9F?usp=sharing and then "add shortcut to drive"
+    Go to this link: <a href="https://drive.google.com/drive/folders/1bpkT5JmhDxsORu-gvljkay0IyKh6XY9F?usp=sharing">aclImdb google drive mirror</a> and then "add shortcut to drive"
 
     Then using the code below, you should be able to access the dataset in your colab notebook.
     </div> 
