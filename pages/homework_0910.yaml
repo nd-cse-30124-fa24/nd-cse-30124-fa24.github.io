@@ -45,6 +45,12 @@ body:       |
     </pre>
 
     <div class="alert alert-danger" markdown="1">
+    **Note**: The blog uses pretty large values for the training and testing sets sizes.
+    You may consider lowering these to make sure your code works and then you can try
+    scaling them back up.
+    </div>
+
+    <div class="alert alert-danger" markdown="1">
     **Note**: I intend to ask at **least** one question about this on the final exam, 
     blindly copy the code in the blogpost at your own discretion.
     </div>
