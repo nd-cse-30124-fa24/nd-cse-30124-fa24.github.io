@@ -12,6 +12,10 @@
 	<!-- Bootstrap core CSS -->
 	<link href="static/css/blugold.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -45,10 +49,34 @@
 </div>
 
 <h2 id="task-1-blog-post">Task 1: Blog Post<a class="headerlink" href="#task-1-blog-post" title="Permanent link">&para;</a></h2>
-<p>For this bonus homework, just follow and implement the instructions in this blog post:</p>
+<p>For this homework, just follow and implement the instructions in this blog post:</p>
 <p><a href="https://jamesmccaffrey.wordpress.com/2022/01/17/imdb-movie-review-sentiment-analysis-using-an-lstm-with-pytorch/">IMDB Movie Review Sentiment Analysis using an LSTM with PyTorch</a></p>
-<p>Then either bring in your working model to demonstrate to me or a TA, or send a video of
-it working on your machine, and submit your own version of the code.</p>
+<p>Then submit it to a git branch and make a pull request.</p>
+<div class="alert alert-warning">
+<p>Accessing the dataset in colab is a little trickier than I intended, but given below are the steps:</p>
+<p>Go to this link: https://drive.google.com/drive/folders/1bpkT5JmhDxsORu-gvljkay0IyKh6XY9F?usp=sharing and then "add shortcut to drive"</p>
+<p>Then using the code below, you should be able to access the dataset in your colab notebook.</p>
+</div>
+<pre>
+  <code class="python">
+    from google.colab import drive
+    import os
+
+    # Mount Google Drive
+    drive.mount('/content/drive', force_remount=True)
+
+    # Path to the shared folder
+    dataset_path = '/content/drive/My Drive/aclImdb'
+    os.chdir(dataset_path)
+
+    # List files in the dataset folder
+    print("Files in the aclImdb dataset folder:")
+    for root, dirs, files in os.walk(dataset_path):
+        for file in files:
+            print(os.path.join(root, file))
+  </code>
+</pre>
+
 <div class="alert alert-danger">
 <p><strong>Note</strong>: I intend to ask at <strong>least</strong> one question about this on the final exam, 
 blindly copy the code in the blogpost at your own discretion.</p>
