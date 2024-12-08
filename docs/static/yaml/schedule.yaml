@@ -257,10 +257,10 @@
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1mfVlNyydEad4wbXvShd1wLcK04-74HC7/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
 
-- name:     Natural Language Processing (NLP)
+- name:     Diffusion Models
   days:
       - date:           Mon 12/09
-        topics:         Modern Natural Language Processing
+        topics:         Diffusion Models
         assignments:
           - Quiz 09
 
