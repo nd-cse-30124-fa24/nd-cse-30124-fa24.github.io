@@ -263,6 +263,13 @@
   days:
       - date:           Mon 12/09
         topics:         Diffusion Models
+        items:
+          - name:       Slides
+            link:       
+          - name:       Panopto
+            link:       
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1Ek5KJA_CrEBPARSz69CZg3vFWHzkyy59?usp=sharing
         assignments:
           - Quiz 09
 
