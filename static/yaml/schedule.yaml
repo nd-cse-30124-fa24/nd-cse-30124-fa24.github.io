@@ -256,6 +256,8 @@
         items:
           - name:       Slides
             link:       https://drive.google.com/file/d/14GxMO2b3fSFUk0wp7JY-0eJ90J6B3Rfy/view?usp=sharing
+          - name:       Panopto
+            link:       https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f97b7155-09fb-446c-952b-b23c01660383
 
 - name:     Diffusion Models
   days:
