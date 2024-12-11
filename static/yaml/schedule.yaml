@@ -277,7 +277,7 @@
   days:
       - date:           Wed 12/11
         topics:         Agents and Reinforcement Learning
-  items:
+        items:
           - name:       Slides
             link:       https://docs.google.com/presentation/d/1PHZ3cgZyyqT6Ap8et0ipp8tLZFAdtsbF/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true 
           - name:       Panopto
