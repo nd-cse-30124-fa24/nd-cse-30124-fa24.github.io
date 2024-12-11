@@ -277,6 +277,13 @@
   days:
       - date:           Wed 12/11
         topics:         Agents and Reinforcement Learning
+  items:
+          - name:       Slides
+            link:       https://docs.google.com/presentation/d/1PHZ3cgZyyqT6Ap8et0ipp8tLZFAdtsbF/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true 
+          - name:       Panopto
+            link:       
+          - name:       Notebook
+            link:       https://colab.research.google.com/drive/1DfagGpPkYvP6Ug6Sbb0bQqj2-wQNtP83?usp=sharing 
         assignments:
           - Quiz 10
           - Homework 0910
